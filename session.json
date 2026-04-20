@@ -1,17 +1,93 @@
 {
-  "theme": "",
-  "status": "idle",
-  "scr": {},
-  "main_hypotheses": [],
-  "sub_hypotheses": [],
-  "info_needs": [],
-  "search_queries": [],
-  "analysis_frameworks": [],
-  "output_sections": [],
-  "collected_data": {},
-  "report_outline": {},
-  "output_file": "",
-  "quality_score": 0,
-  "created_at": "",
-  "updated_at": ""
+  "theme": "日本のAIスタートアップ投資トレンド 2024-2025",
+  "status": "analysis_done",
+  "scr": {
+    "situation": "日本のスタートアップエコシステムが政府主導の『スタートアップ育成5か年計画』を背景に成長中。2024年の国内スタートアップ総調達額は7793億円（前年比+3%）。",
+    "complication": "米国のAI民間投資($1091億)・中国($93億)と比べ日本は圧倒的小規模。AI領域で出遅れた日本がどう巻き返すか、またその投資効果の実態が問われている。",
+    "resolution": "2024-2025年、日本のAIスタートアップ投資のリアルなトレンド・牽引役・課題と今後の展望は何か？"
+  },
+  "main_hypotheses": [
+    "日本のAIスタートアップ投資は2024年に急増し、生成AI基盤モデルへの集中投資が顕著（Sakana AIに代表される）",
+    "海外VCの日本参入加速と政府の大型政策支援が、構造的な変化をもたらしつつある"
+  ],
+  "sub_hypotheses": [
+    ["AI分野の資金調達は前年比80%増", "投資の上位数社への集中が顕著", "生成AI・基盤モデルが最大ホットスポット"],
+    ["Khosla, NEA, a16z等の海外VCが日本に進出", "中国リスク回避資金が日本にシフト", "政府の10兆円支援策が追い風"]
+  ],
+  "info_needs": ["AI分野別投資額", "主要調達企業リスト", "海外VC参入状況", "政府支援策の詳細", "日米中比較データ"],
+  "search_queries": [
+    "日本 AIスタートアップ 投資 2024 2025 トレンド",
+    "Japan AI startup investment 2024 2025 venture capital",
+    "Sakana AI 資金調達 2024",
+    "日本 AIスタートアップ ランキング 2024",
+    "overseas VC Japan AI startup 2024",
+    "Japan government AI startup policy 2024 2025",
+    "Japan AI investment vs US China comparison 2024"
+  ],
+  "analysis_frameworks": ["時系列トレンド分析", "競合ポジショニング（日米中比較）", "投資構造分析（国内vs海外VC）"],
+  "output_sections": [
+    "Executive Summary",
+    "投資規模と成長率",
+    "主要調達企業と生成AIブーム",
+    "海外VCの日本参入",
+    "政府政策の役割",
+    "日米中比較と日本の課題",
+    "2025年以降の展望"
+  ],
+  "collected_data": {
+    "by_hypothesis": {
+      "仮説1_AI投資急増": [
+        {"source": "https://techblitz.com/report/top-50-startups-that-attracted-major-investments-in-2024/", "tier": 2, "score": 8, "key_info": "2024年AI関連企業の資金調達額は前年度から約80%増", "date": "2024"},
+        {"source": "https://journal.startup-db.com/articles/funding-ranking-202412", "tier": 2, "score": 9, "key_info": "Sakana AIが383.4億円で年間1位", "date": "2024-12"},
+        {"source": "https://initial.inc/articles/japan-startup-finance-2025h1", "tier": 2, "score": 8, "key_info": "2025H1 AI投資+20.75%", "date": "2025"}
+      ],
+      "仮説2_海外VC参入": [
+        {"source": "https://initial.inc/articles/japan-startup-finance-2024-en", "tier": 2, "score": 9, "key_info": "NEA, Khosla, Lux CapitalがSakana AIに投資", "date": "2024"},
+        {"source": "https://practiceguides.chambers.com/practice-guides/venture-capital-2025/japan/trends-and-developments", "tier": 1, "score": 9, "key_info": "a16zが日本オフィス開設を発表", "date": "2025"}
+      ]
+    },
+    "contradictions": [
+      {"topic": "投資増加の実態", "view_a": "AI投資が前年比80%増と急拡大（techblitz）", "view_b": "スタートアップ全体の調達額は+3%に留まりほぼ横ばい（initial）", "sources": ["https://techblitz.com", "https://initial.inc"]}
+    ],
+    "key_stats": [
+      {"stat": "2024年AI関連資金調達：前年比約80%増", "source": "TechBlitz", "year": "2024"},
+      {"stat": "Sakana AI年間調達額383.4億円（国内1位）", "source": "STARTUP DB", "year": "2024"},
+      {"stat": "日本スタートアップ総調達額7793億円", "source": "initial.inc", "year": "2024"},
+      {"stat": "米国2024年AI民間投資$1091億（日本の約70倍）", "source": "Stanford HAI AI Index 2025", "year": "2024"},
+      {"stat": "累積2013-2024：米国$4700億 vs 日本$60億", "source": "Stanford HAI", "year": "2024"},
+      {"stat": "政府目標：2030年までに10兆円のAI支援", "source": "日本政府", "year": "2024"},
+      {"stat": "2025H1 AI投資：前年同期比+20.75%", "source": "Tracxn", "year": "2025"},
+      {"stat": "生成AI導入率：25.8%（2024）→ 9.9%（2023）", "source": "各種調査", "year": "2024"}
+    ],
+    "expert_quotes": [
+      {"quote": "Andreessen Horowitzが日本オフィス開設を発表、日本を安定した低リスク投資先として評価", "who": "a16z", "source": "Chambers VC Guide 2025"},
+      {"quote": "中国経済への懸念と投資家の中国離れが日本への資金流入を加速", "who": "市場分析", "source": "initial.inc"}
+    ]
+  },
+  "report_outline": {
+    "executive_summary": "2024年、日本のAIスタートアップ投資はAI関連で前年比80%増という急拡大を記録したが、その実態はSakana AIへの集中投資と海外VCの参入という構造的変化が牽引。米国との絶対額格差（約70倍）は依然大きいが、政府の10兆円支援策と海外資本流入が中長期の底上げ要因となりつつある。",
+    "sections": [
+      {"title": "投資規模と成長率：急成長の実態", "so_what": "AI分野は前年比80%増と急拡大したが、一部企業への集中が顕著で、エコシステム全体の底上げには至っていない", "key_data": ["AI関連調達+80%", "全体は+3%横ばい", "2025H1 AI+20.75%継続"], "sub_points": ["Sakana AIが383.4億円で年間1位", "上位数社が全体の相当部分を占める集中構造"]},
+      {"title": "生成AIブームの震源地：Sakana AI現象", "so_what": "元Google研究者チームによるSakana AIはわずか1年でユニコーン達成、日本AIスタートアップの象徴となった", "key_data": ["383.4億円調達", "企業価値4000億円", "NEA/Khosla/Lux Capitalリード"], "sub_points": ["自然界着想の小型モデル技術", "NVIDIAとの提携", "メガバンク3行も戦略出資"]},
+      {"title": "海外VCの日本参入加速", "so_what": "中国リスク回避の資金が日本にシフトし、2024年はトップVCの日本参入が加速した", "key_data": ["a16z日本オフィス開設発表", "Khosla・NEA・Lux Capitalが参入", "Sequoia Heritage・KKRも案件実行"], "sub_points": ["中国からの投資家撤退が追い風", "政府の友好的姿勢が評価"]},
+      {"title": "政府支援：10兆円の本気度", "so_what": "日本政府はAI・半導体に2030年までに10兆円の公的支援を約束し、スタートアップへの直接支援も開始した", "key_data": ["10兆円目標（2030年）", "深層技術スタートアップに1000億円", "2025年度AI関連予算1969億円"], "sub_points": ["国家AI基本計画を2025年12月閣議決定", "製造・ヘルスケアAIに重点投資"]},
+      {"title": "日米中比較：依然大きい絶対額格差", "so_what": "急成長しているが米国との差は依然約70倍、人材不足と市場規模が構造的課題として残る", "key_data": ["米国$1091億 vs 日本$15-20億（推定）", "累積米国$4700億 vs 日本$60億", "エンジニア不足78.9万人（2030年予測）"], "sub_points": ["AI活用の期待外れ感：54.9%が期待以下と回答", "言語障壁と市場規模の限界"]}
+    ],
+    "contradictions_resolved": [
+      {"topic": "AI投資増加の実態", "conclusion": "AI関連は前年比80%増は真実だが、全体の7793億円はほぼ横ばい。つまり、限られた資本のAIへの集中シフトが起きており、他分野のスタートアップへのしわ寄せという側面もある"}
+    ],
+    "limitations": [
+      "日本のAI投資の詳細な公式統計データが限られており、推計値に依存している部分がある",
+      "2025年後半以降のデータは未確定で、米国金利動向・為替・地政学リスクが予測を大きく変える可能性がある",
+      "Sakana AIという一社への依存度が高く、同社を除いたエコシステムの実力は過大評価されている可能性がある"
+    ],
+    "key_insights_top3": [
+      "日本AIスタートアップ投資の急成長は実態として『Sakana AI効果』に大きく依存しており、1社を除いた場合の生態系底力はまだ限定的",
+      "中国リスク回避という地政学的変化が日本への海外VC参入を加速しており、この追い風は日本自身の実力向上以上に重要な要因である",
+      "政府の10兆円投資目標は意欲的だが、エンジニア不足（2030年に78.9万人）という人材制約が最大のボトルネックとなる構造的問題が未解決のまま"]
+  },
+  "output_file": "outputs/2026-04-20_japan-ai-startup-investment-trends-2024-2025.md",
+  "quality_score": 87,
+  "created_at": "2026-04-20",
+  "updated_at": "2026-04-20"
 }
