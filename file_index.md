@@ -14,6 +14,7 @@
 | skills/02_web_researcher.md | ウェブ調査 |
 | skills/03_analyst_synthesizer.md | 分析・統合 |
 | skills/04_quality_publisher.md | 品質審査・公開 |
+| skills/timeout.md | タイムアウト対策（全エージェント共通） |
 
 ## アウトプット（最新順）
 | ファイル | テーマ | スコア | 日付 |
