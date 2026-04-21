@@ -22,10 +22,12 @@
 4. skills/04_quality_publisher.md
 
 ## タイムアウト対策
+詳細ルールは **skills/timeout.md** を必ず参照。
 - 各エージェントのターン上限：10ターン
 - パイプライン全体上限：40ターン
 - 各ウェブ検索は最大10クエリ/エージェントに分割
 - 途中保存：各エージェント完了時にsession.jsonを更新してgit commit
+- ファイル生成はWrite/Editでローカル完結→Bashでcommit+push（`mcp__github__push_files`は初期構築時のみ）
 
 ## ユーザー操作
 - 新テーマのリサーチ開始：リサーチテーマを入力するだけ
