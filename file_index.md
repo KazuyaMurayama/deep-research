@@ -19,4 +19,5 @@
 ## アウトプット（最新順）
 | ファイル | テーマ | スコア | 日付 |
 |----------|--------|--------|------|
+| [outputs/2026-04-23_claude-code-ui-comparison.md](outputs/2026-04-23_claude-code-ui-comparison.md) | Claude Code 4UIの使い分け比較 2026 | 86/100 | 2026-04-23 |
 | [outputs/2026-04-20_japan-ai-startup-investment-trends-2024-2025.md](outputs/2026-04-20_japan-ai-startup-investment-trends-2024-2025.md) | 日本のAIスタートアップ投資トレンド 2024-2025 | 87/100 | 2026-04-20 |
