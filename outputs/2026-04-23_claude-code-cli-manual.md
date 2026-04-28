@@ -176,19 +176,60 @@ claude
 
 ### 起動の鉄則
 
+### プロジェクトフォルダのネーミング戦略
+
+複数プロジェクトを長期運用するなら、**最初にフォルダ構造を決める**のが鉄則です。
+
+#### 推奨ディレクトリ構造
+
+```
+C:\Users\yourname\
+└── projects\
+    ├── work\          # 仕事・業務系
+    │   ├── client-a_website\
+    │   └── internal_dashboard\
+    ├── personal\      # 個人開発・副業
+    │   ├── my-blog\
+    │   └── portfolio\
+    ├── sandbox\       # 実験・学習・使い捨て
+    │   └── claude-test\
+    └── oss\           # OSSコントリビューション
+        └── some-repo\
+```
+
+#### ネーミングルール（4原則）
+
+| 原則 | ルール | 例 |
+|------|-------|---|
+| **小文字+ハイフン** | スペース・大文字・アンダースコアは避ける | `my-project` ✅ `My Project` ❌ |
+| **カテゴリ_名前** | 仕事系は `client名_内容` で整理 | `acme_lp` `acme_api` |
+| **短く具体的に** | 役割が一目でわかる名前 | `portfolio` ✅ `project1` ❌ |
+| **日付は不要** | Gitがバージョン管理するので不要 | `my-app` ✅ `my-app-2026` ❌ |
+
+#### 初回セットアップ（一度だけ実行）
+
 ```powershell
-# 【PowerShell で実行】※ your-project は実際のフォルダ名に置き換える
-# 既存プロジェクトがある場合：
-cd C:\Users\yourname\projects\既存フォルダ名
+# 【PowerShell で実行】フォルダ構造をまとめて作成
+mkdir C:\Users\$env:USERNAME\projects\work
+mkdir C:\Users\$env:USERNAME\projects\personal
+mkdir C:\Users\$env:USERNAME\projects\sandbox
+mkdir C:\Users\$env:USERNAME\projects\oss
+```
 
-# 初めて試す場合はフォルダを作ってから起動：
-mkdir C:\Users\yourname\projects\hello-claude
-cd C:\Users\yourname\projects\hello-claude
+#### プロジェクト開始の流れ
 
+```powershell
+# 新規プロジェクトの場合
+mkdir C:\Users\$env:USERNAME\projects\sandbox\claude-test
+cd C:\Users\$env:USERNAME\projects\sandbox\claude-test
+claude
+
+# 既存リポジトリの場合（Git Bash推奨）
+cd ~/projects/work/acme_lp
 claude
 ```
 
-> ⚠️ **`your-project` はプレースホルダーです。** そのままコピペせず、実際のフォルダパスに置き換えてください。存在しないパスを指定するとエラーになります。
+> 💡 **Windows Tips**：パスにスペースが入ると PowerShell でクォートが必要になり面倒。`projects` 直下は必ずスペースなしのフォルダ名にする。
 
 **プロジェクトディレクトリで起動する**ことで、Claude Codeはそのリポジトリ全体を理解できます。Web版にはこの「コンテキスト所属感」がありません。
 
