@@ -22,5 +22,10 @@
   "output_file": "outputs/2026-04-23_claude-code-cli-manual.md",
   "target_lines": 700,
   "created_at": "2026-04-23",
-  "updated_at": "2026-04-23"
+  "updated_at": "2026-04-28",
+  "brushup": {
+    "type": "Windows対応版",
+    "changes": "ターミナル4種早見表追加・全コードブロックにラベル付与・Windows特化トラブルシュート",
+    "lines_after": 1031
+  }
 }
