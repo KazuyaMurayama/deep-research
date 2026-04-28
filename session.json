@@ -1,43 +1,58 @@
 {
-  "theme": "Claude Code 4UIの使い分け比較 2026",
+  "theme": "Amazon・楽天・Yahoo!ショッピングのサクラレビュー推定割合 比較 2026",
   "status": "architect_done",
   "scr": {
-    "situation": "Claude Codeは4UI（VS Code拡張・Web版・CLI・Coworkアプリ）で利用可能、2026年Q1以降も機能追加継続",
-    "complication": "UI間で機能・性能・適合タスクが異なるが横断比較（2026年3月以降）が散逸、併用者の知見も未整理",
-    "resolution": "4UI×12機能カテゴリのマトリクス評価とタスク別推奨UIガイドを提示"
+    "situation": "日本主要EC3社（Amazon・楽天・Yahoo!）でサクラチェッカー等が普及、2023年10月にステマ規制施行",
+    "complication": "3社のサクラ実態は構造的に異なるが横断比較データが散逸、判定基準も民間/公的でバラつき",
+    "resolution": "判定軸を体系化し、3社のサクラ推定割合と構造的差異を比較するフレームを提示"
   },
   "main_hypotheses": [
-    "CLIが機能量最多かつ自動化・拡張性で圧倒的優位",
-    "VS Code拡張はIDE統合・Web版は軽量/共有・Coworkは特定領域に強み"
+    "判定軸は多軸複合（類似性・時期集中・アカウント信頼性・歪度等）でツール間の重み付けが異なる",
+    "Amazonが最高頻度（マケプレ型）、楽天・Yahooは構造的に低いが代替形態の問題あり"
   ],
-  "evaluation_axes": [
-    "コード編集・生成", "ファイル操作粒度", "MCP/ツール拡張",
-    "hooks/slashコマンド", "自動化・バッチ処理", "セッション継続",
-    "IDE統合・diff", "チーム共有", "起動容易さ",
-    "オフライン動作", "モバイル対応", "モデル選択・コスト"
+  "judgment_axes": [
+    "レビュー文の類似度・テンプレート性",
+    "投稿時期の集中度",
+    "レビュアー履歴・信頼性",
+    "高評価への偏り（5星集中度）",
+    "商品記述との不整合",
+    "価格・販売実績との不釣り合い",
+    "出品者属性（中華系・新規ブランド）",
+    "報酬・特典誘導痕跡",
+    "同一IP/機器からの複数投稿",
+    "ステマ規制違反（PR表示欠落）"
+  ],
+  "extra_approaches": [
+    "A: ECサイト構造比較を先行（マケプレ型vsショップ型）",
+    "B: 割合と絶対数の併記",
+    "C: カテゴリ別ヒートマップ",
+    "D: ステマ規制前後の経時変化",
+    "E: 検出ツール側のバイアス検証"
   ],
   "search_queries": [
-    "Claude Code VS Code extension vs CLI vs web comparison 2026",
-    "Claude Code CLI MCP hooks slash commands features 2026",
-    "Claude Code web version claude.ai features March 2026",
-    "Claude Code desktop app Cowork review 2026",
-    "Claude Code power user workflow multi-interface 2026",
-    "Claude Code March April 2026 release notes updates",
-    "Claude Code VS Code extension vs CLI when to use"
+    "サクラチェッカー 判定基準 アルゴリズム",
+    "Amazon サクラレビュー 割合 推定 中華系",
+    "楽天市場 サクラレビュー ステマ ポイント誘導",
+    "Yahoo!ショッピング PayPay サクラ 実態",
+    "消費者庁 ステマ規制 違反 EC 2024 2025",
+    "fake review detection Amazon Japan rate",
+    "EC レビュー カテゴリ別 サクラ 家電 健康食品",
+    "Amazon 楽天 Yahoo 比較 信頼性 レビュー"
   ],
-  "analysis_frameworks": ["機能評価マトリクス", "Task-UI Fit Matrix", "ペルソナ別推奨"],
+  "analysis_frameworks": ["多軸判定マトリクス", "3社実態マトリクス", "経時変化分析", "矛盾解消分析"],
   "output_sections": [
     "Executive Summary",
-    "4UIの概要",
-    "12機能×4UIマトリクス",
-    "UI別強み弱み",
-    "タスク別推奨UI",
-    "併用ベストプラクティス",
-    "2026年Q1-Q2の影響"
+    "反直感的主要発見",
+    "判定軸の体系",
+    "検出ツール比較とバイアス",
+    "EC3社の構造比較",
+    "3社サクラ推定割合マトリクス",
+    "カテゴリ別ヒートマップ",
+    "ステマ規制前後の変化",
+    "ユーザー対策とKey Insights"
   ],
-  "collected_data_ref": "session/research_data.json",
-  "output_file": "outputs/2026-04-23_claude-code-ui-comparison.md",
-  "target_lines": 400,
+  "output_file": "outputs/2026-04-23_ec-sakura-review-comparison.md",
+  "target_lines": 380,
   "created_at": "2026-04-23",
   "updated_at": "2026-04-23"
 }
