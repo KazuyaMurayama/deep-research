@@ -291,7 +291,7 @@ Claudeは以下を**自動実行**します：
 
 ```bash
 # Claude Code 起動中
-> /plugin add github
+> /plugin install github
 ```
 
 これでPRレビュー・Issue管理・Action確認が**すべて対話で**できるようになります。
@@ -462,11 +462,11 @@ claude
 
 ### Channels（チャンネル連携）
 
-2026年3月20日に登場した機能。Claude Code を **Telegram / Discord / iMessage** に接続できます。
+Claude Code を **Telegram / Discord / iMessage** などの外部チャットに接続できる機能。起動時の `--channels` オプションで有効化します。
 
-```
-> /channel telegram
-# Bot Token と Chat ID を入力
+```bash
+# Telegram チャンネルを使う例（起動時に指定）
+claude --channels plugin:telegram@claude-plugins-official
 ```
 
 外出中、Telegramのチャットでメッセージを送ると、PC上のClaudeが反応します。
@@ -662,12 +662,16 @@ echo "Context: ${remaining}%"
 - 圧縮時は「変更したファイル一覧」「実行したテストコマンド」を必ず保持
 ```
 
-### Auto Mode（2026年3月研究プレビュー）
+### Auto Mode（パーミッションモード切替）
 
-**Auto Mode** は「安全な操作は自動許可、危険な操作は遮断」を分類器で判定する機能です（Web版経由・Pro/Max）。
+**Auto Mode** は「安全な操作は自動許可、危険な操作は遮断」を分類器で判定する機能です。
 
-```
-> /auto on
+```bash
+# 起動時にオプションで指定
+claude --permission-mode auto
+
+# 対話中は Shift+Tab でモードをサイクル切替
+# Normal → Auto → Manual → Normal ...
 ```
 
 | 操作 | 自動実行 | 確認必須 |
@@ -796,9 +800,11 @@ MCPは「Claude を任意の外部システムにつなぐ」プロトコル。
 #### 追加方法
 
 ```bash
-claude mcp add github
-# または
-> /plugin add github
+# CLIから追加（起動前に実行）
+claude mcp add <サーバー名> <コマンド>
+
+# 対話中に確認
+> /mcp
 ```
 
 設定済みのMCPは `/mcp` で確認：
@@ -1027,5 +1033,6 @@ Web版で「コピペ往復」していた時代から、**CLIで「コードを
 **マニュアル生成モデル：** claude-sonnet-4-6
 **初版生成日：** 2026-04-23
 **Windows対応版更新日：** 2026-04-28
-**対象バージョン：** Claude Code 2.1.52 以降
+**コマンド精度修正：** 2026-04-28（/plugin install・--permission-mode・--channels 構文修正）
+**対象バージョン：** Claude Code 2.1.114 以降
 **対象OS：** Windows 10/11（PowerShell + Git Bash 環境）
