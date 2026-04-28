@@ -176,15 +176,19 @@ claude
 
 ### 起動の鉄則
 
-```bash
-# 【Git Bash または PowerShell で実行】
-cd ~/projects/your-project    # ← これが最重要
-# Windowsの場合は以下のどちらでも可：
-# Git Bash: cd ~/projects/your-project  または  cd /c/Users/yourname/projects/your-project
-# PowerShell: cd C:\Users\yourname\projects\your-project
+```powershell
+# 【PowerShell で実行】※ your-project は実際のフォルダ名に置き換える
+# 既存プロジェクトがある場合：
+cd C:\Users\yourname\projects\既存フォルダ名
+
+# 初めて試す場合はフォルダを作ってから起動：
+mkdir C:\Users\yourname\projects\hello-claude
+cd C:\Users\yourname\projects\hello-claude
 
 claude
 ```
+
+> ⚠️ **`your-project` はプレースホルダーです。** そのままコピペせず、実際のフォルダパスに置き換えてください。存在しないパスを指定するとエラーになります。
 
 **プロジェクトディレクトリで起動する**ことで、Claude Codeはそのリポジトリ全体を理解できます。Web版にはこの「コンテキスト所属感」がありません。
 
