@@ -1,0 +1,75 @@
+{
+  "checked_at": "2026-05-01",
+  "results": [
+    {
+      "url": "https://docs.warp.dev/terminal/windows-and-tabs",
+      "status": "dead",
+      "correct_url": "https://docs.warp.dev/terminal/sessions/tabs",
+      "key_findings": "The original URL returns a 404 error. The alternative URL https://docs.warp.dev/terminal/sessions/tabs also returned 404. The URL structure for Warp docs may have changed further.",
+      "issues_found": "URL is broken; the tabs/windows documentation may have been reorganized or removed."
+    },
+    {
+      "url": "https://docs.warp.dev/guides/external-tools-and-integrations/how-to-set-up-claude-code",
+      "status": "live",
+      "correct_url": null,
+      "key_findings": "Page exists with title 'How to set up Claude Code'. Covers installation, authentication, and configuration of Claude Code with Warp in ~5 minutes. Features include voice prompting, image attachment, visual code review via Code Review panel, parallel session management via vertical tabs, and Ctrl+G for rich input editing.",
+      "issues_found": "No issues found. Page content matches expected Claude Code integration guide."
+    },
+    {
+      "url": "https://www.warp.dev/university/getting-started/warp-vs-claude-code",
+      "status": "redirect",
+      "correct_url": "https://docs.warp.dev/",
+      "key_findings": "URL redirects 301 to https://docs.warp.dev/ (homepage). The specific 'warp-vs-claude-code' university page no longer exists.",
+      "issues_found": "Page has been removed/redirected; any guide linking to this URL will lead readers to the Warp docs homepage instead of specific comparison content."
+    },
+    {
+      "url": "https://docs.warp.dev/agent-platform/third-party-agents/claude-code",
+      "status": "live",
+      "correct_url": null,
+      "key_findings": "Page exists. The correct manual install command is `claude plugin marketplace add warpdotdev/claude-code-warp` followed by `claude plugin install warp@claude-code-warp`. The guide also shows auto-install via notification chip.",
+      "issues_found": "The command in the guide uses `/plugin marketplace add warpdotdev/claude-code-warp` (slash command format), but the actual CLI command is `claude plugin marketplace add warpdotdev/claude-code-warp` (CLI format). These are different contexts - inside Claude Code session vs terminal."
+    },
+    {
+      "url": "https://docs.warp.dev/agent-platform/warp-agents/interacting-with-agents/voice",
+      "status": "live",
+      "correct_url": null,
+      "key_findings": "Page exists (last updated April 30, 2026). Voice input works across 'all of Warp's input interfaces' per documentation. Activation via microphone button in Agent Mode or hotkeys (Fn on macOS, ALT-RIGHT on Windows/Linux). Does NOT explicitly mention Terminal Mode by name.",
+      "issues_found": "The doc says 'all input interfaces' but does not explicitly call out Terminal Mode by name. If the guide claims voice works 'in Terminal Mode', that's implied but not directly confirmed by this wording."
+    },
+    {
+      "url": "https://code.claude.com/docs/en/cli-reference",
+      "status": "live",
+      "correct_url": null,
+      "key_findings": "`--max-turns` flag exists: 'Limit the number of agentic turns (print mode only). Exits with an error when the limit is reached. No limit by default.' `claude auth login` command exists and is documented with flags --email, --sso, and --console.",
+      "issues_found": "No issues found. Both --max-turns flag and claude auth login command are confirmed present."
+    },
+    {
+      "url": "https://code.claude.com/docs/en/commands",
+      "status": "live",
+      "correct_url": null,
+      "key_findings": "/voice command exists: 'Toggle voice dictation, or enable it in a specific mode. Requires a Claude.ai account.' /resume exists: 'Resume a conversation by ID or name, or open the session picker. Alias: /continue'. So /continue is an ALIAS for /resume, not the other way around. No separate /voice command under Warp-specific context.",
+      "issues_found": "The relationship between /resume and /continue: /continue is an alias OF /resume (not a separate command). If the guide treats them as equally separate commands, that is slightly misleading - /resume is the primary and /continue is the alias."
+    },
+    {
+      "url": "https://github.com/warpdotdev/claude-code-warp",
+      "status": "live",
+      "correct_url": null,
+      "key_findings": "Repository exists. Official title: 'warpdotdev/claude-code-warp: Official Warp terminal integration for Claude Code - native notifications and more'. Uses OSC 777 escape sequences for JSON payloads. Requires Warp terminal, Claude Code CLI, and jq.",
+      "issues_found": "No issues found. Repository is live and active."
+    }
+  ],
+  "critical_issues": [
+    "URL https://docs.warp.dev/terminal/windows-and-tabs is 404 (dead). Alternative https://docs.warp.dev/terminal/sessions/tabs also 404. Correct URL for tabs documentation needs further investigation.",
+    "URL https://www.warp.dev/university/getting-started/warp-vs-claude-code redirects to https://docs.warp.dev/ homepage (301). The specific comparison page no longer exists and should be removed or replaced in the guide."
+  ],
+  "url_corrections": {
+    "https://docs.warp.dev/terminal/windows-and-tabs": "DEAD - no confirmed replacement found (https://docs.warp.dev/terminal/sessions/tabs also 404)",
+    "https://www.warp.dev/university/getting-started/warp-vs-claude-code": "https://docs.warp.dev/ (redirects to homepage; specific page removed)"
+  },
+  "confirmed_facts": {
+    "voice_works_in_terminal_mode": true,
+    "max_turns_flag_exists": true,
+    "plugin_command_correct": "Partially correct: inside Claude Code session the slash command is `/plugin marketplace add warpdotdev/claude-code-warp`; the CLI equivalent is `claude plugin marketplace add warpdotdev/claude-code-warp`. Both forms are valid in their respective contexts.",
+    "auth_login_command": "Confirmed: `claude auth login` exists with flags --email, --sso, --console"
+  }
+}
