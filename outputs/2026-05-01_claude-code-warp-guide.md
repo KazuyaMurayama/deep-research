@@ -697,3 +697,187 @@ claude -r
 ```
 
 タブを閉じても後からセッションを再開できるため、急な割り込みが入っても作業を中断せず後で戻れる。
+
+---
+
+### 4-7. スマホから監視・指示を出す（Warp Remote Control）（ニーズ7）
+
+**実現可否：△（監視・承認・テキスト指示は可、新規セッション起動は不可）**
+
+Warp Remote Controlは、PC上で起動中のClaude Codeセッションにスマホのブラウザから接続し、リアルタイムで監視・操作できる機能だ。スマホ側にアプリのインストールは不要。
+
+#### セットアップ手順（PC側）
+
+1. WarpでClaude Codeセッションを起動する：
+
+```bash
+cd ~/projects/my-app
+claude
+# バックグラウンドでタスクを実行する場合
+claude -p '全テストを実行して失敗を修正して' --permission-mode auto > claude-log.txt 2>&1 &
+```
+
+2. Warpのエージェントユーティリティバー（画面上部）を確認し、**`/remote-control`** チップをクリックする
+3. 自動生成されたURLがクリップボードにコピーされる
+4. そのURLをSMS・メモアプリなどでスマホに送り、Safariまたは Chromeで開く（アプリインストール不要）
+
+公式ドキュメント：[Warp Remote Control](https://docs.warp.dev/agent-platform/third-party-agents/remote-control)
+
+#### スマホ側でできること
+
+- セッションのリアルタイム閲覧（出力がPCと同期される）
+- テキスト入力・追加指示の送信
+- 承認プロンプト（ファイル書き込みの確認など）への ✓/✗ 応答
+
+#### スマホ側でできないこと ✗
+
+- 新規セッションの起動（PCで起動済みのセッションへの接続のみ）
+- ファイルブラウザ操作
+- キーボードショートカット
+
+#### 実用シナリオ
+
+通勤中にPCで「全テスト実行＋バグ修正」タスクをバックグラウンド実行しておき、スマホのブラウザでRemote Controlを開いて進捗を確認。Claude Codeからの承認プロンプトが出たら ✓ をタップして承認。必要なら「この方向ではなく〇〇で実装して」と追加指示を送信する。
+
+---
+
+## 第5章：実運用Tips
+
+### CLAUDE.mdの効果的な書き方
+
+プロジェクトルートの `CLAUDE.md` はClaude Codeが起動のたびに自動で読み込む設定ファイルだ。ここにプロジェクト共通ルールを書いておくことで、毎回同じ説明をせずに済む。
+
+```markdown
+# プロジェクト名
+
+## 基本情報
+- 言語: TypeScript 5.x / Node.js 20
+- テスト: Jest（npm test）
+- リント: ESLint + Prettier（npm run lint:fix で自動修正）
+
+## 必須ルール
+- コミット前に必ず npm test && npm run lint を実行すること
+- 型の any は禁止（unknown を使う）
+- コメントは日本語で書く
+
+## 関連リポジトリ
+- ../api/  : バックエンドAPI（レスポンス型は api/src/types/ を参照）
+```
+
+セッション内で `/memory` を実行するとエディタでCLAUDE.mdをその場で編集できる。
+
+参考：[Claude Code メモリ設定](https://code.claude.com/docs/en/memory)
+
+### セッション開始時の定番コマンドセット
+
+```bash
+# 1. プロジェクトに移動してセッション起動
+cd ~/projects/my-app && claude
+
+# セッション内で最初に実行する定番コマンド
+/status        # モデル・バージョン・接続状況を確認
+/context       # コンテキスト使用量を把握してからスタート
+/usage         # 前セッションまでのコストを確認
+```
+
+### コスト削減のコツ
+
+| テクニック | 効果 |
+|-----------|------|
+| `/compact` を定期実行 | 不要な中間出力を要約してトークンを節約 |
+| `--max-turns` で上限設定 | 非対話バッチ実行のコスト上限を制御 |
+| CLAUDE.mdを100行以内に保つ | 毎ターンのシステムトークン削減 |
+| 探索と実装でセッションを分ける | 探索時の出力が実装コンテキストを汚染しない |
+
+```bash
+# コスト上限付きバッチ実行
+claude -p 'バグを全て修正して' --max-turns 30 --permission-mode auto
+```
+
+### よくある失敗と対処
+
+**権限エラー（Permission denied）**
+
+```bash
+# 原因：デフォルトモードでClaude Codeがファイル書き込みを試みた
+# 対処：--permission-mode auto で自動許可、または /permissions でルールを追加
+claude --permission-mode auto
+```
+
+**コンテキスト溢れ（Context window full）**
+
+```bash
+# 対処1：/compact で圧縮してから継続
+/compact 重要な決定事項と変更ファイル名だけ保持
+
+# 対処2：新規セッションを開始
+/clear
+```
+
+**git競合（Merge conflict）**
+
+```bash
+# 複数タブで同一ブランチを操作すると発生
+# 対処：タブごとに別ブランチを使う
+git checkout -b feature/fix-A  # タブ1
+git checkout -b feature/fix-B  # タブ2
+
+# 競合が発生した場合はClaudeに解決させる
+# > このgit競合を解決して（優先する変更はXの方向で）
+```
+
+---
+
+## 第6章：できること・できないことの早見表
+
+| ニーズ | Web版Claude Code | Warp + CLI | Remote Control（スマホ） |
+|--------|----------------|------------|------------------------|
+| ローカルファイル編集 | ✗ | ✓ | ✗（CLI経由で可） |
+| 複数リポ横断 | △ | ✓ | △ |
+| 音声入力 | ✗ | ✓ | ✗ |
+| 履歴管理 | △ | ✓ | 閲覧のみ ✓ |
+| トークン確認 | ✗ | ✓ | 閲覧のみ ✓ |
+| 並行セッション | △ | ✓ | 監視のみ ✓ |
+| 外出先操作 | ✓（ブラウザ） | △（PC起動必要） | ✓（PC起動必要） |
+
+---
+
+## 第7章：まとめ ― 3層運用モデル
+
+### いつどの層を使うか
+
+```
+軽い質問・設計相談・アイデア整理
+    → Layer 1: Web版Claude Code（インストール不要・すぐ使える）
+
+実装・ファイル編集・複数リポ作業・Git操作
+    → Layer 2: Warp + Claude Code CLI（ローカル環境で最大パフォーマンス）
+
+外出先での確認・承認・追加指示
+    → Layer 3: Warp Remote Control（PC上のセッションにスマホから接続）
+```
+
+### 学習ロードマップ（Week 1〜4）
+
+| 週 | 目標 | 主な操作 |
+|----|------|---------|
+| Week 1 | Warp + CLIインストール・基本操作 | `claude` 起動、ファイル編集指示、`/usage` 確認 |
+| Week 2 | 複数リポ・CLAUDE.md設定 | `--add-dir`、CLAUDE.md作成、`claude -r` セッション再開 |
+| Week 3 | 音声入力・並行セッション | Warp Agent Mode + Voice、マルチタブ運用、`/compact` |
+| Week 4 | Remote Control・フル3層運用 | スマホからの監視・承認、バックグラウンド実行 |
+
+### 参考リンク集（公式）
+
+| ドキュメント | URL |
+|------------|-----|
+| Claude Code 概要 | [code.claude.com/docs/en/overview](https://code.claude.com/docs/en/overview) |
+| Claude Code クイックスタート | [code.claude.com/docs/en/quickstart](https://code.claude.com/docs/en/quickstart) |
+| Claude Code CLIリファレンス | [code.claude.com/docs/en/cli-reference](https://code.claude.com/docs/en/cli-reference) |
+| Claude Code 権限モード | [code.claude.com/docs/en/permission-modes](https://code.claude.com/docs/en/permission-modes) |
+| Claude Code メモリ・CLAUDE.md | [code.claude.com/docs/en/memory](https://code.claude.com/docs/en/memory) |
+| Claude Code コスト管理 | [code.claude.com/docs/en/costs](https://code.claude.com/docs/en/costs) |
+| Claude Code ベストプラクティス | [code.claude.com/docs/en/best-practices](https://code.claude.com/docs/en/best-practices) |
+| Warp セットアップガイド | [docs.warp.dev/guides/external-tools-and-integrations/how-to-set-up-claude-code](https://docs.warp.dev/guides/external-tools-and-integrations/how-to-set-up-claude-code) |
+| Warp Remote Control | [docs.warp.dev/agent-platform/third-party-agents/remote-control](https://docs.warp.dev/agent-platform/third-party-agents/remote-control) |
+| Warp 音声入力 | [docs.warp.dev/agent-platform/warp-agents/interacting-with-agents/voice](https://docs.warp.dev/agent-platform/warp-agents/interacting-with-agents/voice) |
+| Warp vs Claude Code | [warp.dev/university/getting-started/warp-vs-claude-code](https://www.warp.dev/university/getting-started/warp-vs-claude-code) |
