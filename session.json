@@ -2,7 +2,7 @@
   "version": "1.1",
   "updated_at": "2026-05-01",
   "theme": "Claude CodeをWarpで使う：Web版ユーザー向け移行・補完ガイド",
-  "status": "architect_done",
+  "status": "researcher_done",
   "audience": {
     "current_tool": "Web版Claude Code",
     "github_repos": "多数所有",
