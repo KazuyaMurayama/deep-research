@@ -1,31 +1,19 @@
 {
-  "theme": "Claude Code CLI 初心者向けインストラクションマニュアル 2026",
-  "status": "architect_done",
-  "scr": {
-    "situation": "Claude Code CLIは2026年に機能急拡大（subagents/hooks/MCP/Remote Control）",
-    "complication": "機能多すぎて初心者の入口が見えにくい、日本語の最新統合マニュアル不足",
-    "resolution": "Web版でできない機能を軸に30分で価値実感できる11パート手順書を作る"
-  },
-  "manual_parts": [
-    "0_intro", "1_setup", "2_basics", "3_github", "4_multi_repo",
-    "5_mobile", "6_local_files", "7_context_auto", "8_cli_tricks",
-    "9_troubleshoot", "10_resources"
+  "theme": "GMOコイン 入金合計額の確認方法ガイド",
+  "status": "completed",
+  "target": "2020年8月〜2026年に投資・現金化したGMOコインユーザー",
+  "format": "高校生向け手順ガイド（MDファイル）",
+  "output_file": "outputs/2026-05-01_gmo-coin-deposit-check-guide.md",
+  "steps_covered": [
+    "STEP1: GMOコインへのログイン手順",
+    "STEP2: 入出金履歴ページの開き方（日本円タブ・期間指定）",
+    "STEP3: CSVダウンロードとSUM関数での合計計算",
+    "年ごと記録用テーブル",
+    "スマホアプリ利用時の注意",
+    "よくあるトラブルQ&A",
+    "税金の基礎知識（確定申告の目安）"
   ],
-  "search_queries": [
-    "Claude Code CLI install setup official docs 2026",
-    "Claude Code GitHub MCP server setup workflow",
-    "Claude Code multiple repositories worktree",
-    "Claude Code mobile Remote Control channels 2026",
-    "Claude Code context compact hooks 2026",
-    "Claude Code subagents slash commands skills"
-  ],
-  "output_file": "outputs/2026-04-23_claude-code-cli-manual.md",
-  "target_lines": 700,
-  "created_at": "2026-04-23",
-  "updated_at": "2026-04-28",
-  "brushup": {
-    "type": "Windows対応版",
-    "changes": "ターミナル4種早見表追加・全コードブロックにラベル付与・Windows特化トラブルシュート",
-    "lines_after": 1031
-  }
+  "branch": "main",
+  "created_at": "2026-05-01",
+  "updated_at": "2026-05-01"
 }
