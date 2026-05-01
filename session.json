@@ -1,90 +1,64 @@
 {
-  "theme": "パワーローラーS 効果的使い方・健康カテゴリー別スコア評価",
-  "status": "completed",
-  "product_url": "https://www.mtgec.jp/wellness/sixpad/products/powerrollers/",
-  "scr": {
-    "situation": "SIXPADのPower Roller Sは振動機能付きフォームローラーで、筋膜リリース・セルフケア機器として一般家庭向けに販売されている。健康志向の高まりとリモートワーク普及により、首・肩・腰のこりや柔軟性低下、運動不足、ストレスへの自宅ケア需要が拡大している。",
-    "complication": "振動フォームローラーは『筋膜リリース』『マッサージ効果』を訴求するが、効果量はメーカー訴求と独立した臨床・専門家評価で差がある。ユーザーは(1)正しい使い方が分からない、(2)各健康課題に対する実効果が不明、(3)マッサージ・ストレッチ・通常フォームローラーと比べた費用対効果が判断できない、という課題を抱えている。",
-    "resolution": "Power Roller Sを使った効果量の大きい使用プロトコルは何か。また、首こり・肩こり・腰こり・前屈柔軟性・脂肪燃焼・ストレス緩和の6カテゴリーで、信頼性ある根拠に基づき100点満点で何点と評価でき、マッサージ/ストレッチ/通常フォームローラーと比べどう位置づけられるか。"
+  "version": "1.1",
+  "updated_at": "2026-05-01",
+  "theme": "Claude CodeをWarpで使う：Web版ユーザー向け移行・補完ガイド",
+  "status": "architect_done",
+  "audience": {
+    "current_tool": "Web版Claude Code",
+    "github_repos": "多数所有",
+    "cli_skill": "初心者",
+    "goal": "Warp上のClaude Code CLIへ移行し、Web版の制約を解消"
   },
-  "main_hypotheses": [
-    "H1: Power Roller Sは振動 + 自重圧による筋膜・筋緊張緩和に作用し、肩こり・腰こり・前屈柔軟性で中〜高い効果(60-80点相当)を示すが、脂肪燃焼やストレス緩和は間接効果にとどまる(30-50点)。",
-    "H2: 通常フォームローラーに対する振動付加の優位性はROM(関節可動域)向上と痛覚閾値で報告されており、Power Roller Sも同様の優位性をもつが、首こりは構造上直接適用が難しくスコアは限定的になる。"
-  ],
-  "sub_hypotheses": [
-    [
-      "H1-1: 胸椎・僧帽筋下部・肩甲骨周りへの当て方で肩こり改善が最大化する",
-      "H1-2: 腰部は直接ローラー圧をかけるより殿筋・広背筋・大腿後面リリースが奏功する",
-      "H1-3: 前屈柔軟性はハム/ふくらはぎ/胸椎モビリティ改善で短期的に有意改善する",
-      "H1-4: 脂肪燃焼への直接効果は乏しく、運動前後の補助としての位置づけ",
-      "H1-5: 振動刺激は副交感神経優位化を通じてストレス指標(HRV等)に短期的好影響を与える可能性"
-    ],
-    [
-      "H2-1: 振動付加フォームローラーはROM・柔軟性向上で通常ローラーより5-10%上回るメタ解析報告がある",
-      "H2-2: 痛覚閾値(PPT)・DOMS軽減で振動の優位性が報告される",
-      "H2-3: 首はローラーを直接当てる用途より後頭下筋群周辺に応用する間接アプローチが安全",
-      "H2-4: マッサージ(徒手)は強度・部位精度で勝るがコスト・継続性で劣る",
-      "H2-5: ストレッチ単独より『振動ローラー+ストレッチ』併用がROM向上に最も寄与"
-    ]
-  ],
-  "info_needs": [
-    "振動フォームローラーの効果に関する査読論文・系統的レビュー(ROM、柔軟性、DOMS、PPT)",
-    "理学療法士・整形外科医による正しい使い方解説(首・肩・腰)",
-    "前屈/シットアンドリーチ改善に関するRCT",
-    "フォームローリングと自律神経・ストレス指標(HRV、コルチゾール)の関係",
-    "フォームローリングのエネルギー消費量・脂肪燃焼への影響",
-    "Power Roller S製品仕様(振動Hz、レベル、推奨使用時間)",
-    "通常フォームローラー vs 振動フォームローラー比較研究",
-    "マッサージ vs フォームローリング比較",
-    "首こりに対するセルフ筋膜リリース安全性ガイドライン",
-    "推奨使用部位別プロトコル(秒数、頻度、圧)"
-  ],
+  "scr": {
+    "situation": "Web版Claude Code利用者だがCLI初心者で、ローカルファイル編集・複数リポ横断・外出時操作に制約",
+    "complication": "CLI移行はハードルが高く、WarpのAgent ModeとClaude Codeの役割重複も混乱要因",
+    "resolution": "WarpをClaude Code CLIのGUIラッパーとして使い、Web版/Warp+CLI/スマホ Remote Controlの3層運用で7ニーズを解決"
+  },
   "search_queries": [
-    "vibrating foam roller systematic review range of motion",
-    "振動フォームローラー 効果 論文 柔軟性",
-    "SIXPAD パワーローラーS 使い方 理学療法士",
-    "foam rolling sit and reach flexibility RCT",
-    "foam rolling neck shoulder pain physical therapist",
-    "vibration foam roller vs traditional foam roller meta-analysis",
-    "foam rolling heart rate variability parasympathetic stress",
-    "foam rolling energy expenditure fat loss",
-    "腰痛 フォームローラー 使い方 整形外科 監修",
-    "self myofascial release pressure pain threshold DOMS"
+    "Claude Code CLI install Warp terminal setup",
+    "Warp terminal Claude Code integration guide",
+    "Claude Code /status /context /cost token usage command",
+    "CLAUDE.md multiple repositories configuration best practice",
+    "Claude Code --dangerously-skip-permissions option usage",
+    "Warp Agent Mode vs Claude Code CLI comparison",
+    "Warp voice input dictation Claude Code",
+    "Warp Remote Control mobile app features limitations",
+    "Claude Code /continue resume session multiple tabs",
+    "Warp blocks UI command history Claude Code output"
   ],
-  "source_priority": [
-    "医師・理学療法士の解説",
-    "査読論文",
-    "専門家監修記事",
-    "製品公式情報",
-    "ユーザーレビュー"
+  "official_urls": {
+    "claude_code": [
+      "https://docs.anthropic.com/en/docs/claude-code/overview",
+      "https://docs.anthropic.com/en/docs/claude-code/quickstart",
+      "https://docs.anthropic.com/en/docs/claude-code/cli-reference",
+      "https://docs.anthropic.com/en/docs/claude-code/slash-commands",
+      "https://docs.anthropic.com/en/docs/claude-code/memory",
+      "https://docs.anthropic.com/en/docs/claude-code/settings"
+    ],
+    "warp": [
+      "https://docs.warp.dev/",
+      "https://docs.warp.dev/features/blocks",
+      "https://docs.warp.dev/features/agent-mode",
+      "https://docs.warp.dev/features/voice",
+      "https://docs.warp.dev/features/remote-control",
+      "https://docs.warp.dev/terminal/windows-and-tabs"
+    ]
+  },
+  "needs_feasibility": {
+    "1_multi_repo": {"verdict": "ok", "owner": "claude_code_cli"},
+    "2_voice_input": {"verdict": "ok_to_verify", "owner": "warp"},
+    "3_local_file_edit": {"verdict": "strong_ok", "owner": "claude_code_cli"},
+    "4_history_blocks": {"verdict": "ok", "owner": "warp"},
+    "5_token_context": {"verdict": "ok", "owner": "claude_code_cli"},
+    "6_parallel_tabs": {"verdict": "strong_ok", "owner": "warp_plus_cli"},
+    "7_mobile_remote": {"verdict": "partial_ok", "owner": "warp_remote_control"}
+  },
+  "writing_parts": [
+    {"id": "A", "chapters": ["1_intro", "2_role_split", "3_setup"], "max_lines": 250},
+    {"id": "B", "chapters": ["4_1_multi_repo", "4_2_voice", "4_3_local_file"], "max_lines": 250},
+    {"id": "C", "chapters": ["4_4_history", "4_5_token", "4_6_parallel"], "max_lines": 250},
+    {"id": "D", "chapters": ["4_7_remote_control", "5_tips", "6_limits", "7_summary"], "max_lines": 250}
   ],
-  "score_categories": [
-    "首のこり改善",
-    "肩こりの改善",
-    "腰のこりの改善",
-    "前屈のストレッチ性向上",
-    "脂肪燃焼効果",
-    "ストレスの緩和"
-  ],
-  "comparison_targets": [
-    "マッサージ",
-    "ストレッチ",
-    "通常のフォームローラー"
-  ],
-  "analysis_frameworks": [
-    "PICO(Population/Intervention/Comparison/Outcome)による各カテゴリー評価",
-    "効果量(Cohen's d)を参照したスコア換算",
-    "比較マトリクス(コスト/効果/手軽さ/継続性)"
-  ],
-  "output_sections": [
-    "エグゼクティブサマリー",
-    "製品概要と仕様",
-    "効果的な使い方プロトコル(部位別)",
-    "6カテゴリー別スコア評価と根拠",
-    "マッサージ/ストレッチ/通常フォームローラー比較",
-    "注意事項と禁忌",
-    "結論と推奨"
-  ],
-  "output_file": "outputs/2026-04-30_power-roller-s-effects.md",
-  "created_at": "2026-04-30"
+  "output_file": "outputs/2026-05-01_claude-code-warp-guide.md",
+  "created_at": "2026-05-01"
 }
