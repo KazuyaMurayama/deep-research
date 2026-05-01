@@ -1,0 +1,239 @@
+{
+  "analyzed_at": "2026-05-01",
+  "verified_urls": {
+    "claude_code_docs": {
+      "overview": "https://code.claude.com/docs/en/overview",
+      "quickstart": "https://code.claude.com/docs/en/quickstart",
+      "cli_ref": "https://code.claude.com/docs/en/cli-reference",
+      "commands": "https://code.claude.com/docs/en/commands",
+      "memory": "https://code.claude.com/docs/en/memory",
+      "settings": "https://code.claude.com/docs/en/settings",
+      "costs": "https://code.claude.com/docs/en/costs",
+      "permission_modes": "https://code.claude.com/docs/en/permission-modes",
+      "best_practices": "https://code.claude.com/docs/en/best-practices"
+    },
+    "warp_docs": {
+      "top": "https://docs.warp.dev/",
+      "blocks": "https://docs.warp.dev/terminal/blocks/block-basics",
+      "voice": "https://docs.warp.dev/agent-platform/warp-agents/interacting-with-agents/voice",
+      "remote_control": "https://docs.warp.dev/agent-platform/third-party-agents/remote-control",
+      "agent_mode": "https://docs.warp.dev/agent-platform/warp-agents/interacting-with-agents/terminal-and-agent-modes",
+      "claude_code_integration": "https://docs.warp.dev/agent-platform/third-party-agents/claude-code",
+      "claude_code_setup_guide": "https://docs.warp.dev/guides/external-tools-and-integrations/how-to-set-up-claude-code",
+      "warp_vs_claude_code": "https://www.warp.dev/university/getting-started/warp-vs-claude-code",
+      "tabs": "https://docs.warp.dev/terminal/windows-and-tabs"
+    },
+    "app_stores": {
+      "ios": "TBD（モバイルブラウザのみ対応、iOSアプリ不要）",
+      "android": "TBD（モバイルブラウザのみ対応、Androidアプリ不要）"
+    },
+    "url_notes": {
+      "claude_code_old_base": "https://docs.anthropic.com/en/docs/claude-code/（廃止・リダイレクト）",
+      "claude_code_new_base": "https://code.claude.com/docs/en/（現行）",
+      "warp_old_features": "https://docs.warp.dev/features/（廃止・リダイレクト）",
+      "warp_new_structure": "https://docs.warp.dev/terminal/ および /agent-platform/（現行）"
+    }
+  },
+  "needs_verdict": {
+    "1_multi_repo": {
+      "verdict": "○",
+      "method": "（1）複数リポのある親ディレクトリから `claude` を起動するとディレクトリツリーを上向きに走査してCLAUDE.mdを自動読み込み。（2）`claude --add-dir ../other-repo` で追加リポジトリを指定しつつ `CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD=1` 環境変数で各リポのCLAUDE.mdも読み込む（v2.1.20+）。（3）各CLAUDE.mdに「このプロジェクトは ../api/ と連携し、レスポンス形式は ../api/CLAUDE.md を参照」と記述して横断コンテキストを確立。",
+      "limit": "同時に開けるコンテキストウィンドウは1つのClaude Codeセッションにつき1つ。大規模モノレポでは `claudeMdExcludes` 設定で不要なCLAUDE.mdを除外してトークン節約が必要。"
+    },
+    "2_voice": {
+      "verdict": "○",
+      "method": "（1）WarpのAgent Modeを開く（Ctrl+I）。（2）入力欄右のマイクボタンをクリック、または Settings > AI > Voice でホットキー設定後そのキーをホールド。（3）話し終えるとWispr Flow経由でリアルタイム文字起こしされ入力欄に挿入。（4）そのままClaude Code CLIへ送信可能。また `/voice` スラッシュコマンドでも音声入力をトグル可能。",
+      "limit": "Warpのエージェントモードでの音声入力（Warp Agent ModeがClaude Codeに対してプロキシ的に動作）。Warpがインストールされていない環境では音声入力不可。アンチアビューズ制限あり（詳細非公開）。"
+    },
+    "3_local_file": {
+      "verdict": "○",
+      "method": "Claude Code CLIはプロジェクトディレクトリ内のファイルを直接読み書き・作成・削除できる。「このファイルを修正して」と指示するだけでローカルファイルを編集。ターミナル（Warp）上でgit diffで差分確認、git commitまで実行可能。Web版Claude Codeにあった「ローカルファイルに直接アクセスできない」制約が完全解消。",
+      "limit": "デフォルトでは編集のたびに許可プロンプトが表示される。自動化/CI利用時は `--permission-mode auto` または `--permission-mode bypassPermissions`（`--dangerously-skip-permissions`）で制御。bypassPermissionsは隔離環境でのみ推奨。"
+    },
+    "4_history": {
+      "verdict": "○",
+      "method": "（1）Warpのブロック機能：各コマンド+出力が「ブロック」として管理。上下矢印でブロック間を移動、Ctrl-Shift-Up/Downでブロック先頭/末尾へスクロール、コマンドコピー・出力コピー・シェア・ブックマークが可能。（2）Claude Code CLIのセッション再開：`claude -c`（最後のセッションを再開）、`claude -r`（セッション選択ピッカー）、セッション内では `/resume` または `/continue`。全メッセージ履歴とツール使用履歴が復元される。（3）ブロックをAgent Modeのコンテキストに添付可能（スパークルアイコン）。",
+      "limit": "ブロックは同一Warpセッション内の視覚的グルーピング。Warpウィンドウを閉じると表示上の履歴は消えるが、Claude Codeのセッション永続化は別途 `claude -r` で管理。"
+    },
+    "5_token": {
+      "verdict": "○",
+      "method": "（1）`/usage`（別名 `/cost`、`/stats`）：セッションコスト・プラン使用量上限・アクティビティ統計を表示。APIユーザーはトークン数とドルコストも確認可能。（2）`/context`：コンテキストウィンドウ使用状況をカテゴリ別カラーグリッドで可視化（システムプロンプト・ツール・メモリファイル・スキル・メッセージ別の割合とバイト数）。（3）`/compact [instructions]`：会話を要約してコンテキストを解放。（4）`/status`：バージョン・モデル・アカウント・接続状況を確認。",
+      "limit": "コンテキスト上限はモデルにより異なる。/contextの最適化提案に従って不要なメモリファイルや大きなCLAUDE.mdを削除することが推奨。"
+    },
+    "6_parallel": {
+      "verdict": "○",
+      "method": "（1）WarpでCmd+T（Mac）またはCtrl+T（Win/Linux）で新規タブを開く。（2）各タブで別のプロジェクトディレクトリに移動して `claude` を起動。（3）各タブは独立したClaude Codeセッション。（4）Warpの縦タブUIで「どのタブがどのリポに対応するか」をタブメタデータ付きで管理。（5）スプリットペインも活用可能で同一ウィンドウ内に複数エージェントを並列表示。",
+      "limit": "各セッションは独立しており、セッション間での直接通信は不可。並列実行の調整は人間が担当するかClaude CodeのサブエージェントAPI（内部並列）を使う。プラン上限（Pro/Max等）に注意。"
+    },
+    "7_mobile": {
+      "verdict": "△",
+      "method": "（1）PCでClaudeCodeセッションを起動。（2）Warpのエージェントユーティリティバーにある `/remote-control` チップをクリック。（3）自動生成されたURLをコピーしてスマホのブラウザで開く（アプリインストール不要）。（4）スマホから進捗監視、コマンド承認、入力送信が可能（view-only または edit権限）。リアルタイム同期。",
+      "limit": "スマホでClaudeCodeを「新規起動」する機能ではなく、PC上で起動済みのセッションへのリモート接続。スマホからセッションを開始することは現時点では不可。セッションを閉じるとリモートアクセスも終了。Warp専用機能のため、Warpなしでは利用不可。"
+    }
+  },
+  "report_outline": {
+    "title": "Claude CodeをWarpで使う：Web版ユーザー向け移行・補完ガイド",
+    "target_audience": "Web版Claude Code利用者でCLI初心者、複数GitHubリポジトリを持つ開発者",
+    "parts": [
+      {
+        "id": "A",
+        "chapters": ["第1章：はじめに", "第2章：役割分担を理解する", "第3章：環境セットアップ"],
+        "key_points": [
+          "Web版Claude Codeの7つの制約を具体的に列挙（ローカルファイル触れない、複数リポ横断困難、等）",
+          "WarpとClaude Code CLIを組み合わせると7ニーズが全て解決できることを示す（○/△評価表）",
+          "WarpはClaude Code CLIのGUIラッパーとして機能する—役割の違いを図解",
+          "Warp Agent ModeとClaude Code CLIの使い分け：WarpはUI/マルチモデル強み、Claude CodeはCI/自律実行強み",
+          "セットアップ全体像を示す（3ステップ：Warpインストール→Claude Codeインストール→連携設定）"
+        ],
+        "commands": [
+          "# Mac/Linuxへのインストール",
+          "curl -fsSL https://claude.ai/install.sh | bash",
+          "# Windowsへのインストール (PowerShell)",
+          "irm https://claude.ai/install.ps1 | iex",
+          "# インストール確認",
+          "claude --version",
+          "# ログイン",
+          "claude auth login",
+          "# Warp claude-code-warpプラグインのインストール",
+          "/plugin marketplace add warpdotdev/claude-code-warp",
+          "/plugin install warp@claude-code-warp"
+        ],
+        "urls": [
+          "https://code.claude.com/docs/en/overview",
+          "https://code.claude.com/docs/en/quickstart",
+          "https://docs.warp.dev/guides/external-tools-and-integrations/how-to-set-up-claude-code",
+          "https://www.warp.dev/university/getting-started/warp-vs-claude-code"
+        ],
+        "install_steps": {
+          "warp": {
+            "mac": "https://www.warp.dev/ からダウンロード、またはbrew install --cask warp",
+            "windows": "https://www.warp.dev/ からインストーラーをダウンロード（Windows版はベータ）",
+            "linux": "https://www.warp.dev/linux からdeb/rpmパッケージをダウンロード"
+          },
+          "claude_code": {
+            "mac_linux": "curl -fsSL https://claude.ai/install.sh | bash",
+            "windows": "irm https://claude.ai/install.ps1 | iex （PowerShellで実行）",
+            "requirements": "Node.js 18以上またはRustランタイム。Claude Pro/Max/Team/Enterpriseサブスクまたは Anthropic Consoleアカウントが必要。"
+          }
+        }
+      },
+      {
+        "id": "B",
+        "chapters": ["第4章（1）複数リポジトリ横断", "第4章（2）音声入力", "第4章（3）ローカルファイル編集"],
+        "key_points": [
+          "ニーズ1（複数リポ）：親ディレクトリからの起動とCLAUDE.mdツリー走査の仕組みを図解",
+          "--add-dirオプションによる追加リポジトリ参照の手順（v2.1.20+、環境変数付き）",
+          "CLAUDE.mdへの「他リポ参照コメント」記法を具体例で示す",
+          "ニーズ2（音声入力）：WarpのAgent Modeへの切り替えからマイクボタンまでのUI操作手順",
+          "Settings > AI > Voice でのホットキー設定手順",
+          "ニーズ3（ローカルファイル）：Web版との対比表—Claude CodeCLIはファイルを直接読み書き",
+          "許可モードの選択方法（デフォルト・auto・bypassPermissions）と推奨ユースケース"
+        ],
+        "commands": [
+          "# 親ディレクトリからの複数リポ起動",
+          "cd ~/projects && claude",
+          "# 追加リポジトリを指定して起動",
+          "CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD=1 claude --add-dir ../api-repo",
+          "# 自動許可モードで起動（CI/自動化向け）",
+          "claude --permission-mode auto",
+          "# bypassPermissions（隔離環境のみ）",
+          "claude --dangerously-skip-permissions",
+          "# セッション内でのコマンド",
+          "/memory  # CLAUDE.mdを編集",
+          "/permissions  # 許可ルール管理"
+        ],
+        "urls": [
+          "https://code.claude.com/docs/en/memory",
+          "https://code.claude.com/docs/en/best-practices",
+          "https://code.claude.com/docs/en/permission-modes",
+          "https://docs.warp.dev/agent-platform/warp-agents/interacting-with-agents/voice"
+        ],
+        "claude_md_example": "# このプロジェクト (frontend)\n関連リポジトリ:\n- ../api/ : バックエンドAPI（レスポンス形式はapi/CLAUDE.mdを参照）\n- ../shared/ : 共有型定義（TypeScript型は shared/src/types/を参照）\n\n## 運用ルール\n- APIの変更が必要な場合は必ず../api/も合わせて修正すること\n- コミット前にnpm test && npm run lintを実行"
+      },
+      {
+        "id": "C",
+        "chapters": ["第4章（4）履歴・ブロック管理", "第4章（5）トークン・コスト管理", "第4章（6）並列タブ運用"],
+        "key_points": [
+          "ニーズ4（履歴）：Warpブロックの概念と基本操作（矢印キー移動・ショートカット一覧）",
+          "ブロックとClaude Codeセッション再開の組み合わせ（ブロックをコンテキストに添付 → セッション再開）",
+          "claude -cとclaude -rの使い分けと実際のユースケース",
+          "ニーズ5（トークン）：/usage・/context・/compactの使い分けと表示内容の解説",
+          "/contextのカラーグリッド表示の読み方（緑=余裕、黄=注意、赤=圧迫）",
+          "コンテキスト最適化の4つのテクニック（/compact、CLAUDE.md軽量化、/clear、モデル変更）",
+          "ニーズ6（並列）：Warpマルチタブでの複数Claude Codeセッション管理",
+          "縦タブUI活用法とスプリットペインでの同時モニタリング",
+          "タブごとのリポジトリ割り当てとメタデータ管理のベストプラクティス"
+        ],
+        "commands": [
+          "# Warpブロック操作",
+          "↑ / ↓  # ブロック間移動",
+          "Ctrl-Shift-Up / Ctrl-Shift-Down  # ブロック先頭/末尾へ",
+          "# セッション管理",
+          "claude -c  # 最後のセッションを再開",
+          "claude -r  # セッション選択ピッカーを起動",
+          "claude --resume my-project  # セッション名指定で再開",
+          "# セッション内コマンド",
+          "/usage  # コスト・使用量確認（/cost, /starsも同じ）",
+          "/context  # コンテキストウィンドウ可視化",
+          "/compact  # 会話を要約してコンテキスト解放",
+          "/compact 重要な決定事項だけ保持して要約  # 指示付き圧縮",
+          "/clear  # コンテキストを完全リセット",
+          "# 新規タブでの並列実行（Warp内）",
+          "Cmd+T（Mac）/ Ctrl+T（Win/Linux）  # 新規タブ",
+          "cd ~/projects/repo-b && claude  # 別リポでClaudeCode起動"
+        ],
+        "urls": [
+          "https://docs.warp.dev/terminal/blocks/block-basics",
+          "https://code.claude.com/docs/en/costs",
+          "https://code.claude.com/docs/en/cli-reference",
+          "https://code.claude.com/docs/en/commands"
+        ]
+      },
+      {
+        "id": "D",
+        "chapters": ["第4章（7）スマホからのRemote Control", "第5章：Tips集", "第6章：制限事項", "第7章：まとめ"],
+        "key_points": [
+          "ニーズ7（モバイル）：Remote Controlの起動から接続までの手順を画面フロー付きで解説",
+          "アプリインストール不要（スマホブラウザのみ）の点を強調",
+          "view-onlyとedit権限の使い分け（監視のみvs積極的な介入）",
+          "PC上で長時間タスクを実行しながら外出先からスマホで確認・承認するユースケース",
+          "Tips：Ctrl-Gでリッチ入力エディタ展開、コードレビューパネルのインラインコメント活用",
+          "Tips：Warpの通知機能でClaude Code完了を受け取る設定",
+          "制限：スマホからのセッション新規起動は不可（監視・操作のみ）",
+          "制限：Remote ControlはWarpがPC上で起動している間のみ有効",
+          "制限：並列セッション間は直接通信不可",
+          "まとめ：7ニーズ解決一覧表（○/△評価）とクイックリファレンスカード"
+        ],
+        "commands": [
+          "# Remote Control手順（セッション内）",
+          "# 1. Claude Codeセッション内でWarpのユーティリティバーの /remote-control をクリック",
+          "# 2. 自動でURLがクリップボードにコピーされる",
+          "# 3. そのURLをスマホブラウザで開く（アプリ不要）",
+          "# 非インタラクティブモード（バックグラウンド実行）",
+          "claude -p 'テスト全件実行してバグを修正して' --permission-mode auto > claude-log.txt 2>&1 &",
+          "# 完了後Remote Controlで確認"
+        ],
+        "urls": [
+          "https://docs.warp.dev/agent-platform/third-party-agents/remote-control",
+          "https://docs.warp.dev/agent-platform/third-party-agents/claude-code",
+          "https://code.claude.com/docs/en/settings"
+        ],
+        "remote_control_steps": [
+          "1. PCのWarpでClaudeCodeセッションを起動（claude コマンド）",
+          "2. Warpウィンドウ上部のエージェントユーティリティバーを確認",
+          "3. '/remote-control' チップをクリック",
+          "4. 自動生成されたURLがクリップボードにコピーされる",
+          "5. そのURLをスマホのSafari/Chrome等で開く",
+          "6. リアルタイムでセッションが表示される（アプリインストール不要）",
+          "7. view-onlyモード：進捗監視のみ / edit権限：コマンド承認・入力送信も可能"
+        ]
+      }
+    ]
+  },
+  "key_findings": {
+    "url_corrections": "docs.anthropic.com/en/docs/claude-code/* は全て code.claude.com/docs/en/* にリダイレクト済み。docs.warp.dev/features/* は /agent-platform/ および /terminal/ 配下の新URLに変更済み。",
+    "mobile_verdict_rationale": "Warp Remote Controlはスマホからセッション監視・承認・入力送信は可能だが、スマホから新規セッション起動は不可のため△評価（条件付き対応）。",
+    "warp_vs_claude_code_clarity": "WarpはGUI+マルチモデル対応のターミナル環境、Claude CodeはAnthropic特化の自律型CLIエージェント。役割は補完的で競合しない。WarpをClaude CodeのGUIラッパーとして使うのが最適。",
+    "voice_via_warp_only": "音声入力はWarpのAgent Mode経由でのみ利用可能。Claude Code CLI単体には音声入力機能なし。WarpがWispr Flowで文字起こしした内容をClaude Codeに送信する構成。"
+  }
+}
