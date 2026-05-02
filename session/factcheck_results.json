@@ -1,0 +1,86 @@
+{
+  "checked_at": "2026-04-30",
+  "results": [
+    {
+      "url": "https://www.mtgec.jp/wellness/sixpad/howto/powerroller/",
+      "status": "live",
+      "correct_url": null,
+      "claim_verified": false,
+      "notes": "ページは生存しているが、4段階モード・タイマー15分・禁止部位（首から上・心臓）・ふくらはぎ3分静置の記述は確認できなかった。このページは使い方動画・8つの悩み別ストレッチを紹介するコンテンツページで、安全警告・使用制限・禁止部位に関する記述がない。該当情報は製品マニュアルに存在する可能性が高い。",
+      "key_findings": "Power Roller Twins（最大約2,350回/分）とPower Roller S（最大約3,000回/分）の2モデル紹介。首・肩・腰・股関節・膝・脚・足裏・全身柔軟性の8カテゴリ動画あり。安全注意事項・モード設定・タイマー記述なし。"
+    },
+    {
+      "url": "https://shelteringarmsinstitute.com/rehablogs/foam-rollers-and-more-simple-tools-to-ease-neck-and-back-pain/",
+      "status": "live",
+      "correct_url": null,
+      "claim_verified": "partial",
+      "notes": "URL-Aは生存。「1-3セット後ストレッチ」の記述は確認できなかった。唯一の反復回数記述は「Repeat 20-30 times」（特定エクササイズ）のみ。フォームローラー・ラクロスボール・セラピーケーンの3ツールを紹介する記事。",
+      "key_findings": "著者: Niki Johnson, MS, ACSM EP。首・背中・肩・股関節のセルフマッサージ手技を解説。「1-3セット後ストレッチ」の具体的記述なし。"
+    },
+    {
+      "url": "https://shelteringarmsinstitute.com/rehablogs/foam-rollers-and-simple-tools-to-ease-neck-and-back-pain/",
+      "status": "dead",
+      "correct_url": "https://shelteringarmsinstitute.com/rehablogs/foam-rollers-and-more-simple-tools-to-ease-neck-and-back-pain/",
+      "claim_verified": false,
+      "notes": "URL-Bは404エラー。URL-A（foam-rollers-and-more-simple-tools-...）が正しいURL。",
+      "key_findings": "404 Not Found"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8413912/",
+      "status": "live",
+      "correct_url": null,
+      "claim_verified": true,
+      "notes": "3つの主張すべて確認済み。SMD=1.47（シットアンドリーチ）、SMD=0.53（全体ROM）、振動周波数18-33Hzの記述を確認。",
+      "key_findings": "Stand and reach test: SMD=1.47（95%CI 0.55-2.39）。振動FR vs 通常FR: ROM改善SMD=0.53（95%CI 0.29-0.77）。振動周波数18-33Hzの範囲（7研究）、別研究で3,700rpm。"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8998857/",
+      "status": "live",
+      "correct_url": null,
+      "claim_verified": "partial",
+      "notes": "「4週間超継続で効果大」については介入期間4-11週のRCT9件を分析しており部分的に支持されるが、慢性FRは「conflicting results」と結論づけている。「5-10秒でシットアンドリーチROM向上」の記述は確認できなかった。介入プロトコルは通常30-120秒/セット×複数セットであり、5-10秒という短時間プロトコルの記述なし。",
+      "key_findings": "介入期間4-11週のRCT9件のシステマティックレビュー。週3回・3セット×30-50秒のプロトコルが多い。慢性FRの柔軟性改善は一貫した結果が得られていない（5/8研究でポジティブ）。5-10秒プロトコルの記述なし。"
+    },
+    {
+      "url": "https://www.nuhw-pt.jp/2022/02/-20220203.html",
+      "status": "live",
+      "correct_url": null,
+      "claim_verified": "partial",
+      "notes": "「60秒×2セット」の記述は確認できなかった。「転がさなくても圧迫だけでOK」の正確な文言はないが、「圧迫するだけでも痛みを緩和できる」「圧迫するだけで筋肉痛の痛みを和らげる効果があります」という類似した内容は確認された。",
+      "key_findings": "新潟医療福祉大学のページ。「圧迫するだけでも痛みを緩和できる」「圧迫するだけで筋肉痛の痛みを和らげる効果」の記述あり。60秒×2セットの具体的プロトコル記述は未確認。"
+    },
+    {
+      "url": "https://www.bsrphysicaltherapy.com/2021/04/26/foam-roller-exercises-shoulder/",
+      "status": "live",
+      "correct_url": null,
+      "claim_verified": true,
+      "notes": "ページは生存。肩可動性改善のためのフォームローラーエクササイズ5種を解説しており、主張と一致する内容を確認。",
+      "key_findings": "5種のエクササイズ（Upper Back Rolling, Lat Rolling, Thoracolumbar Fascia Rolling, Triceps Rolling, Pectoral Stretch）を解説。フォームローリングは最大30分間ROMを改善すると記述。ストレッチとの組み合わせを推奨。"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8897534/",
+      "status": "live",
+      "correct_url": null,
+      "claim_verified": "partial",
+      "notes": "「振動FR vs 通常FRで振動優位」の主張は本研究では完全には支持されない。システマティックレビューの結果は「comparable effects（同等の効果）」で、ジャンプパフォーマンスではVFRが有意な効果を示さなかった。アジリティ向上にVFRが有望とされているが、メタ分析は異質性のため実施されていない。",
+      "key_findings": "VFR vs 通常FRの比較：血流回復は両者同等。ジャンプパフォーマンス：FRは向上するがVFRは有意差なし。アジリティ：VFRが有望だがメタ分析未実施。結論：振動の追加効果は「insufficient evidence（証拠不十分）」。"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4637917/",
+      "status": "live",
+      "correct_url": null,
+      "claim_verified": true,
+      "notes": "「PPT最大30分後まで上昇」の記述を確認。Jay et al.の研究でフォームローリング後30分まで有意にPPT上昇（p=0.0007）。60分後には統計的有意差なし。",
+      "key_findings": "Jay et al.：ローラーマッサージ群で10分後の痛み有意減少（p<0.0001）、PPT最大30分後まで上昇（p=0.0007）。60分後には対照群との有意差なし。ハムストリング運動誘発性筋損傷後にアルゴメトリーで測定。"
+    }
+  ],
+  "critical_issues": [
+    "SIXPAD公式ページ（mtgec.jp）に「4段階モード・タイマー15分・禁止部位（首から上・心臓）・ふくらはぎ3分静置」の記述なし。これらの安全情報はレポートで引用されているが、引用URLでは確認不可。製品マニュアルに基づく情報の可能性が高く、引用元URLの変更または補足注記が必要。",
+    "shelteringarmsinstitute.com URL-B（foam-rollers-and-simple-tools-...）は404で存在しない。正しいURLはURL-A（foam-rollers-and-more-simple-tools-...）。レポート内のURLを修正する必要あり。",
+    "PMC8998857の「5-10秒でシットアンドリーチROM向上」の記述は確認できなかった。実際の研究は30-120秒プロトコルを使用しており、5-10秒という記述はレポートの誤りの可能性がある。",
+    "PMC8897534は「振動FR優位」ではなく「同等またはエビデンス不十分」と結論づけており、レポートの記述とニュアンスが異なる。"
+  ],
+  "url_corrections": {
+    "https://shelteringarmsinstitute.com/rehablogs/foam-rollers-and-simple-tools-to-ease-neck-and-back-pain/": "https://shelteringarmsinstitute.com/rehablogs/foam-rollers-and-more-simple-tools-to-ease-neck-and-back-pain/"
+  }
+}

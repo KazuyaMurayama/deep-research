@@ -1,0 +1,172 @@
+{
+  "sources": [
+    {
+      "query": "vibrating foam roller systematic review range of motion",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8413912/",
+      "tier": "1",
+      "key_info": "振動フォームローラー（VFR）は通常フォームローラーより関節可動域(ROM)改善に優れ、SMD=0.53（中程度の効果量、95%CI: 0.29-0.77）。股関節SMD=0.56、膝関節SMD=0.59で有意。シットアンドリーチではSMD=1.47と大きな効果量。8件のRCT、230名対象。振動周波数は18-33Hz。",
+      "credibility": "high",
+      "relevance_to_categories": ["前屈のストレッチ性向上", "肩こりの改善", "腰のこりの改善"]
+    },
+    {
+      "query": "vibrating foam roller systematic review range of motion",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12193259/",
+      "tier": "1",
+      "key_info": "筋疲労のある人への振動フォームローリングは痛み・疲労・ROMに効果的。一部研究では振動が痛みや受動的股関節伸展ROMを改善し、血流・バランス・安定性に有意差なしとする報告も混在。機械的圧力・摩擦・局所熱がROM改善の主要因の可能性。",
+      "credibility": "high",
+      "relevance_to_categories": ["前屈のストレッチ性向上", "腰のこりの改善"]
+    },
+    {
+      "query": "振動フォームローラー 効果 論文 柔軟性",
+      "url": "https://www.nuhw-pt.jp/2022/02/-20220203.html",
+      "tier": "1",
+      "key_info": "新潟医療福祉大学の研究：筋肉痛のある筋に振動フォームローラーを圧迫するだけ（転がさなくても）で痛みと関節可動域が改善。1回60秒×2セットが柔軟性改善に効果的で毎日実施可能。",
+      "credibility": "high",
+      "relevance_to_categories": ["肩こりの改善", "腰のこりの改善", "前屈のストレッチ性向上"]
+    },
+    {
+      "query": "振動フォームローラー 効果 論文 柔軟性",
+      "url": "http://k-nakashima.net/vibration_rolling/",
+      "tier": "2",
+      "key_info": "ウォームアップで行う振動フォームローラーは膝関節伸展・屈曲ROM、筋力、動的バランスを向上させる。固有感覚を阻害せずにROMと筋力を同時改善できることが特徴。",
+      "credibility": "medium",
+      "relevance_to_categories": ["前屈のストレッチ性向上", "肩こりの改善"]
+    },
+    {
+      "query": "SIXPAD パワーローラーS 使い方 理学療法士",
+      "url": "https://www.mtgec.jp/wellness/sixpad/howto/powerroller/",
+      "tier": "2",
+      "key_info": "SIXPAD公式の使い方ガイド。推奨部位：背中・肩・腕・脚・足裏。首から上・心臓周辺は使用禁止。基本操作：スイッチONして対象部位に当て前後左右に転がす。ふくらはぎは3分放置も可。",
+      "credibility": "medium",
+      "relevance_to_categories": ["首のこり改善", "肩こりの改善", "腰のこりの改善"]
+    },
+    {
+      "query": "SIXPAD パワーローラーS 使い方 理学療法士",
+      "url": "https://raku-like-life.com/718.html",
+      "tier": "3",
+      "key_info": "パワーローラーSは首に直接使用不可（メーカー非推奨）。肩甲骨周辺・胸椎部位へのアプローチが肩こり改善に有効。腰痛には腰直接より殿筋・ハムストリングスへの使用が推奨。",
+      "credibility": "medium",
+      "relevance_to_categories": ["首のこり改善", "肩こりの改善", "腰のこりの改善"]
+    },
+    {
+      "query": "foam rolling sit and reach flexibility RCT",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8998857/",
+      "tier": "1",
+      "key_info": "フォームローリングのトレーニングによるROM向上のメタ解析（290名、平均年齢23.9歳）：中程度の効果量が確認。介入期間4週間超で有意に効果大。ハムストリングスへのローラーマッサージは5-10秒でシットアンドリーチROMを向上させパフォーマンスを低下させない。",
+      "credibility": "high",
+      "relevance_to_categories": ["前屈のストレッチ性向上", "腰のこりの改善"]
+    },
+    {
+      "query": "foam rolling neck shoulder pain physical therapist",
+      "url": "https://shelteringarmsinstitute.com/rehablogs/foam-rollers-and-more-simple-tools-to-ease-neck-and-back-pain/",
+      "tier": "2",
+      "key_info": "理学療法士推奨：フォームローラーは頸部・上背部の疼痛・圧痛・こわばり軽減に有効。短期的（最大30分）のROM改善効果が確認。ローリング1-3セット後にストレッチを組み合わせることが最も効果的。変形性疾患・椎間板疾患がある場合は医師への相談が必要。",
+      "credibility": "medium",
+      "relevance_to_categories": ["首のこり改善", "肩こりの改善"]
+    },
+    {
+      "query": "foam rolling neck shoulder pain physical therapist",
+      "url": "https://www.bsrphysicaltherapy.com/2021/04/26/foam-roller-exercises-shoulder/",
+      "tier": "2",
+      "key_info": "物理療法士によるフォームローラーを用いた肩可動性改善エクササイズ解説。胸椎エクステンション、ラットストレッチ等が有効。肩甲骨周囲筋のリリースが肩こり・肩の可動域向上に貢献。",
+      "credibility": "medium",
+      "relevance_to_categories": ["肩こりの改善"]
+    },
+    {
+      "query": "vibration foam roller vs traditional foam roller meta-analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8897534/",
+      "tier": "1",
+      "key_info": "振動フォームローラーはジャンプパフォーマンス・俊敏性・筋力向上とリカバリー促進の可能性を示す系統的レビュー＆メタ解析。ただし振動単独の効果確立には更なる研究が必要。一部研究では通常ローラーと同等効果。ROM改善では振動付きが優位な報告あり。",
+      "credibility": "high",
+      "relevance_to_categories": ["前屈のストレッチ性向上", "肩こりの改善", "腰のこりの改善"]
+    },
+    {
+      "query": "vibration foam roller vs traditional foam roller meta-analysis",
+      "url": "https://www.researchgate.net/publication/318489567_Comparison_of_a_vibrating_foam_roller_and_a_non-vibrating_foam_roller_intervention_on_knee_range_of_motion_and_pressure_pain_threshold_A_randomized_controlled_trial_Accepted",
+      "tier": "1",
+      "key_info": "RCT：振動フォームローラーは膝関節ROM改善と圧痛閾値(PPT)上昇で通常ローラーより優位な結果。振動付加がPPT（痛覚閾値）を高め、筋肉のこり緩和に追加的メリットをもたらす。",
+      "credibility": "high",
+      "relevance_to_categories": ["肩こりの改善", "腰のこりの改善", "前屈のストレッチ性向上"]
+    },
+    {
+      "query": "foam rolling heart rate variability parasympathetic stress",
+      "url": "https://ijtmb.org/index.php/ijtmb/article/view/739",
+      "tier": "1",
+      "key_info": "全身フォームローリング1セッションの急性効果とHRVの研究。単回のフォームローリングは副交感神経活動を仮説通りに増加させなかったという報告あり。自己実施マッサージは受動的マッサージより自律神経への効果が限定的な可能性。",
+      "credibility": "high",
+      "relevance_to_categories": ["ストレスの緩和"]
+    },
+    {
+      "query": "foam rolling heart rate variability parasympathetic stress",
+      "url": "https://www.sci-sport.com/en/articles/impact-of-foam-rolling-on-the-cardiovascular-system-169.php",
+      "tier": "2",
+      "key_info": "15分間のフォームローリングは交感神経活動低下・副交感神経活動増加・血圧低下をもたらすという報告。ただし研究間で結果が混在し、血流増加や筋緊張緩和を通じた間接的なストレス軽減効果の可能性が高い。",
+      "credibility": "medium",
+      "relevance_to_categories": ["ストレスの緩和"]
+    },
+    {
+      "query": "foam rolling energy expenditure fat loss",
+      "url": "https://wellness.alibaba.com/fitlife/foam-rolling-for-weight-loss-myths-facts",
+      "tier": "3",
+      "key_info": "フォームローリングは直接的な脂肪燃焼・カロリー消費効果はほぼなし。脂肪を直接分解する能力はない。運動前後の筋肉痛軽減・ROM向上・リカバリー促進を通じてより質の高いトレーニングを可能にし、間接的に脂肪燃焼をサポートするというポジションが正確。",
+      "credibility": "medium",
+      "relevance_to_categories": ["脂肪燃焼効果"]
+    },
+    {
+      "query": "foam rolling energy expenditure fat loss",
+      "url": "https://rollga.com/blogs/news/do-foam-rollers-break-up-fat",
+      "tier": "3",
+      "key_info": "フォームローラーは脂肪を分解しない。血流改善・筋膜リリースを通じたリカバリー促進が主効果。脂肪燃焼への直接効果を示す研究エビデンスは現時点で存在しない。",
+      "credibility": "medium",
+      "relevance_to_categories": ["脂肪燃焼効果"]
+    },
+    {
+      "query": "腰痛 フォームローラー 使い方 整形外科 監修",
+      "url": "https://tarzanweb.jp/post-229290",
+      "tier": "2",
+      "key_info": "肩こり・腰痛改善のためのフォームローラー使い方。腰直接よりも股関節・殿筋・ハムストリングスへのアプローチが推奨。筋膜全体へのアプローチがこり改善に有効とする専門家コメントあり。腰に直接当てる場合は過度の反り禁止。",
+      "credibility": "medium",
+      "relevance_to_categories": ["腰のこりの改善"]
+    },
+    {
+      "query": "腰痛 フォームローラー 使い方 整形外科 監修",
+      "url": "https://tential.jp/journals/exercise/foam_roller/009",
+      "tier": "2",
+      "key_info": "腰痛改善のためのフォームローラー使い方解説。殿筋（大臀筋）左右30秒ずつ・ハムストリングス・広背筋のリリースが腰痛軽減に有効。腰椎に直接強圧をかけることは禁忌。呼吸を止めない・ゆっくり転がすことが重要。",
+      "credibility": "medium",
+      "relevance_to_categories": ["腰のこりの改善"]
+    },
+    {
+      "query": "self myofascial release pressure pain threshold DOMS",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4637917/",
+      "tier": "1",
+      "key_info": "系統的レビュー：フォームローラー・ローラーマッサージによるSMRはROM向上・筋回復・DOMSへの効果を確認。ローラーマッサージは介入後10分間の痛み有意減少、圧痛閾値（PPT）は最大30分後まで上昇。パフォーマンスへのマイナス影響なし。",
+      "credibility": "high",
+      "relevance_to_categories": ["肩こりの改善", "腰のこりの改善", "首のこり改善"]
+    },
+    {
+      "query": "self myofascial release pressure pain threshold DOMS",
+      "url": "https://www.nature.com/articles/s41598-024-66577-x",
+      "tier": "1",
+      "key_info": "異なる硬度のフォームローラーによるSMR比較（Nature Scientific Reports）：全タイプのフォームローラーで筋肉への圧痛閾値が有意改善。硬めのローラーが分析効果増強の可能性。乳酸除去とDOMSへの効果が確認。",
+      "credibility": "high",
+      "relevance_to_categories": ["肩こりの改善", "腰のこりの改善", "前屈のストレッチ性向上"]
+    }
+  ],
+  "product_specs": {
+    "振動レベル": "4段階モード（弱：1,500回/分、中：2,500回/分、強：3,000回/分、最強：1,500-3,000回/分可変）、最大3,000回/分",
+    "推奨使用時間": "15分タイマー内蔵（過使用防止）。連続使用：弱モード約6時間、強モード約2時間",
+    "推奨部位": "背中・肩・腕・脚・足裏など全身。首から上・心臓周辺は使用禁止",
+    "特徴": "サイズ315mm×直径85mmのコンパクト設計。凸凹テクスチャー表面で筋膜リリースを促進。ボタン1つで操作。電源OFF状態でも指圧器として使用可能。床・ソファ・椅子間に挟んで全身対応。",
+    "振動周波数": "最大50Hz相当（1,500-3,000回/分 = 25-50Hz）",
+    "推奨プロトコル": "1部位あたり60秒×2セット、毎日使用可"
+  },
+  "key_findings": {
+    "首のこり改善": "パワーローラーSは首に直接使用不可（メーカー禁止）。後頭下筋群・肩甲挙筋への間接アプローチ（胸椎上部・肩甲骨周辺）でのみ対応可能。フォームローリングによる頸部筋緊張緩和のエビデンスは間接的。SMR後10-30分間の圧痛閾値上昇（PPT改善）は確認済。推定効果量：通常ローラーと同等で中程度（Cohen's d ≈ 0.4-0.6）。ただし首への直接適用不可のため効果は限定的。",
+    "肩こりの改善": "胸椎・僧帽筋・肩甲骨周辺へのフォームローリングは肩こり改善に有効。理学療法士推奨：1-3セットローリング後にストレッチ。振動付きでPPT改善のRCTエビデンスあり（SMD ≈ 0.53）。振動フォームローラーは通常ローラーより痛覚閾値改善で優位。推定効果量：中程度（Cohen's d ≈ 0.5-0.7）。",
+    "腰のこりの改善": "腰直接へのローリングより殿筋（大臀筋30秒/側）・ハムストリングス・広背筋へのアプローチが安全で有効。フォームローリングのROM改善効果（SMD ≈ 0.53）と圧痛閾値改善（PPT最大30分持続）は腰部こり軽減に寄与。4週間以上の継続で効果大。推定効果量：中程度（Cohen's d ≈ 0.5-0.7）。",
+    "前屈のストレッチ性向上": "振動フォームローラーによるシットアンドリーチ改善はSMD=1.47と大きな効果量。ハムストリングス・ふくらはぎ・胸椎モビリティへのアプローチで短期改善確認。1回60秒×2セットで効果的。4週間超の継続でさらに向上。最もエビデンスの強いカテゴリー。推定効果量：大（Cohen's d ≈ 1.0-1.5）。",
+    "脂肪燃焼効果": "直接的な脂肪燃焼・カロリー消費効果のエビデンスは存在しない。脂肪を直接分解する能力なし。リカバリー促進→より質の高いトレーニング継続→間接的な脂肪燃焼促進という位置づけが正確。単独での脂肪燃焼ツールとしては不適切。推定効果量：直接効果はほぼゼロ（間接効果は個人の運動習慣次第）。",
+    "ストレスの緩和": "エビデンスは混在。一部研究では15分フォームローリングで副交感神経優位・血圧低下を報告。他の研究では単回セッションでは副交感神経活動の有意増加なし。自己実施の場合、受動的マッサージより効果限定的。血流改善・筋緊張緩和を通じた間接的なリラクゼーション効果が主。推定効果量：弱〜中程度（Cohen's d ≈ 0.2-0.4）。"
+  }
+}
