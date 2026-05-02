@@ -1,0 +1,150 @@
+{
+  "researched_at": "2026-05-01",
+  "url_status": {
+    "claude_code": [
+      {
+        "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+        "status": "redirect",
+        "correct_url": "https://code.claude.com/docs/en/overview",
+        "key_info": "Claude Code is an AI-powered coding assistant available in terminal, IDE, desktop app, and browser. Install on macOS/Linux with `curl -fsSL https://claude.ai/install.sh | bash`, or on Windows with PowerShell `irm https://claude.ai/install.ps1 | iex`. Requires a Claude subscription (Pro, Max, Team, or Enterprise) or Anthropic Console account."
+      },
+      {
+        "url": "https://docs.anthropic.com/en/docs/claude-code/quickstart",
+        "status": "redirect",
+        "correct_url": "https://code.claude.com/docs/en/quickstart",
+        "key_info": "Start Claude Code with `claude` in any project directory; first run prompts for login. Key commands: `claude -c` (continue last session), `claude -r` (resume session by name), `claude -p 'query'` (one-shot print mode). Press `/help` inside a session to see all available commands."
+      },
+      {
+        "url": "https://docs.anthropic.com/en/docs/claude-code/cli-reference",
+        "status": "redirect",
+        "correct_url": "https://code.claude.com/docs/en/cli-reference",
+        "key_info": "Key CLI flags include `--dangerously-skip-permissions` (bypass all permission prompts, equivalent to `--permission-mode bypassPermissions`), `--permission-mode` (start in default/acceptEdits/plan/auto/bypassPermissions), `--add-dir` (add extra working directories), `--model` (set model), `--continue`/`-c` (resume last session), `--resume`/`-r` (resume by name). Also `claude auth login/logout/status` for authentication management."
+      },
+      {
+        "url": "https://docs.anthropic.com/en/docs/claude-code/slash-commands",
+        "status": "redirect",
+        "correct_url": "https://code.claude.com/docs/en/commands",
+        "key_info": "The /slash-commands URL now redirects to /skills (custom commands merged into skills). The canonical commands reference is at /en/commands. Key commands include /clear (new context), /compact (summarize), /context (visualize context window), /usage aka /cost aka /stats (show session cost/tokens), /status (version/model/account info), /memory (edit CLAUDE.md files), /resume (resume session), /model (change model), /config (settings UI)."
+      },
+      {
+        "url": "https://docs.anthropic.com/en/docs/claude-code/memory",
+        "status": "redirect",
+        "correct_url": "https://code.claude.com/docs/en/memory",
+        "key_info": "CLAUDE.md files provide persistent instructions across sessions. Locations: managed policy (/Library/Application Support/ClaudeCode/CLAUDE.md), project (./CLAUDE.md or ./.claude/CLAUDE.md), user (~/.claude/CLAUDE.md), local (./CLAUDE.local.md). Files are loaded by walking up the directory tree. Auto memory (since v2.1.59) lets Claude save notes automatically to ~/.claude/projects/<project>/memory/."
+      },
+      {
+        "url": "https://docs.anthropic.com/en/docs/claude-code/settings",
+        "status": "redirect",
+        "correct_url": "https://code.claude.com/docs/en/settings",
+        "key_info": "Settings have 4 scope levels: Managed (org-wide), User (~/.claude/settings.json), Project (.claude/settings.json), Local (.claude/settings.local.json). Key options: model selection, permissions (allow/ask/deny rules), env vars, sandbox mode. Use `/config` in-session to open settings UI, or `/status` (Status tab) for version/account info."
+      }
+    ],
+    "warp": [
+      {
+        "url": "https://docs.warp.dev/",
+        "status": "live",
+        "correct_url": "https://docs.warp.dev/",
+        "key_info": "Warp is described as 'an open source Agentic Development Environment' - a modern terminal combined with AI agents. Features include terminal blocks, agent mode, voice input, remote control, code editor with LSP, and Git Worktrees. Documentation is organized into Terminal, Code, Agents, and Knowledge sections."
+      },
+      {
+        "url": "https://docs.warp.dev/features/blocks",
+        "status": "dead (404)",
+        "correct_url": "https://docs.warp.dev/terminal/blocks/block-basics",
+        "key_info": "Terminal Blocks group commands and their outputs into atomic units. Blocks enable copying command, copying output, sharing both with formatting, and bookmarking. Navigation: arrow keys move between blocks, Ctrl-Shift-Up/Down scrolls to top/bottom of selected block. Non-zero exit codes show red background."
+      },
+      {
+        "url": "https://docs.warp.dev/features/agent-mode",
+        "status": "dead (404)",
+        "correct_url": "https://docs.warp.dev/agent-platform/warp-agents/interacting-with-agents/terminal-and-agent-modes",
+        "key_info": "Warp has two modes: Terminal Mode (clean terminal for commands) and Agent Mode (dedicated conversation view with model select, voice input, and image attachments for multi-turn agent workflows). Agent Mode sees full terminal session state including open files, command history, and environment variables. Warp Agent Mode is built-in while Claude Code is a third-party CLI agent that can run inside Warp."
+      },
+      {
+        "url": "https://docs.warp.dev/features/voice",
+        "status": "dead (404)",
+        "correct_url": "https://docs.warp.dev/agent-platform/warp-agents/interacting-with-agents/voice",
+        "key_info": "Warp Voice enables natural speech input across all input interfaces (Agent Mode, Find dialog, terminal). Activate via microphone button in Agent Mode or a configurable hold-hotkey. Transcription is powered by Wispr Flow in real-time and is not retained as recordings. Configure at Settings > AI > Voice."
+      },
+      {
+        "url": "https://docs.warp.dev/features/remote-control",
+        "status": "dead (404)",
+        "correct_url": "https://docs.warp.dev/agent-platform/third-party-agents/remote-control",
+        "key_info": "Warp Remote Control publishes a running third-party agent session (Claude Code, Codex, OpenCode) to the cloud with one click via /remote-control chip in the agent utility bar. Viewers can monitor progress, send input, approve commands, or redirect the agent from phone, web browser, or another computer with no install required. Sessions sync in real-time; access can be view-only or with edit permissions for remote input."
+      },
+      {
+        "url": "https://docs.warp.dev/terminal/windows-and-tabs",
+        "status": "dead (404)",
+        "correct_url": "https://docs.warp.dev/terminal/windows-and-tabs",
+        "key_info": "URL returned 404. Warp supports multiple windows and tabs for managing sessions. The documentation covers split panes and tab management under the Terminal section, but the exact URL has changed in the 2026 documentation restructure."
+      }
+    ]
+  },
+  "search_findings": [
+    {
+      "query": "Claude Code CLI install Warp terminal setup",
+      "key_findings": "Warp auto-detects Claude Code agent sessions and surfaces integrated controls including rich input, code review, vertical tab metadata. Install Claude Code with `curl -fsSL https://claude.ai/install.sh | bash`. Warp has an official claude-code-warp plugin for notifications; install via `/plugin marketplace add warpdotdev/claude-code-warp` then `/plugin install warp@claude-code-warp`, or one-click from the notification chip that appears automatically.",
+      "best_url": "https://docs.warp.dev/guides/external-tools-and-integrations/how-to-set-up-claude-code",
+      "source": "公式"
+    },
+    {
+      "query": "Warp terminal Claude Code integration guide",
+      "key_findings": "Official Warp guide at docs.warp.dev covers Claude Code setup, configuration, and productivity tips including voice prompting and visual code review. Key integrations: agent notifications (in-app and desktop alerts), rich input editor (Ctrl-G to expand), code review panel for inline comments, and vertical tab metadata. There is also a dedicated migration guide at /getting-started/migrate-to-warp/migrate-to-warp-from-claude-code.",
+      "best_url": "https://docs.warp.dev/agent-platform/third-party-agents/claude-code",
+      "source": "公式"
+    },
+    {
+      "query": "Claude Code /status /context /cost token usage command",
+      "key_findings": "/usage (aliases: /cost, /stats) shows session cost, plan usage limits, and activity stats; API users see token count and dollar cost. /context visualizes context window usage as a colored grid showing system prompt, tools, memory files, skills, messages breakdown with percentages and optimization suggestions. /status opens Settings interface showing version, model, account, and connectivity (works even while Claude is responding).",
+      "best_url": "https://code.claude.com/docs/en/costs",
+      "source": "公式"
+    },
+    {
+      "query": "CLAUDE.md multiple repositories configuration best practice",
+      "key_findings": "For multi-repo setups, launch Claude Code from a parent workspace directory containing all repos as subdirectories—Claude walks up the tree loading CLAUDE.md from each level. Use `CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD=1 claude --add-dir ../other-project` to load CLAUDE.md from additional directories (requires v2.1.20+). Cross-reference repos in CLAUDE.md: document relationships like 'Check ../api/CLAUDE.md for response format'. Commit CLAUDE.md to git so team members benefit from the same context.",
+      "best_url": "https://code.claude.com/docs/en/best-practices",
+      "source": "公式"
+    },
+    {
+      "query": "Claude Code --dangerously-skip-permissions option usage",
+      "key_findings": "--dangerously-skip-permissions is equivalent to --permission-mode bypassPermissions and disables all permission prompts for fully unattended execution. Only use in isolated environments (containers, VMs, dev containers without internet access). Risks include data loss, system compromise, prompt injection, credential exposure. Safer alternative: Auto mode (`--permission-mode auto`) provides background safety checks without permission prompts.",
+      "best_url": "https://code.claude.com/docs/en/permission-modes",
+      "source": "公式"
+    },
+    {
+      "query": "Warp Agent Mode vs Claude Code CLI",
+      "key_findings": "Claude Code is a CLI agent that runs inside any terminal and can run commands on your behalf, observe results, and decide next steps—it also supports spawning parallel sub-agents and non-interactive CI usage. Warp is a full terminal replacement with a built-in agent layer and GUI elements (file tree, Blocks, diff viewer, multi-model support). The two complement each other: you can run Claude Code inside Warp to get the best of both, or use Warp's own Agent Mode as the primary coding agent.",
+      "best_url": "https://www.warp.dev/university/getting-started/warp-vs-claude-code",
+      "source": "公式"
+    },
+    {
+      "query": "Warp voice input dictation feature site:docs.warp.dev",
+      "key_findings": "Warp Voice is configured at Settings > AI > Voice. Activate via microphone icon in Agent Mode input area or hold a configurable hotkey. Transcription uses Wispr Flow and works across all input interfaces including terminal and Find dialog. Voice data is processed in real-time and not retained as recordings. Anti-abuse limits apply.",
+      "best_url": "https://docs.warp.dev/agent-platform/warp-agents/interacting-with-agents/voice",
+      "source": "公式"
+    },
+    {
+      "query": "Warp Remote Control mobile iOS Android site:docs.warp.dev",
+      "key_findings": "Warp Remote Control works via any mobile web browser—no app installation required for viewers. Publish with one click using /remote-control chip; shareable link is copied to clipboard automatically. Supports view-only or edit access (send input, approve commands). Syncs in real-time and stops when session is closed. Designed for async monitoring rather than live collaborative work (which uses Session Sharing).",
+      "best_url": "https://docs.warp.dev/agent-platform/third-party-agents/remote-control",
+      "source": "公式"
+    },
+    {
+      "query": "Claude Code /continue resume session",
+      "key_findings": "CLI: `claude --continue` or `claude -c` resumes the most recent session in the current directory; `claude --resume <name>` or `claude -r` opens a session picker or resumes by name. In-session: `/resume` (alias `/continue`) shows a picker of previous sessions. For scripts, use `claude --continue --print 'prompt'` for non-interactive mode. Full message history and tool usage are restored on resume.",
+      "best_url": "https://code.claude.com/docs/en/cli-reference",
+      "source": "公式"
+    },
+    {
+      "query": "Warp blocks UI features site:docs.warp.dev",
+      "key_findings": "Warp Blocks group terminal commands with their outputs as atomic units. Block actions include: copy command, copy output, share with formatting, re-input command, scroll to output start, bookmark. Navigation: Up/Down arrows move between blocks, Ctrl-Shift-Up/Down scrolls to top/bottom of block. Non-zero exit code blocks get red background. Blocks can be attached as context to Agent Mode conversations via the sparkle icon.",
+      "best_url": "https://docs.warp.dev/terminal/blocks/block-basics",
+      "source": "公式"
+    }
+  ],
+  "verified_facts": {
+    "warp_voice_input": "Warp Voice is a real feature powered by Wispr Flow transcription. Activate via microphone button in Agent Mode or by holding a configurable hotkey (set at Settings > AI > Voice). Works across all Warp input interfaces including terminal, Find dialog, and Agent Mode. Voice data is processed in real-time and not stored as recordings. Anti-abuse usage limits apply.",
+    "warp_remote_control": "Warp Remote Control publishes any running third-party CLI agent session (Claude Code, Codex, OpenCode, Gemini CLI) to the cloud via a single click on the /remote-control chip. Generates a shareable link viewable from any phone or web browser without installation. Supports real-time sync, view-only or edit permissions (remote input and command approval), and team collaboration with live cursors. Differs from Session Sharing (which is for live pair programming) in that Remote Control is designed for async monitoring and steering.",
+    "claude_code_slash_commands": "Key built-in slash commands: /clear (new context), /compact [instructions] (summarize to free context), /context (visualize context window usage by category), /usage aka /cost aka /stats (session cost and token stats), /status (version/model/account/connectivity), /memory (edit CLAUDE.md files and manage auto-memory), /model (change AI model), /config aka /settings (settings UI), /resume aka /continue (resume previous session), /permissions (manage allow/ask/deny rules), /plan (enter plan mode), /diff (interactive diff viewer), /voice (toggle voice dictation). Also bundled skills: /simplify, /batch, /debug, /loop, /claude-api.",
+    "claude_code_multi_repo": "Multi-repo support: (1) Launch from a parent workspace directory containing all repos as subdirectories—Claude walks up the tree loading CLAUDE.md at each level. (2) Use `--add-dir ../other-repo` with env var `CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD=1` to load CLAUDE.md from extra directories (v2.1.20+). (3) Reference cross-repo dependencies in CLAUDE.md comments. (4) Use `claudeMdExcludes` in settings to skip irrelevant CLAUDE.md files in large monorepos. Each project's CLAUDE.md should document relationships with other repos.",
+    "warp_agent_mode_vs_claude_code": "Warp Agent Mode is a built-in conversation view inside Warp terminal with model selection, voice input, image attachments, and access to full terminal session state. Claude Code CLI is an independent agentic tool that executes commands, edits files, manages git, spawns sub-agents, and can run non-interactively in CI/scripts. Key difference: Warp tells you what command to run; Claude Code runs commands autonomously and iterates. The tools complement each other—Claude Code runs inside Warp gaining notifications, rich input editor (Ctrl-G), code review panel, and Remote Control. Warp's Agent Mode supports multiple AI models (including GPT-5, Gemini) while Claude Code uses Anthropic models. For autonomous multi-file coding tasks, Claude Code is stronger; for terminal UX and multi-model flexibility, Warp Agent Mode has advantages."
+  }
+}
