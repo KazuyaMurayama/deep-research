@@ -20,6 +20,7 @@
 | ファイル | テーマ | スコア | 日付 |
 |----------|--------|--------|------|
 | [outputs/2026-05-01_claude-code-warp-guide.md](outputs/2026-05-01_claude-code-warp-guide.md) | Claude Code × Warp 移行・補完ガイド（Remote Control含む） | -/100 | 2026-05-01 |
+| [outputs/2026-05-01_gmo-coin-deposit-check-guide.md](outputs/2026-05-01_gmo-coin-deposit-check-guide.md) | GMOコイン 入金合計額の確認方法ガイド（高校生向け） | -/100 | 2026-05-01 |
 | [outputs/2026-04-30_power-roller-s-effects.md](outputs/2026-04-30_power-roller-s-effects.md) | パワーローラーS 効果評価・使い方・カテゴリー別スコア | -/100 | 2026-04-30 |
 | [outputs/2026-04-23_claude-code-cli-manual.md](outputs/2026-04-23_claude-code-cli-manual.md) | Claude Code CLI 初心者向け完全マニュアル 2026（Windows対応版） | 88/100 | 2026-04-28 |
 | [outputs/2026-04-23_ec-sakura-review-comparison.md](outputs/2026-04-23_ec-sakura-review-comparison.md) | EC3社サクラレビュー推定割合 比較 2026 | 84/100 | 2026-04-23 |
