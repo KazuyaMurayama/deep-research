@@ -1,33 +1,29 @@
-# FILE_INDEX — deep-research
+# FILE INDEX - deep-research
 
-> ⚠️ このファイルは自動生成です。手動編集は次回更新で上書きされます。
+> 最終更新: 2026-05-06 | ファイル数: 57
 
-| 項目 | 値 |
-|---|---|
-| リポジトリ | KazuyaMurayama/deep-research |
-| ブランチ | main |
-| 総ファイル数 | 55 |
-| 最終更新 | 2026-05-02 |
-| 管理者 | 男座員也（Kazuya Oza） |
-
----
-
-## カテゴリ別サマリー
-
-| カテゴリ | ファイル数 |
-|---|---|
-| Documentation | 45 |
-| Data | 8 |
-| Config | 1 |
-| Other | 1 |
-
----
-
-## ディレクトリ構成
+## ディレクトリ構造 (depth=4)
 
 ```
 .
+├── .gitignore
+├── CLAUDE.md
+├── FILE_INDEX.md
+├── README.md
+├── Timeout_Prevention.md
+├── file_index.md
 ├── outputs/
+│   ├── .gitkeep
+│   ├── 2026-04-20_japan-ai-startup-investment-trends-2024-2025.md
+│   ├── 2026-04-23_claude-code-cli-manual.md
+│   ├── 2026-04-23_claude-code-ui-comparison.md
+│   ├── 2026-04-23_ec-sakura-review-comparison.md
+│   ├── 2026-04-29_manga-apps-free-comparison.md
+│   ├── 2026-04-30_power-roller-s-effects.md
+│   ├── 2026-04-30_sasaki-satoshi-ebn-nutrition.md
+│   ├── 2026-05-01_claude-code-warp-guide.md
+│   ├── 2026-05-01_gmo-coin-deposit-check-guide.md
+│   ├── 2026-05-01_wakkiyai-wemof-fx-indicator.md
 │   ├── parts/
 │   │   ├── 01_header.md
 │   │   ├── 02_overview.md
@@ -56,17 +52,7 @@
 │   │   ├── 05_percentages.md
 │   │   ├── 06_regulation.md
 │   │   └── 07_footer.md
-│   ├── .gitkeep
-│   ├── 2026-04-20_japan-ai-startup-investment-trends-2024-2025.md
-│   ├── 2026-04-23_claude-code-cli-manual.md
-│   ├── 2026-04-23_claude-code-ui-comparison.md
-│   ├── 2026-04-23_ec-sakura-review-comparison.md
-│   ├── 2026-04-29_manga-apps-free-comparison.md
-│   ├── 2026-04-30_power-roller-s-effects.md
-│   ├── 2026-04-30_sasaki-satoshi-ebn-nutrition.md
-│   ├── 2026-05-01_claude-code-warp-guide.md
-│   ├── 2026-05-01_gmo-coin-deposit-check-guide.md
-│   └── 2026-05-01_wakkiyai-wemof-fx-indicator.md
+│   └── 医学体験施設_花小金井40分以内_子ども向け.md
 ├── session/
 │   ├── analysis_results.json
 │   ├── factcheck_results.json
@@ -75,100 +61,92 @@
 │   ├── video_urls.json
 │   ├── warp_analysis.json
 │   └── warp_research_data.json
+├── session.json
 ├── skills/
 │   ├── 01_research_architect.md
 │   ├── 02_web_researcher.md
 │   ├── 03_analyst_synthesizer.md
 │   ├── 04_quality_publisher.md
 │   └── timeout.md
-├── .gitignore
-├── CLAUDE.md
-├── file_index.md
-├── README.md
-├── session.json
-├── tasks.md
-└── Timeout_Prevention.md
+└── tasks.md
 ```
 
----
+## カテゴリ別ファイル一覧
 
-## ファイル詳細
+### Documentation (47件)
 
-### Documentation (45件)
-
-| ファイル | サイズ | 説明 |
+| ファイルパス | サイズ(bytes) | SHA |
 |---|---|---|
-| `CLAUDE.md` | 2.2 KB | Claude Code プロジェクト設定・命名ルール |
-| `file_index.md` | 1.8 KB | Markdown ドキュメント |
-| `outputs/2026-04-20_japan-ai-startup-investment-trends-2024-2025.md` | 14.6 KB | Markdown ドキュメント |
-| `outputs/2026-04-23_claude-code-cli-manual.md` | 35.0 KB | Markdown ドキュメント |
-| `outputs/2026-04-23_claude-code-ui-comparison.md` | 17.3 KB | Markdown ドキュメント |
-| `outputs/2026-04-23_ec-sakura-review-comparison.md` | 19.6 KB | Markdown ドキュメント |
-| `outputs/2026-04-29_manga-apps-free-comparison.md` | 14.7 KB | Markdown ドキュメント |
-| `outputs/2026-04-30_power-roller-s-effects.md` | 35.8 KB | Markdown ドキュメント |
-| `outputs/2026-04-30_sasaki-satoshi-ebn-nutrition.md` | 37.9 KB | Markdown ドキュメント |
-| `outputs/2026-05-01_claude-code-warp-guide.md` | 13.0 KB | Markdown ドキュメント |
-| `outputs/2026-05-01_gmo-coin-deposit-check-guide.md` | 10.8 KB | Markdown ドキュメント |
-| `outputs/2026-05-01_wakkiyai-wemof-fx-indicator.md` | 21.2 KB | Markdown ドキュメント |
-| `outputs/parts_manual/00_intro.md` | 2.2 KB | リサーチ出力データ |
-| `outputs/parts_manual/01_setup.md` | 2.0 KB | リサーチ出力データ |
-| `outputs/parts_manual/02_basics.md` | 2.2 KB | リサーチ出力データ |
-| `outputs/parts_manual/03_github.md` | 2.1 KB | リサーチ出力データ |
-| `outputs/parts_manual/04_multi_repo.md` | 2.5 KB | リサーチ出力データ |
-| `outputs/parts_manual/05_mobile.md` | 3.0 KB | リサーチ出力データ |
-| `outputs/parts_manual/06_local_files.md` | 3.2 KB | リサーチ出力データ |
-| `outputs/parts_manual/07_context_auto.md` | 3.6 KB | リサーチ出力データ |
-| `outputs/parts_manual/08_cli_tricks.md` | 4.0 KB | リサーチ出力データ |
-| `outputs/parts_manual/09_troubleshoot.md` | 1.5 KB | リサーチ出力データ |
-| `outputs/parts_manual/10_resources.md` | 2.9 KB | リサーチ出力データ |
-| `outputs/parts_sakura/01_header.md` | 2.7 KB | リサーチ出力データ |
-| `outputs/parts_sakura/02_judgment_axes.md` | 2.3 KB | リサーチ出力データ |
-| `outputs/parts_sakura/03_tools.md` | 2.4 KB | リサーチ出力データ |
-| `outputs/parts_sakura/04_structure.md` | 2.4 KB | リサーチ出力データ |
-| `outputs/parts_sakura/05_percentages.md` | 2.8 KB | リサーチ出力データ |
-| `outputs/parts_sakura/06_regulation.md` | 3.0 KB | リサーチ出力データ |
-| `outputs/parts_sakura/07_footer.md` | 4.1 KB | リサーチ出力データ |
-| `outputs/parts/01_header.md` | 2.1 KB | リサーチ出力データ |
-| `outputs/parts/02_overview.md` | 1.2 KB | リサーチ出力データ |
-| `outputs/parts/03_matrix.md` | 1.4 KB | リサーチ出力データ |
-| `outputs/parts/04_details.md` | 3.0 KB | リサーチ出力データ |
-| `outputs/parts/05_usecases.md` | 2.0 KB | リサーチ出力データ |
-| `outputs/parts/06_bestpractices.md` | 3.7 KB | リサーチ出力データ |
-| `outputs/parts/07_footer.md` | 3.8 KB | リサーチ出力データ |
-| `README.md` | 2.2 KB | リポジトリ概要・セットアップ手順 |
-| `skills/01_research_architect.md` | 1.7 KB | Markdown ドキュメント |
-| `skills/02_web_researcher.md` | 1.9 KB | Markdown ドキュメント |
-| `skills/03_analyst_synthesizer.md` | 2.0 KB | Markdown ドキュメント |
-| `skills/04_quality_publisher.md` | 3.3 KB | Markdown ドキュメント |
-| `skills/timeout.md` | 2.4 KB | Markdown ドキュメント |
-| `tasks.md` | 2.4 KB | タスク管理・セッション履歴 |
-| `Timeout_Prevention.md` | 4.9 KB | タイムアウト対策ガイド |
+| `CLAUDE.md` | 2241 | e2eaa7c |
+| `file_index.md` | 2215 | 2b3e862 |
+| `FILE_INDEX.md` | 7433 | ff9c421 |
+| `outputs/2026-04-20_japan-ai-startup-investment-trends-2024-2025.md` | 14910 | 076dbd0 |
+| `outputs/2026-04-23_claude-code-cli-manual.md` | 35890 | edd5780 |
+| `outputs/2026-04-23_claude-code-ui-comparison.md` | 17718 | ae3e051 |
+| `outputs/2026-04-23_ec-sakura-review-comparison.md` | 20033 | 65a31f9 |
+| `outputs/2026-04-29_manga-apps-free-comparison.md` | 15075 | 9ae7294 |
+| `outputs/2026-04-30_power-roller-s-effects.md` | 36613 | fb795fc |
+| `outputs/2026-04-30_sasaki-satoshi-ebn-nutrition.md` | 38850 | ea70246 |
+| `outputs/2026-05-01_claude-code-warp-guide.md` | 13345 | 14c4613 |
+| `outputs/2026-05-01_gmo-coin-deposit-check-guide.md` | 11022 | 929c928 |
+| `outputs/2026-05-01_wakkiyai-wemof-fx-indicator.md` | 21746 | 2fb12d3 |
+| `outputs/parts_manual/00_intro.md` | 2220 | 388cc6d |
+| `outputs/parts_manual/01_setup.md` | 2066 | 181c808 |
+| `outputs/parts_manual/02_basics.md` | 2276 | 48f4ed5 |
+| `outputs/parts_manual/03_github.md` | 2189 | 42c30d9 |
+| `outputs/parts_manual/04_multi_repo.md` | 2518 | 301e584 |
+| `outputs/parts_manual/05_mobile.md` | 3083 | def75e0 |
+| `outputs/parts_manual/06_local_files.md` | 3266 | 229d11b |
+| `outputs/parts_manual/07_context_auto.md` | 3679 | 67a9a6c |
+| `outputs/parts_manual/08_cli_tricks.md` | 4083 | 79edca1 |
+| `outputs/parts_manual/09_troubleshoot.md` | 1530 | eabdb7a |
+| `outputs/parts_manual/10_resources.md` | 2946 | dfbc0a2 |
+| `outputs/parts_sakura/01_header.md` | 2756 | e8b9e80 |
+| `outputs/parts_sakura/02_judgment_axes.md` | 2337 | f9ea4b0 |
+| `outputs/parts_sakura/03_tools.md` | 2454 | e1675b6 |
+| `outputs/parts_sakura/04_structure.md` | 2456 | ad8e47e |
+| `outputs/parts_sakura/05_percentages.md` | 2824 | 4b7b41e |
+| `outputs/parts_sakura/06_regulation.md` | 3049 | 3595583 |
+| `outputs/parts_sakura/07_footer.md` | 4157 | 89b9ba0 |
+| `outputs/parts/01_header.md` | 2168 | 2b27b43 |
+| `outputs/parts/02_overview.md` | 1269 | 6a051e6 |
+| `outputs/parts/03_matrix.md` | 1417 | f7db94b |
+| `outputs/parts/04_details.md` | 3098 | 2461ae6 |
+| `outputs/parts/05_usecases.md` | 2058 | 49f460b |
+| `outputs/parts/06_bestpractices.md` | 3803 | b208a03 |
+| `outputs/parts/07_footer.md` | 3905 | 2cdc5f7 |
+| `outputs/医学体験施設_花小金井40分以内_子ども向け.md` | 8061 | de6c8e5 |
+| `README.md` | 2260 | 7188f7a |
+| `skills/01_research_architect.md` | 1751 | e51cbe3 |
+| `skills/02_web_researcher.md` | 1945 | 96744d5 |
+| `skills/03_analyst_synthesizer.md` | 2060 | 4e6933c |
+| `skills/04_quality_publisher.md` | 3388 | 1c201c5 |
+| `skills/timeout.md` | 2407 | 56625dc |
+| `tasks.md` | 3440 | 0ae459b |
+| `Timeout_Prevention.md` | 4989 | d690243 |
 
 ### Data (8件)
 
-| ファイル | サイズ | 説明 |
+| ファイルパス | サイズ(bytes) | SHA |
 |---|---|---|
-| `session.json` | 802 B | JSON データ |
-| `session/analysis_results.json` | 15.5 KB | JSON データ |
-| `session/factcheck_results.json` | 7.7 KB | JSON データ |
-| `session/factcheck_warp.json` | 5.9 KB | JSON データ |
-| `session/research_data.json` | 15.1 KB | JSON データ |
-| `session/video_urls.json` | 5.3 KB | JSON データ |
-| `session/warp_analysis.json` | 19.2 KB | JSON データ |
-| `session/warp_research_data.json` | 16.1 KB | JSON データ |
+| `session.json` | 3205 | bdb9f80 |
+| `session/analysis_results.json` | 15878 | 61897c9 |
+| `session/factcheck_results.json` | 7933 | 90a215e |
+| `session/factcheck_warp.json` | 6047 | 320a414 |
+| `session/research_data.json` | 15479 | 0da6ae5 |
+| `session/video_urls.json` | 5477 | b978fb6 |
+| `session/warp_analysis.json` | 19611 | ad84678 |
+| `session/warp_research_data.json` | 16494 | 4d4955b |
 
 ### Config (1件)
 
-| ファイル | サイズ | 説明 |
+| ファイルパス | サイズ(bytes) | SHA |
 |---|---|---|
-| `.gitignore` | 377 B | Git 除外設定 |
+| `.gitignore` | 377 | 4465f30 |
 
 ### Other (1件)
 
-| ファイル | サイズ | 説明 |
+| ファイルパス | サイズ(bytes) | SHA |
 |---|---|---|
-| `outputs/.gitkeep` | - | ファイル |
+| `outputs/.gitkeep` | 0 | e69de29 |
 
----
-
-_自動生成: 2026-05-02 | 管理者: 男座員也（Kazuya Oza）_
