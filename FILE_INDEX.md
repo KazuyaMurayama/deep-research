@@ -1,6 +1,6 @@
 # FILE INDEX - deep-research
 
-> 最終更新: 2026-05-06 | ファイル数: 57
+> 最終更新: 2026-05-07 | ファイル数: 57
 
 ## ディレクトリ構造 (depth=4)
 
@@ -79,7 +79,7 @@
 |---|---|---|
 | `CLAUDE.md` | 2241 | e2eaa7c |
 | `file_index.md` | 2215 | 2b3e862 |
-| `FILE_INDEX.md` | 7433 | ff9c421 |
+| `FILE_INDEX.md` | 6090 | bdb3f99 |
 | `outputs/2026-04-20_japan-ai-startup-investment-trends-2024-2025.md` | 14910 | 076dbd0 |
 | `outputs/2026-04-23_claude-code-cli-manual.md` | 35890 | edd5780 |
 | `outputs/2026-04-23_claude-code-ui-comparison.md` | 17718 | ae3e051 |
