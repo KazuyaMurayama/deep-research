@@ -19,6 +19,7 @@
 ## アウトプット（最新順）
 | ファイル | テーマ | スコア | 日付 |
 |----------|--------|--------|------|
+| [outputs/2026-05-08_crypto-history-download-guide.md](outputs/2026-05-08_crypto-history-download-guide.md) | Bybit・Binance・MetaMask 取引履歴ダウンロードガイド（高校生向け） | -/100 | 2026-05-08 |
 | [outputs/2026-05-01_claude-code-warp-guide.md](outputs/2026-05-01_claude-code-warp-guide.md) | Claude Code × Warp 移行・補完ガイド（Remote Control含む） | -/100 | 2026-05-01 |
 | [outputs/2026-05-01_gmo-coin-deposit-check-guide.md](outputs/2026-05-01_gmo-coin-deposit-check-guide.md) | GMOコイン 入金合計額の確認方法ガイド（高校生向け） | -/100 | 2026-05-01 |
 | [outputs/2026-04-30_power-roller-s-effects.md](outputs/2026-04-30_power-roller-s-effects.md) | パワーローラーS 効果評価・使い方・カテゴリー別スコア | -/100 | 2026-04-30 |

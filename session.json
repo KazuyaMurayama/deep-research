@@ -1,64 +1,23 @@
 {
-  "version": "1.1",
-  "updated_at": "2026-05-01",
-  "theme": "Claude CodeをWarpで使う：Web版ユーザー向け移行・補完ガイド",
+  "theme": "Bybit・Binance・MetaMask 取引履歴ダウンロードガイド",
   "status": "completed",
-  "audience": {
-    "current_tool": "Web版Claude Code",
-    "github_repos": "多数所有",
-    "cli_skill": "初心者",
-    "goal": "Warp上のClaude Code CLIへ移行し、Web版の制約を解消"
+  "target": "2020年頃から仮想通貨取引をしてきたユーザー（高校生向け）",
+  "format": "高校生向け手順ガイド（MDファイル）",
+  "agents": {
+    "architect": "claude-opus-4-7（プレリサーチ・構成設計）",
+    "researcher_bybit": "claude-sonnet-4-6（Bybit調査・検証）",
+    "researcher_binance": "claude-sonnet-4-6（Binance調査・検証）",
+    "researcher_metamask": "claude-sonnet-4-6（MetaMask/Etherscan調査・検証）"
   },
-  "scr": {
-    "situation": "Web版Claude Code利用者だがCLI初心者で、ローカルファイル編集・複数リポ横断・外出時操作に制約",
-    "complication": "CLI移行はハードルが高く、WarpのAgent ModeとClaude Codeの役割重複も混乱要因",
-    "resolution": "WarpをClaude Code CLIのGUIラッパーとして使い、Web版/Warp+CLI/スマホ Remote Controlの3層運用で7ニーズを解決"
-  },
-  "search_queries": [
-    "Claude Code CLI install Warp terminal setup",
-    "Warp terminal Claude Code integration guide",
-    "Claude Code /status /context /cost token usage command",
-    "CLAUDE.md multiple repositories configuration best practice",
-    "Claude Code --dangerously-skip-permissions option usage",
-    "Warp Agent Mode vs Claude Code CLI comparison",
-    "Warp voice input dictation Claude Code",
-    "Warp Remote Control mobile app features limitations",
-    "Claude Code /continue resume session multiple tabs",
-    "Warp blocks UI command history Claude Code output"
+  "output_file": "outputs/2026-05-08_crypto-history-download-guide.md",
+  "platforms_covered": ["Bybit", "Binance / Binance Japan", "MetaMask + Etherscan"],
+  "key_findings": [
+    "Bybit: PC必須・ZIPダウンロード・1回最大1年・最大5年遡及",
+    "Binance: 日本居住者はBinance Japan移行済み。グローバル旧履歴は要サポート問い合わせ",
+    "MetaMask: CSV機能なし→Etherscanでウォレットアドレス検索してエクスポート。5000件/回上限",
+    "複数チェーン対応: Etherscan/BscScan/PolygonScanそれぞれで取得が必要"
   ],
-  "official_urls": {
-    "claude_code": [
-      "https://docs.anthropic.com/en/docs/claude-code/overview",
-      "https://docs.anthropic.com/en/docs/claude-code/quickstart",
-      "https://docs.anthropic.com/en/docs/claude-code/cli-reference",
-      "https://docs.anthropic.com/en/docs/claude-code/slash-commands",
-      "https://docs.anthropic.com/en/docs/claude-code/memory",
-      "https://docs.anthropic.com/en/docs/claude-code/settings"
-    ],
-    "warp": [
-      "https://docs.warp.dev/",
-      "https://docs.warp.dev/features/blocks",
-      "https://docs.warp.dev/features/agent-mode",
-      "https://docs.warp.dev/features/voice",
-      "https://docs.warp.dev/features/remote-control",
-      "https://docs.warp.dev/terminal/windows-and-tabs"
-    ]
-  },
-  "needs_feasibility": {
-    "1_multi_repo": {"verdict": "ok", "owner": "claude_code_cli"},
-    "2_voice_input": {"verdict": "ok_to_verify", "owner": "warp"},
-    "3_local_file_edit": {"verdict": "strong_ok", "owner": "claude_code_cli"},
-    "4_history_blocks": {"verdict": "ok", "owner": "warp"},
-    "5_token_context": {"verdict": "ok", "owner": "claude_code_cli"},
-    "6_parallel_tabs": {"verdict": "strong_ok", "owner": "warp_plus_cli"},
-    "7_mobile_remote": {"verdict": "partial_ok", "owner": "warp_remote_control"}
-  },
-  "writing_parts": [
-    {"id": "A", "chapters": ["1_intro", "2_role_split", "3_setup"], "max_lines": 250},
-    {"id": "B", "chapters": ["4_1_multi_repo", "4_2_voice", "4_3_local_file"], "max_lines": 250},
-    {"id": "C", "chapters": ["4_4_history", "4_5_token", "4_6_parallel"], "max_lines": 250},
-    {"id": "D", "chapters": ["4_7_remote_control", "5_tips", "6_limits", "7_summary"], "max_lines": 250}
-  ],
-  "output_file": "outputs/2026-05-01_claude-code-warp-guide.md",
-  "created_at": "2026-05-01"
+  "branch": "main",
+  "created_at": "2026-05-08",
+  "updated_at": "2026-05-08"
 }
