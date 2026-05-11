@@ -1,23 +1,20 @@
 {
-  "theme": "Bybit・Binance・MetaMask 取引履歴ダウンロードガイド",
+  "theme": "ヘルメスエージェント調査レポート",
   "status": "completed",
-  "target": "2020年頃から仮想通貨取引をしてきたユーザー（高校生向け）",
-  "format": "高校生向け手順ガイド（MDファイル）",
+  "target": "VS CodeでClaude Codeを使用中のユーザー（スマホ操作課題）",
+  "format": "調査レポート（MDファイル）",
   "agents": {
-    "architect": "claude-opus-4-7（プレリサーチ・構成設計）",
-    "researcher_bybit": "claude-sonnet-4-6（Bybit調査・検証）",
-    "researcher_binance": "claude-sonnet-4-6（Binance調査・検証）",
-    "researcher_metamask": "claude-sonnet-4-6（MetaMask/Etherscan調査・検証）"
+    "architect": "claude-opus-4-7（研究設計）",
+    "researcher": "claude-sonnet-4-6（Web調査・検証）"
   },
-  "output_file": "outputs/2026-05-08_crypto-history-download-guide.md",
-  "platforms_covered": ["Bybit", "Binance / Binance Japan", "MetaMask + Etherscan"],
+  "output_file": "outputs/2026-05-11_hermes-agent-guide.md",
   "key_findings": [
-    "Bybit: PC必須・ZIPダウンロード・1回最大1年・最大5年遡及",
-    "Binance: 日本居住者はBinance Japan移行済み。グローバル旧履歴は要サポート問い合わせ",
-    "MetaMask: CSV機能なし→Etherscanでウォレットアドレス検索してエクスポート。5000件/回上限",
-    "複数チェーン対応: Etherscan/BscScan/PolygonScanそれぞれで取得が必要"
+    "Hermes AgentはNous Research製オープンソース自己学習型AIエージェント（実在確認済み）",
+    "VS Code/Claude Codeセッションへの直接アクセスは不可",
+    "スマホからのClaude Code操作にはRemote Control機能（/remote-control）が最適解",
+    "Hermes AgentはTelegram/Discord経由でHermes自身を操作する独立エージェント"
   ],
   "branch": "main",
-  "created_at": "2026-05-08",
-  "updated_at": "2026-05-08"
+  "created_at": "2026-05-11",
+  "updated_at": "2026-05-11"
 }
