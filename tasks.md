@@ -14,6 +14,11 @@
 
 ## リサーチ実行タスク（テーマごとにここに追記）
 
+### 2026-05-11 Garry Tan（YC）のClaude Code設定（gstack×gbrain）活用ガイド
+- [x] Agent1: 研究設計（Opus・5検索クエリ・5評価軸・レポート構成）
+- [x] Agent2: Web調査（Sonnet・garrytan/gstack・garrytan/gbrain・全主要ファイル取得）
+- [x] レポート生成（200行・push済み）
+
 ### 2026-05-11 ヘルメスエージェント調査レポート
 - [x] Agent1（Opus）: 研究設計（SCR分析・調査ポイント整理・課題定義）
 - [x] Agent2（Sonnet）: Web調査・検証（Hermes Agent実態・VS Code互換性・Remote Control比較）

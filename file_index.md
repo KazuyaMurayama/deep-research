@@ -19,6 +19,7 @@
 ## アウトプット（最新順）
 | ファイル | テーマ | スコア | 日付 |
 |----------|--------|--------|------|
+| [outputs/2026-05-11_garry-tan-gstack-gbrain-guide.md](outputs/2026-05-11_garry-tan-gstack-gbrain-guide.md) | Garry Tan（YC）のgstack×gbrain活用ガイド | -/100 | 2026-05-11 |
 | [outputs/2026-05-11_hermes-agent-guide.md](outputs/2026-05-11_hermes-agent-guide.md) | ヘルメスエージェント調査レポート（VS Code/スマホ操作可否） | -/100 | 2026-05-11 |
 | [outputs/2026-05-08_crypto-history-download-guide.md](outputs/2026-05-08_crypto-history-download-guide.md) | Bybit・Binance・MetaMask 取引履歴ダウンロードガイド（高校生向け） | -/100 | 2026-05-08 |
 | [outputs/2026-05-01_claude-code-warp-guide.md](outputs/2026-05-01_claude-code-warp-guide.md) | Claude Code × Warp 移行・補完ガイド（Remote Control含む） | -/100 | 2026-05-01 |
