@@ -14,6 +14,11 @@
 
 ## リサーチ実行タスク（テーマごとにここに追記）
 
+### 2026-05-11 ヘルメスエージェント調査レポート
+- [x] Agent1（Opus）: 研究設計（SCR分析・調査ポイント整理・課題定義）
+- [x] Agent2（Sonnet）: Web調査・検証（Hermes Agent実態・VS Code互換性・Remote Control比較）
+- [x] Agent4: レポート統合・公開（mainブランチ）
+
 ### 2026-05-08 Bybit・Binance・MetaMask 取引履歴ダウンロードガイド
 - [x] Agent1（Opus）: プレリサーチ・構成設計（SCR分析・3プラットフォーム調査ポイント整理）
 - [x] Agent2a（Sonnet）: Bybit調査・検証（公式ヘルプ・Data Export手順・ZIP形式・5年遡及確認）
