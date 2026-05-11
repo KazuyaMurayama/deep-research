@@ -29,3 +29,10 @@
 | [outputs/2026-04-23_ec-sakura-review-comparison.md](outputs/2026-04-23_ec-sakura-review-comparison.md) | EC3社サクラレビュー推定割合 比較 2026 | 84/100 | 2026-04-23 |
 | [outputs/2026-04-23_claude-code-ui-comparison.md](outputs/2026-04-23_claude-code-ui-comparison.md) | Claude Code 4UIの使い分け比較 2026 | 86/100 | 2026-04-23 |
 | [outputs/2026-04-20_japan-ai-startup-investment-trends-2024-2025.md](outputs/2026-04-20_japan-ai-startup-investment-trends-2024-2025.md) | 日本のAIスタートアップ投資トレンド 2024-2025 | 87/100 | 2026-04-20 |
+
+<!-- ブランチマージで追加 2026-05-11 -->
+- outputs/2026-05-01_wakkiyai-wemof-fx-indicator.md
+- outputs/2026-05-08_bitcoin-price-forecast-2028.md
+- outputs/2026-05-10_happy-men-40s-comprehensive-report.md
+- outputs/2026-05-10_happy-men-40s-research.md
+- outputs/2026-04-29_manga-apps-free-comparison.md
