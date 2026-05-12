@@ -14,6 +14,12 @@
 
 ## リサーチ実行タスク（テーマごとにここに追記）
 
+### 2026-05-12 日本5都市移住先比較レポート（花小金井/札幌/仙台/軽井沢/新潟）
+- [x] Agent1（Opus）: 研究設計（6軸設計・前提仮定・都市別調査ポイント・検索クエリ25本）
+- [ ] Agent2（Sonnet）: Web調査・検証（5都市×3〜5クエリ・行政公式/SUUMO/HOME'S/気象庁）
+- [ ] Agent3（Sonnet）: 分析・統合（年間コスト算出・6軸スコアリング）
+- [ ] Agent4: レポート統合・公開（mainブランチ）
+
 ### 2026-05-11 Garry Tan（YC）のClaude Code設定（gstack×gbrain）活用ガイド
 - [x] Agent1: 研究設計（Opus・5検索クエリ・5評価軸・レポート構成）
 - [x] Agent2: Web調査（Sonnet・garrytan/gstack・garrytan/gbrain・全主要ファイル取得）
