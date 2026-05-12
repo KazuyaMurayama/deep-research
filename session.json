@@ -1,20 +1,46 @@
 {
-  "theme": "ヘルメスエージェント調査レポート",
-  "status": "completed",
-  "target": "VS CodeでClaude Codeを使用中のユーザー（スマホ操作課題）",
-  "format": "調査レポート（MDファイル）",
+  "theme": "日本5都市移住先比較レポート（花小金井/札幌/仙台/軽井沢/新潟）",
+  "status": "architect_done",
+  "target": "幼稚園児2人＋柴犬2匹を抱える子育て世帯（移住検討者）",
+  "format": "比較リサーチレポート（MDファイル・6軸スコアリング・結論先出し）",
   "agents": {
     "architect": "claude-opus-4-7（研究設計）",
-    "researcher": "claude-sonnet-4-6（Web調査・検証）"
+    "researcher": "claude-sonnet-4-6（Web調査・検証）",
+    "analyst": "claude-sonnet-4-6（スコアリング・統合）",
+    "publisher": "claude-sonnet-4-6（公開）"
   },
-  "output_file": "outputs/2026-05-11_hermes-agent-guide.md",
-  "key_findings": [
-    "Hermes AgentはNous Research製オープンソース自己学習型AIエージェント（実在確認済み）",
-    "VS Code/Claude Codeセッションへの直接アクセスは不可",
-    "スマホからのClaude Code操作にはRemote Control機能（/remote-control）が最適解",
-    "Hermes AgentはTelegram/Discord経由でHermes自身を操作する独立エージェント"
+  "scr": {
+    "situation": "子育て期家族（夫婦＋幼稚園児2人＋柴犬2匹）が、東京近郊から地方含む5都市を移住候補として並列比較したい。",
+    "complication": "5都市は気候・教育環境・生活コスト・ペット環境が大きく異なり、定性印象だけでは選べない。6軸を定量化する必要がある。",
+    "resolution": "家族構成・住居条件・6軸評価をもとに、各都市の年間総コストとスコアを算出し、推奨順位とトレードオフを明示する。"
+  },
+  "main_hypotheses": [
+    "賃貸＋生活コストは新潟＜仙台＜札幌＜花小金井＜軽井沢の順で高くなる",
+    "夏の暑さ・公園アクセス・教育の総合評価では札幌or軽井沢が上位、便利さでは花小金井or仙台が上位、コストでは新潟が最上位"
   ],
+  "evaluation_axes": [
+    "賃貸・生活コスト（年額）",
+    "教育環境（幼稚園〜小学校）",
+    "大型公園・ドッグランアクセス",
+    "夏場最高気温（涼しさ）",
+    "生活利便性・治安",
+    "行政サービス・税制"
+  ],
+  "target_cities": [
+    "東京都小平市・花小金井",
+    "北海道札幌市",
+    "宮城県仙台市",
+    "長野県軽井沢町",
+    "新潟県新潟市"
+  ],
+  "household_assumptions": {
+    "annual_income_jpy": 8000000,
+    "dwelling": "70平米・駅徒歩10分以内・ペット可（柴犬2匹可）",
+    "children": "幼稚園児2人（4-6歳）",
+    "pets": "柴犬2匹",
+    "car_ownership": "都市部は無し想定、軽井沢・新潟は1台保有想定"
+  },
   "branch": "main",
-  "created_at": "2026-05-11",
-  "updated_at": "2026-05-11"
+  "created_at": "2026-05-12",
+  "updated_at": "2026-05-12"
 }
