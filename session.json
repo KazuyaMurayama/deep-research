@@ -1,44 +1,24 @@
 {
-  "theme": "哺乳瓶を1歳以降も使い続けることによる口腔・呼吸・発達への悪影響",
-  "status": "architect_done",
+  "theme": "哺乳瓶を1歳以降も使い続けることの悪影響",
+  "status": "completed",
   "target": "1歳前後の子を持つ保護者・小児歯科/小児科関係者・保育/育児支援職",
   "format": "仮説検証型リサーチレポート（MDファイル・結論先出し・エビデンス階層付き）",
   "agents": {
-    "architect": "claude-opus-4-7（研究設計）",
-    "researcher_oral": "claude-sonnet-4-6（口腔形態・歯並び・齲蝕の英語論文調査）",
-    "researcher_function": "claude-sonnet-4-6（呼吸・嚥下・言語発達の英語論文調査）",
-    "researcher_japan": "claude-sonnet-4-6（日本のガイドライン・小児歯科/小児科指針調査）",
-    "synthesizer": "claude-sonnet-4-6（仮説検証・エビデンス統合）",
-    "publisher": "claude-sonnet-4-6（レポート統合・公開）"
+    "architect": "claude-opus-4-7（研究設計・9仮説立案）",
+    "researcher_oral": "claude-sonnet-4-6（口腔形態・齲蝕・英語論文調査）",
+    "researcher_function": "claude-sonnet-4-6（呼吸・嚥下・言語・貧血・中耳炎調査）",
+    "researcher_japan": "claude-sonnet-4-6（日本ガイドライン調査）",
+    "publisher": "claude-sonnet-4-6（統合・公開）"
   },
-  "scr": {
-    "situation": "WHO・米国小児科学会(AAP)・米国小児歯科学会(AAPD)はおおむね生後12〜18カ月までに哺乳瓶を卒業しコップ飲みへ移行することを推奨している。一方、日本では1歳半〜3歳まで就寝時の哺乳瓶使用が継続するケースが珍しくなく、保護者の卒業判断基準は曖昧。",
-    "complication": "哺乳瓶の長期使用は哺乳瓶齲蝕(Nursing/Baby Bottle Caries)、開咬・上顎前突などの不正咬合、乳児型嚥下の残存、口呼吸・気道狭小化、構音発達遅延、固形食移行遅延、鉄欠乏性貧血など、多面的な悪影響と関連が報告されているが、保護者・現場保育者には体系的に共有されていない。",
-    "resolution": "1歳以降の哺乳瓶延長使用が口腔形態・嚥下・呼吸・言語・栄養・齲蝕・心理習癖の各領域にどのような影響を及ぼすか、現行エビデンスと国内外ガイドラインに基づいて検証し、卒業推奨時期と移行手順を実務的に提示する。"
-  },
-  "main_hypotheses": [
-    "1歳以降の哺乳瓶延長使用は、口腔形態の異常（開咬・上顎前突・狭口蓋）と機能異常（乳児型嚥下残存・口呼吸）を引き起こし、齲蝕・言語・呼吸の二次障害につながる",
-    "悪影響の程度は『使用月齢の長さ × 1日あたりの使用時間 × 就寝時/糖含有飲料の有無』で増大する（用量反応関係がある）"
-  ],
-  "sub_hypotheses_count": 9,
-  "search_queries_count": 17,
-  "info_needs": [
-    "WHO/AAP/AAPD/日本小児歯科学会の哺乳瓶卒業推奨時期",
-    "Nursing bottle caries/Early Childhood Cariesのレビュー論文",
-    "哺乳瓶長期使用と不正咬合（開咬・上顎前突）の疫学研究",
-    "哺乳瓶哺乳の嚥下パターン（乳児型嚥下）と離乳期の生理的移行",
-    "口呼吸・アデノイド肥大・気道狭小化と哺乳習慣の関連",
-    "構音発達と哺乳瓶/おしゃぶり長期使用のRCT・コホート",
-    "哺乳瓶長期使用と鉄欠乏性貧血・固形食移行遅延",
-    "卒乳/卒哺乳瓶の手順（コップ飲み・ストロー移行プロトコル）"
-  ],
-  "analysis_frameworks": [
-    "SCR（Situation/Complication/Resolution）",
-    "PICO（Population/Intervention/Comparison/Outcome）",
-    "エビデンスピラミッド（SR/MA > RCT > コホート > 症例 > 専門家意見）",
-    "用量反応分析（使用月齢×時間×就寝時×糖飲料）"
-  ],
   "output_file": "outputs/2026-05-13_baby-bottle-prolonged-use-effects.md",
+  "key_findings": [
+    "就寝時哺乳瓶はECC（乳幼児齲蝕）の最大リスク因子（全主要機関のGL合意）",
+    "鉄欠乏性貧血リスクOR=6.0（カナダコホート）・最重症例で死亡事例あり（2025年）",
+    "開咬・上顎前突：メタアナリシス複数で支持（中〜高エビデンス）",
+    "乳児型嚥下残存・口呼吸：観察研究レベルで支持（直接RCTなし）",
+    "構音障害：直接証拠不十分（口呼吸→構音の間接経路は強く支持）",
+    "推奨卒業時期：AAPD=12か月/AAP=12〜18か月/日本小児歯科学会=1歳6か月"
+  ],
   "branch": "main",
   "created_at": "2026-05-13",
   "updated_at": "2026-05-13"
