@@ -19,6 +19,7 @@
 ## アウトプット（最新順）
 | ファイル | テーマ | スコア | 日付 |
 |----------|--------|--------|------|
+| [outputs/2026-05-13_baby-bottle-prolonged-use-effects.md](outputs/2026-05-13_baby-bottle-prolonged-use-effects.md) | 哺乳瓶を1歳以降も使い続けることの悪影響（仮説検証・エビデンス・卒業ガイド） | -/100 | 2026-05-13 |
 | [outputs/2026-05-12_japan-5cities-relocation-report.md](outputs/2026-05-12_japan-5cities-relocation-report.md) | 日本5都市 子育て×柴犬世帯の移住先比較（花小金井/札幌/仙台/軽井沢/新潟） | -/100 | 2026-05-12 |
 | [outputs/2026-05-11_garry-tan-gstack-gbrain-guide.md](outputs/2026-05-11_garry-tan-gstack-gbrain-guide.md) | Garry Tan（YC）のgstack×gbrain活用ガイド | -/100 | 2026-05-11 |
 | [outputs/2026-05-11_hermes-agent-guide.md](outputs/2026-05-11_hermes-agent-guide.md) | ヘルメスエージェント調査レポート（VS Code/スマホ操作可否） | -/100 | 2026-05-11 |
