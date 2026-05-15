@@ -103,10 +103,12 @@
     "step2_report": "Step2（Agent3・Agent4フェーズ）では、Step1で集めた素材を『年率換算コスト表』『100万円シミュレーション』『推奨ランキング』に統合し、最終レポートを作成する。読者が『どの商品を選ぶべきか』即判断できる結論先出し型にする。"
   },
   "report_filename": "outputs/2026-05-15_nasdaq-4x-leverage-products.md",
-  "status": "step1_research",
+  "status": "step1_complete",
   "step": "1",
   "agent": "claude-opus-4-7",
   "date": "2026-05-15",
   "created_at": "2026-05-15",
-  "next_agent": "Agent2 (Web Researcher)"
+  "updated_at": "2026-05-15",
+  "step1_data_file": "session/research_data_nasdaq_leverage.md",
+  "next_agent": "Agent3+Agent4 (Analyst + Publisher) for Step2"
 }
