@@ -61,8 +61,8 @@
       {"id": 12, "title": "付録：参考URL"}
     ]
   },
-  "status": "step2_planning",
-  "step": "2_design",
+  "status": "completed",
+  "step": "done",
   "agent": "claude-opus-4-7",
   "date": "2026-05-15",
   "created_at": "2026-05-15",

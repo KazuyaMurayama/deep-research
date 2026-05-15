@@ -19,6 +19,7 @@
 ## アウトプット（最新順）
 | ファイル | テーマ | スコア | 日付 |
 |----------|--------|--------|------|
+| [outputs/2026-05-15_nasdaq-4x-leverage-products.md](outputs/2026-05-15_nasdaq-4x-leverage-products.md) | NASDAQ-100で4倍以上レバレッジを実現する全商品比較ガイド（CFD/ETF/先物/税制） | -/100 | 2026-05-15 |
 | [outputs/2026-05-13_zeami-genius-analysis.md](outputs/2026-05-13_zeami-genius-analysis.md) | 世阿弥の天才性：650年前のスーパープロデューサー（松岡正剛評価・現代アナロジー） | -/100 | 2026-05-13 |
 | [outputs/2026-05-13_baby-bottle-prolonged-use-effects.md](outputs/2026-05-13_baby-bottle-prolonged-use-effects.md) | 哺乳瓶を1歳以降も使い続けることの悪影響（仮説検証・エビデンス・卒業ガイド） | -/100 | 2026-05-13 |
 | [outputs/2026-05-12_japan-5cities-relocation-report.md](outputs/2026-05-12_japan-5cities-relocation-report.md) | 日本5都市 子育て×柴犬世帯の移住先比較（花小金井/札幌/仙台/軽井沢/新潟） | -/100 | 2026-05-12 |
