@@ -77,8 +77,10 @@
     "12. リスク・注意点",
     "13. まとめ・推奨ランキング・参考URL付録"
   ],
-  "status": "architect_done",
+  "status": "completed",
   "agent": "claude-opus-4-7",
   "date": "2026-05-17",
-  "created_at": "2026-05-17"
+  "created_at": "2026-05-17",
+  "completed_at": "2026-05-17",
+  "output_file_created": "outputs/2026-05-17_gold-bond-3x-leverage-products.md"
 }
