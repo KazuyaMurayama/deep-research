@@ -14,6 +14,14 @@
 
 ## リサーチ実行タスク（テーマごとにここに追記）
 
+### 2026-05-17 ゴールド・ボンドに対するレバレッジ3倍以上の投資商品比較ガイド（SBI証券中心）
+- [x] Agent1（Opus）: 研究設計（SCR・2メイン仮説・20クエリ・13セクション設計）
+- [x] Agent2a（Sonnet）: ゴールド系調査（SBI金CFD/UGL/JNUG/3GOL/TOCOM/1540/金ボラ）
+- [x] Agent2b（Sonnet）: ボンド系調査（TMF/TMV/米国債CFD/TLTボラ/国内債券投信）
+- [x] Agent2c（Sonnet）: SBI取扱確認・受渡日数・金CFDコスト構造・SOFR確認
+- [x] Agent3（Sonnet）: レポート統合・公開（mainブランチ・721行・13セクション）
+- [x] 主要発見：くりっく株365金は2024年12月廃止済み・SBI証券に米国債CFDなし・TMF実質8.07%/年[推計]・金CFDはSOFR+金リース金利の独自構造
+
 ### 2026-05-15 NASDAQ-100で4倍以上レバレッジを実現する全商品比較ガイド
 - [x] Agent1（Opus）: Step1研究設計（SCR・3仮説・10クエリ）
 - [x] Agent2×5（Sonnet）: Step1 Web調査（SBI・楽天・IG・GMO・DMM・サクソ・TQQQ・税制）
