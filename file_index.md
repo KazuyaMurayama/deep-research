@@ -19,6 +19,7 @@
 ## アウトプット（最新順）
 | ファイル | テーマ | スコア | 日付 |
 |----------|--------|--------|------|
+| [outputs/2026-05-20_sbi-cfd-nasdaq-8x-9x-leverage-guide.md](outputs/2026-05-20_sbi-cfd-nasdaq-8x-9x-leverage-guide.md) | SBI証券CFDでNASDAQ-100に8倍・9倍レバレッジをかける方法【ウェブ検証レポート】 | -/100 | 2026-05-20 |
 | [outputs/2026-05-17_gold-bond-3x-leverage-products.md](outputs/2026-05-17_gold-bond-3x-leverage-products.md) | ゴールド・ボンドに対するレバレッジ3倍以上の投資商品比較ガイド（SBI証券中心） | -/100 | 2026-05-17 |
 | [outputs/2026-05-15_nasdaq-4x-leverage-products.md](outputs/2026-05-15_nasdaq-4x-leverage-products.md) | NASDAQ-100で4倍以上レバレッジを実現する全商品比較ガイド（CFD/ETF/先物/税制） | -/100 | 2026-05-15 |
 | [outputs/2026-05-13_zeami-genius-analysis.md](outputs/2026-05-13_zeami-genius-analysis.md) | 世阿弥の天才性：650年前のスーパープロデューサー（松岡正剛評価・現代アナロジー） | -/100 | 2026-05-13 |
