@@ -14,6 +14,12 @@
 
 ## リサーチ実行タスク（テーマごとにここに追記）
 
+### 2026-05-20 オンライン会議 AI議事録システム完全設計ガイド（Windows 11・Razer Seiren Mini対応）
+- [x] 研究設計（SCR・8主要課題・3パターン解決策）
+- [x] Web調査（Sonnet）：各ツール詳細・両声キャプチャ問題・OBS+Whisper・LINE WORKS AiNote・Notta・Typeless正確理解
+- [x] レポート生成（13セクション・多専門家4ラウンドレビュー・Claude Codeプロンプト集7本・セットアップ手順書）
+- [x] 主要発見：Razer Seiren MiniはUSBのためステレオミキサー不可・WASAPI Loopbackで解決・OBS+Whisperが最高精度無料・LINE WORKS AiNote月300分無料・Typelessは口述入力専用で両声不可
+
 ### 2026-05-20 SBI証券CFDでNASDAQ-100に8倍・9倍レバレッジをかける方法【ウェブ検証レポート】
 - [x] 過去レポート参照（2026-05-15 NASDAQ 4倍以上レポート確認）
 - [x] Web調査エージェント（Sonnet）：SBI CFD証拠金率・くりっく株365証拠金基準額・各公式サイト訪問確認

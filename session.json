@@ -1,35 +1,37 @@
 {
-  "theme": "SBI証券CFDでNASDAQ-100に8倍・9倍レバレッジをかける方法【ウェブ検証レポート】",
-  "original_prompt": "CFDでレバレッジを8倍や9倍にしていくことが、日本においてSBI証券で可能かどうかを調査して検証。過去のNASDAQ CFD 3倍4倍レポートを参考にしつつ具体的なステップを確認し、ウェブサイトを訪問して検証した上でレポートに記載",
-  "output_file": "outputs/2026-05-20_sbi-cfd-nasdaq-8x-9x-leverage-guide.md",
-  "prior_reports_referenced": [
-    "outputs/2026-05-15_nasdaq-4x-leverage-products.md",
-    "outputs/2026-05-17_gold-bond-3x-leverage-products.md"
-  ],
+  "theme": "オンライン会議 AI議事録システム完全設計ガイド（Windows 11・Razer Seiren Mini対応）",
+  "original_prompt": "Razer Seiren Mini（USB単一指向性マイク）使用環境で、Zoom/Teams/Meet等の複数プラットフォームでオンライン会議の両声録音・AI文字起こし・Claude Code議事録分析を実現するシステムを設計・比較・解説するレポートを作成する",
+  "output_file": "outputs/2026-05-20_online-meeting-minutes-system.md",
+  "prior_reports_referenced": [],
   "scr": {
-    "situation": "2026年5月時点、SBI証券はCFD（店頭CFD）でNASDAQ-100の最大10倍レバレッジを提供している。先行レポート（2026-05-15）では5〜6倍の具体的な手段が整理されたが、8倍・9倍という高レバレッジが実際に可能かどうかの具体的手順が未検証だった。",
-    "complication": "日本の法規制では個人投資家向け株価指数CFDの最大レバレッジは10倍（証拠金率10%の下限）。8倍・9倍はこの上限内で実現できるはずだが、実際にSBI CFDの仕組みでどう設定するかが不明確。くりっく株365はNASDAQ100で自然なレバレッジが約32倍という高倍率設計のため、8倍・9倍への調整方法も不明確。",
-    "resolution": "SBI証券において8倍・9倍レバレッジが実現できるか、具体的な操作ステップは何か、コストはいくらかを、実際のウェブサイト訪問を通じて検証し、レポートにまとめる。"
+    "situation": "オンライン会議が主流。AI文字起こしが個人レベルで使える時代。Claude Codeで議事録分析まで自動化できる。",
+    "complication": "Razer Seiren Miniは単一指向性マイク→自分の声のみ拾う。相手の声（スピーカー出力）を同時録音するシステム音声キャプチャが必要。この両声キャプチャ問題を解決しないと意味がない。またUSB接続のためWindowsステレオミキサーが動作しない。",
+    "resolution": "3パターンの解決策（A:プラットフォーム内蔵、B:OBS+Whisperローカル、C:Bot型SaaS）を状況別に提示。13セクション・多専門家4ラウンドレビュー・Claude Codeプロンプト集7本を含む完全ガイドを作成。"
   },
   "main_findings": [
-    "SBI CFD（米国NQ100）：最大10倍レバレッジの範囲内で8倍・9倍は完全に実現可能。証拠金率11.1%（9倍）または12.5%（8倍）で設定できる。",
-    "くりっく株365：自然なレバレッジが約32倍（指数29,000pt・証拠金8,960円）。8倍・9倍に落とすためには余剰証拠金を大量に差し入れる非効率な方法が必要。",
-    "SBI CFDで9倍を実現する最短手順：口座開設→100万円入金→米国NQ100を2.1〜2.15枚建玉注文",
-    "コスト（元本100万円・9倍）：年間金利調整額約44〜63万円（年率4.92〜7%想定）",
-    "ロスカットリスク：9倍ではNASDAQ-100が約11.1%下落するとロスカット危険域に到達"
+    "Razer Seiren MiniはUSB接続のためWindowsステレオミキサーが動作しない。WASAPI Loopbackが解決手段。",
+    "OBS + Whisper large-v3が精度・コスト・プライバシーの三拍子揃った最強構成（完全無料・完全ローカル）",
+    "LINE WORKS AiNote（CLOVA技術）が2025年7月個人向け正式リリース・月300分無料・話者分離世界3位",
+    "Typelessは口述入力専用ツールであり、会議の両声録音には対応していない（重要な誤解防止）",
+    "Google Meet 日本語文字起こしは2025年3月に正式対応",
+    "セキュリティ要件別推奨: 機密度高→OBSローカル、中→プラットフォーム内蔵 or SaaS、低→自由選択"
   ],
-  "web_verified_urls": [
-    "https://go.sbisec.co.jp/lp/lp_otccfd_introduction.html",
-    "https://www.clickkabu365.jp/service/service01.html",
-    "https://www.clickkabu365.jp/about_cfd/about_cfd04.html",
-    "https://www.clickkabu365.jp/sp/contents16.html",
-    "https://tetori.jp/cfd/cfd_company/sbi-cfd/",
-    "https://www.fxnav.net/sbi_cfd/"
+  "tools_compared": [
+    "Zoom内蔵文字起こし（AI Companion）",
+    "Google Meet内蔵文字起こし",
+    "Teams内蔵文字起こし",
+    "Notta Bot（月120分無料・Premium月1,185円）",
+    "LINE WORKS AiNote（月300分無料・Solo月1,440円）",
+    "tl;dv（月10会議無料）",
+    "Fireflies.ai（月800分無料）",
+    "Typeless（口述入力専用・両声不可）",
+    "OBS + Whisper（完全無料・完全ローカル）",
+    "VB-Audio Cable（仮想音声ルーター・無料）"
   ],
   "status": "completed",
   "agent": "claude-sonnet-4-6",
   "date": "2026-05-20",
   "created_at": "2026-05-20",
   "completed_at": "2026-05-20",
-  "output_file_created": "outputs/2026-05-20_sbi-cfd-nasdaq-8x-9x-leverage-guide.md"
+  "output_file_created": "outputs/2026-05-20_online-meeting-minutes-system.md"
 }
