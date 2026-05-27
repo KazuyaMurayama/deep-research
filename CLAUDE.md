@@ -136,4 +136,12 @@
 - レポート・成果物MDの新規作成／更新時は `.claude/visual-rules.md` を読み、図の種類判定（§2）と Mermaid 最適化（§3）を毎回適用する。
 - 適用対象: `## ` 見出しが2つ以上ある構造化MD（README・調査メモ・設計書・PR説明など）。
 
+<!-- SKILLS_RULES_START -->
+## Skill 起動ルール（v1.0 / 2026-05-27）
+- **調査トピック受領時** → `research-deep` で並列 Web リサーチ → report.md 自動生成
+- **複雑な多段タスク着手前** → `sp-writing-plans` で計画 → `sp-executing-plans` で実行
+- **レポートに図表が必要な時** → `mermaid-agents365`（フロー/アーキ図）、補助に `mermaid-wh2099`（23 図表型）
+- **新規ファイル/コード作成後** → `code-review` で 5 並列レビュー（confidence 80+ のみ採用）
+<!-- SKILLS_RULES_END -->
+
 <!-- GLOBAL_RULES_END -->
