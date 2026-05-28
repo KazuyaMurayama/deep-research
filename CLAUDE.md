@@ -140,11 +140,11 @@
 ## Skill 起動ルール（v2.0 / 2026-05-28）
 以下のスキルは **必須・スキップ禁止**。該当シーンでは SKILL.md を読んでから作業を開始すること。
 
-- **調査トピックを受け取ったら最初に必ず** `.claude/agents/research-deep/SKILL.md` を読み、手順に従って並列 Web リサーチを実行する
-- **複雑な多段タスクに着手する前に必ず** `.claude/agents/sp-writing-plans/SKILL.md` で計画を作成し、`.claude/agents/sp-executing-plans/SKILL.md` の手順で実行する
-- **レポート・ドキュメントに図表が必要な時は必ず** `.claude/agents/mermaid-agents365/SKILL.md` を読んでからダイアグラムを作成する
-- **アイデア出し・選択肢の洗い出しが必要な時は** `.claude/agents/sp-brainstorming/SKILL.md` を読んでから実施する
-- **成果物を納品・コミットする前に必ず** `.claude/agents/sp-verification-before-completion/SKILL.md` のチェックリストを実行する
+- **調査トピックを受け取ったら最初に必ず** `.claude/skills/research-deep/SKILL.md` を読み、手順に従って並列 Web リサーチを実行する
+- **複雑な多段タスクに着手する前に必ず** `.claude/skills/sp-writing-plans/SKILL.md` で計画を作成し、`.claude/skills/sp-executing-plans/SKILL.md` の手順で実行する
+- **レポート・ドキュメントに図表が必要な時は必ず** `.claude/skills/mermaid-agents365/SKILL.md` を読んでからダイアグラムを作成する
+- **アイデア出し・選択肢の洗い出しが必要な時は** `.claude/skills/sp-brainstorming/SKILL.md` を読んでから実施する
+- **成果物を納品・コミットする前に必ず** `.claude/skills/sp-verification-before-completion/SKILL.md` のチェックリストを実行する
 <!-- SKILLS_RULES_END -->
 
 <!-- GLOBAL_RULES_END -->
