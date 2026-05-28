@@ -137,11 +137,14 @@
 - 適用対象: `## ` 見出しが2つ以上ある構造化MD（README・調査メモ・設計書・PR説明など）。
 
 <!-- SKILLS_RULES_START -->
-## Skill 起動ルール（v1.0 / 2026-05-27）
-- **調査トピック受領時** → `research-deep` で並列 Web リサーチ → report.md 自動生成
-- **複雑な多段タスク着手前** → `sp-writing-plans` で計画 → `sp-executing-plans` で実行
-- **レポートに図表が必要な時** → `mermaid-agents365`（フロー/アーキ図）、補助に `mermaid-wh2099`（23 図表型）
-- **新規ファイル/コード作成後** → `code-review` で 5 並列レビュー（confidence 80+ のみ採用）
+## Skill 起動ルール（v2.0 / 2026-05-28）
+以下のスキルは **必須・スキップ禁止**。該当シーンでは SKILL.md を読んでから作業を開始すること。
+
+- **調査トピックを受け取ったら最初に必ず** `.claude/skills/research-deep/SKILL.md` を読み、手順に従って並列 Web リサーチを実行する
+- **複雑な多段タスクに着手する前に必ず** `.claude/skills/sp-writing-plans/SKILL.md` で計画を作成し、`.claude/skills/sp-executing-plans/SKILL.md` の手順で実行する
+- **レポート・ドキュメントに図表が必要な時は必ず** `.claude/skills/mermaid-agents365/SKILL.md` を読んでからダイアグラムを作成する
+- **アイデア出し・選択肢の洗い出しが必要な時は** `.claude/skills/sp-brainstorming/SKILL.md` を読んでから実施する
+- **成果物を納品・コミットする前に必ず** `.claude/skills/sp-verification-before-completion/SKILL.md` のチェックリストを実行する
 <!-- SKILLS_RULES_END -->
 
 <!-- GLOBAL_RULES_END -->
