@@ -4,7 +4,7 @@
 任意テーマの高品質リサーチレポートを自動生成してGitHubに公開する。
 
 ## ルール（厳守）
-- 本ファイルは軽量に保つ。詳細ルールはskills/配下を参照。
+- 本ファイルは軽量に保つ。詳細ルールはagents/配下を参照。
 - 毎回プロンプト受信時にfile_index.mdとtasks.mdを参照してから開始する。
 - session.jsonで進捗を保存し、途中停止時は/continueで再開できるようにする。
 - ブランチ作成禁止。mainブランチのみで運用。
@@ -16,13 +16,13 @@
 - Agent2〜4（実行系）：claude-sonnet-4-5（コスト効率）
 
 ## エージェント実行順序
-1. skills/01_research_architect.md
-2. skills/02_web_researcher.md
-3. skills/03_analyst_synthesizer.md
-4. skills/04_quality_publisher.md
+1. agents/01_research_architect.md
+2. agents/02_web_researcher.md
+3. agents/03_analyst_synthesizer.md
+4. agents/04_quality_publisher.md
 
 ## タイムアウト対策
-詳細ルールは **skills/timeout.md** を必ず参照。
+詳細ルールは **agents/timeout.md** を必ず参照。
 - 各エージェントのターン上限：10ターン
 - パイプライン全体上限：40ターン
 - 各ウェブ検索は最大10クエリ/エージェントに分割
@@ -140,11 +140,11 @@
 ## Skill 起動ルール（v2.0 / 2026-05-28）
 以下のスキルは **必須・スキップ禁止**。該当シーンでは SKILL.md を読んでから作業を開始すること。
 
-- **調査トピックを受け取ったら最初に必ず** `.claude/skills/research-deep/SKILL.md` を読み、手順に従って並列 Web リサーチを実行する
-- **複雑な多段タスクに着手する前に必ず** `.claude/skills/sp-writing-plans/SKILL.md` で計画を作成し、`.claude/skills/sp-executing-plans/SKILL.md` の手順で実行する
-- **レポート・ドキュメントに図表が必要な時は必ず** `.claude/skills/mermaid-agents365/SKILL.md` を読んでからダイアグラムを作成する
-- **アイデア出し・選択肢の洗い出しが必要な時は** `.claude/skills/sp-brainstorming/SKILL.md` を読んでから実施する
-- **成果物を納品・コミットする前に必ず** `.claude/skills/sp-verification-before-completion/SKILL.md` のチェックリストを実行する
+- **調査トピックを受け取ったら最初に必ず** `.claude/agents/research-deep/SKILL.md` を読み、手順に従って並列 Web リサーチを実行する
+- **複雑な多段タスクに着手する前に必ず** `.claude/agents/sp-writing-plans/SKILL.md` で計画を作成し、`.claude/agents/sp-executing-plans/SKILL.md` の手順で実行する
+- **レポート・ドキュメントに図表が必要な時は必ず** `.claude/agents/mermaid-agents365/SKILL.md` を読んでからダイアグラムを作成する
+- **アイデア出し・選択肢の洗い出しが必要な時は** `.claude/agents/sp-brainstorming/SKILL.md` を読んでから実施する
+- **成果物を納品・コミットする前に必ず** `.claude/agents/sp-verification-before-completion/SKILL.md` のチェックリストを実行する
 <!-- SKILLS_RULES_END -->
 
 <!-- GLOBAL_RULES_END -->
