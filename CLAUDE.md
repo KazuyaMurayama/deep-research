@@ -9,6 +9,7 @@
 - session.jsonで進捗を保存し、途中停止時は/continueで再開できるようにする。
 - ブランチ作成禁止。mainブランチのみで運用。
 - コミットは各エージェント完了ごとに必ず実行する。
+- **成果物をブランチにpushした後は、必ず自動でmainへマージしてpushする**（`git checkout main && git merge <branch> --no-ff && git push -u origin main`）。
 - 成果物はGitHub Contents APIでURLを取得し、ハイパーリンクで報告する。
 
 ## モデル使い分け
