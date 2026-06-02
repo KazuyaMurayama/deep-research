@@ -1,67 +1,76 @@
-# deep-research-forge CLAUDE.md
+# deep-research-forge — Claude Code 運用ルール
 
-## このリポジトリの目的
-任意テーマの高品質リサーチレポートを自動生成してGitHubに公開する。
+任意テーマの高品質リサーチレポートを自動生成して GitHub に公開する。
 
-## ルール（厳守）
-- 本ファイルは軽量に保つ。詳細ルールはagents/配下を参照。
-- 毎回プロンプト受信時にfile_index.mdとtasks.mdを参照してから開始する。
-- session.jsonで進捗を保存し、途中停止時は/continueで再開できるようにする。
-- ブランチ作成禁止。mainブランチのみで運用。
-- コミットは各エージェント完了ごとに必ず実行する。
-- **成果物をブランチにpushした後は、必ず自動でmainへマージしてpushする**（`git checkout main && git merge <branch> --no-ff && git push -u origin main`）。
-- 成果物はGitHub Contents APIでURLを取得し、ハイパーリンクで報告する。
+> **本ファイルは VSCode版 / Web版 Claude Code（claude.ai）の両方で本リポジトリの単独完結ガイド**。
+> Web版はグローバル `~/.claude/CLAUDE.md` を参照しない前提で、本リポの運用に必要な全ルールをここに集約。
 
-## モデル使い分け
-- Agent1（研究設計）：claude-opus-4-5（高度な論理推論）
-- Agent2〜4（実行系）：claude-sonnet-4-5（コスト効率）
+---
 
-## エージェント実行順序
-1. agents/01_research_architect.md
-2. agents/02_web_researcher.md
-3. agents/03_analyst_synthesizer.md
-4. agents/04_quality_publisher.md
+## 0. 厳守ルール
+- 本ファイルは軽量に保つ。詳細ルールは `agents/` 配下を参照
+- 毎回プロンプト受信時に `file_index.md` と `tasks.md` を参照してから開始
+- `session.json` で進捗を保存し、途中停止時は `/continue` で再開できるようにする
+- ブランチ作成禁止。mainブランチのみで運用
+- コミットは各エージェント完了ごとに必ず実行
+- **成果物を push した後は必ず main へマージして push する**（`git checkout main && git merge <branch> --no-ff && git push -u origin main`）
+- 成果物は GitHub Contents API で URL を取得し、ハイパーリンクで報告
 
-## タイムアウト対策
-詳細ルールは **agents/timeout.md** を必ず参照。
-- 各エージェントのターン上限：10ターン
-- パイプライン全体上限：40ターン
-- 各ウェブ検索は最大10クエリ/エージェントに分割
-- 途中保存：各エージェント完了時にsession.jsonを更新してgit commit
-- ファイル生成はWrite/Editでローカル完結→Bashでcommit+push（`mcp__github__push_files`は初期構築時のみ）
+---
 
-## ユーザー操作
-- 新テーマのリサーチ開始：リサーチテーマを入力するだけ
-- 途中再開：/continue と入力
+## 1. モデル使い分け（期間限定: 全タスク Opus）
+- **全タスク Opus**。サブエージェントも `model: "opus"` を明示
+- 通常運用: 「メイン Opus / サブ Sonnet (model: "sonnet")」
 
-## 開発者情報・命名ルール
+---
 
-このリポジトリの開発者・所有者は **男座員也（Kazuya Oza / おざ かずや）** です。
+## 2. 開発者情報・命名ルール
 
-- ドキュメント・コード・コミット等で開発者名を記載する際は必ず **男座員也** または **Kazuya Oza** を使用する
-- 「Murayama」「村山」「Otokoza」「おとこざ」など誤表記は使用しない
-- 英語表記: **Kazuya Oza** / 日本語表記: **男座員也**（おざ かずや）
-- AIアシスタントが生成するドキュメントでも本ルールを遵守すること
+| 種別 | 表記 | 用途 |
+|---|---|---|
+| **システム識別子（変更不可）** | `KazuyaMurayama` | GitHub ユーザー名 / URL / `@KazuyaMurayama` |
+| **システム識別子（変更不可）** | `kazuya.murayama.21@gmail.com` | git `user.email` / 連絡先 |
+| **表記名（人間として記載する場合）** | **男座員也（Kazuya Oza / おざ かずや）** | ドキュメント本文の著者名 / コミット message 中の自己言及 |
 
-## ファイル保存ルール
-- 成果物・スクリプトは本リポジトリ内のみに保存。`C:\\Users\\user\\Desktop` への出力禁止（ユーザー明示指定時を除く）。
+- ドキュメント本文等で開発者名を**人間として**記載する際は **男座員也 / Kazuya Oza** を使用
+- 「Murayama」「村山」「Otokoza」「おとこざ」を**表記名**として誤用しない（システム識別子としての `KazuyaMurayama` は許容）
 
-<!-- SKILLS_RULES_START -->
-## Skill 起動ルール（v2.2 / 2026-06-01）
-以下のスキルは **必須・スキップ禁止**。該当シーンでは SKILL.md を読んでから作業を開始すること。
+---
 
-- **調査トピックを受け取ったら最初に必ず** `.claude/skills/research-deep/SKILL.md` を読み、手順に従って並列 Web リサーチを実行する
-- **複雑な多段タスクに着手する前に必ず** `.claude/skills/sp-writing-plans/SKILL.md` で計画を作成し、`.claude/skills/sp-executing-plans/SKILL.md` の手順で実行する
-- **レポート・ドキュメントに図表が必要な時は必ず** `.claude/skills/mermaid-agents365/SKILL.md` を読んでからダイアグラムを作成する
-- **アイデア出し・選択肢の洗い出しが必要な時は** `.claude/skills/sp-brainstorming/SKILL.md` を読んでから実施する
-- **成果物の納品・コミット前、または品質チェック（QC）・レビューフェーズに入る時は必ず** `.claude/skills/sp-verification-before-completion/SKILL.md` のチェックリストを実行する
-- **分析・レポートの品質チェック（QC）・レビュー・共有前は必ず** `.claude/skills/analysis-qa-checklist/SKILL.md` を読んでチェックリストを実施する
-- **データ品質・整合性の確認が必要な時は必ず** `.claude/skills/data-quality-audit/SKILL.md` を読んで監査を実行する
+## 3. ツール実行・Git・ファイル保存
+- 確認不要・即実行（事前確認文を出力しない）
+- 例外（事前確認必須）: main への `git push --force`、`gh repo delete`
+- **ブランチ管理**: 上記「厳守ルール」のとおり main 単一運用
+- **ファイル保存**: 本リポ内のみ。`C:\Users\user\Desktop` への出力禁止
 
-### ブランチ管理（絶対厳守）
-- **デフォルト: mainへ直接コミット**。ブランチ作成はユーザーが明示的に指示した場合のみ。
-- ブランチを作成した場合、必ず `main` へマージ → ブランチ削除 → push を完了してから作業完了とする。
-- ブランチにファイルを置いたまま回答を完了することを禁止。「完了 = mainにマージ済み＆push済み」。
-- ブランチが残存している場合は、次セッション開始時に `git branch -a` で確認し、即マージ・削除する。
+---
 
-<!-- SKILLS_RULES_END -->
+## 4. 成果物報告ルール
+
+| 成果物 | 説明 | リンク |
+|---|---|---|
+| file.md | 1行説明 | [開く](https://github.com/KazuyaMurayama/deep-research/blob/main/path/to/file.md) |
+
+- Markdownリンク `[表示名](URL)` 形式必須 / `/blob/<実ブランチ>/<実パス>` 形式
+- **報告前にURL存在確認**：`Invoke-WebRequest -Uri https://api.github.com/repos/KazuyaMurayama/deep-research/contents/PATH?ref=BRANCH -UseBasicParsing` でステータス200確認
+- push完了後のみURL生成
+
+---
+
+## 5. ドキュメント日付ルール
+レポート系 .md 新規作成時は H1直下に `作成日: YYYY-MM-DD` / `最終更新日: YYYY-MM-DD` 必須。更新時は最終更新日のみ書き換え。除外: README / CLAUDE.md / FILE_INDEX / tasks.md / CHANGELOG / LICENSE。
+
+---
+
+## 6. Skill 起動ルール
+
+| トリガー | スキル |
+|---|---|
+| 調査トピック受取・並列リサーチ | `.claude/skills/research-deep/SKILL.md` |
+| 計画立案・実行 | `.claude/skills/sp-writing-plans/SKILL.md` + `sp-executing-plans/SKILL.md` |
+| 並列エージェント運用 | `.claude/skills/sp-dispatching-parallel-agents/SKILL.md` |
+| 図表生成（レポート） | `.claude/skills/mermaid-agents365/SKILL.md` |
+| 引用・エビデンス品質 | `.claude/skills/data-quality-audit/SKILL.md` |
+| QC・レビュー前 | `.claude/skills/analysis-qa-checklist/SKILL.md` |
+| 成果物の納品・コミット前 | `.claude/skills/sp-verification-before-completion/SKILL.md` |
+| インサイト統合・ナラティブ | `.claude/skills/insight-synthesis/SKILL.md` + `data-narrative-builder/SKILL.md` |
