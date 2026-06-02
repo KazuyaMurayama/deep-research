@@ -144,6 +144,14 @@
 |---|---|---|
 | `.gitignore` | 377 | 4465f30 |
 
+
+### Outputs — 2026-05-20 追加 (2件)
+
+| ファイルパス | サイズ(bytes) | 追加日 |
+|---|---|---|
+| `outputs/2026-05-20_sbi-cfd-nasdaq-8x-9x-leverage-guide.md` | 32711 | (merged 2026-05-22) |
+| `outputs/2026-05-20_online-meeting-minutes-system.md` | 50487 | (merged 2026-05-22) |
+
 ### Other (1件)
 
 | ファイルパス | サイズ(bytes) | SHA |
