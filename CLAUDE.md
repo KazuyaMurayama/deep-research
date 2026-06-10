@@ -1,135 +1,102 @@
-# deep-research-forge CLAUDE.md
+# deep-research-forge — Claude Code 運用ルール
 
-## このリポジトリの目的
-任意テーマの高品質リサーチレポートを自動生成してGitHubに公開する。
+任意テーマの高品質リサーチレポートを自動生成して GitHub に公開する。
 
-## ルール（厳守）
-- 本ファイルは軽量に保つ。詳細ルールはskills/配下を参照。
-- 毎回プロンプト受信時にfile_index.mdとtasks.mdを参照してから開始する。
-- session.jsonで進捗を保存し、途中停止時は/continueで再開できるようにする。
-- ブランチ作成禁止。mainブランチのみで運用。
-- コミットは各エージェント完了ごとに必ず実行する。
-- 成果物はGitHub Contents APIでURLを取得し、ハイパーリンクで報告する。
+> **本ファイルは VSCode版 / Web版 Claude Code（claude.ai）の両方で本リポジトリの単独完結ガイド**。
+> Web版はグローバル `~/.claude/CLAUDE.md` を参照しない前提で、本リポの運用に必要な全ルールをここに集約。
 
-## モデル使い分け
-- Agent1（研究設計）：claude-opus-4-5（高度な論理推論）
-- Agent2〜4（実行系）：claude-sonnet-4-5（コスト効率）
+---
 
-## エージェント実行順序
-1. skills/01_research_architect.md
-2. skills/02_web_researcher.md
-3. skills/03_analyst_synthesizer.md
-4. skills/04_quality_publisher.md
+## 0. 厳守ルール
+- 本ファイルは軽量に保つ。詳細ルールは `agents/` 配下を参照
+- 毎回プロンプト受信時に `file_index.md` と `tasks.md` を参照してから開始
+- `session.json` で進捗を保存し、途中停止時は `/continue` で再開できるようにする
+- ブランチ作成禁止。mainブランチのみで運用
+- コミットは各エージェント完了ごとに必ず実行
+- **成果物を push した後は必ず main へマージして push する**（`git checkout main && git merge <branch> --no-ff && git push -u origin main`）
+- 成果物は GitHub Contents API で URL を取得し、ハイパーリンクで報告
 
-## タイムアウト対策
-詳細ルールは **skills/timeout.md** を必ず参照。
-- 各エージェントのターン上限：10ターン
-- パイプライン全体上限：40ターン
-- 各ウェブ検索は最大10クエリ/エージェントに分割
-- 途中保存：各エージェント完了時にsession.jsonを更新してgit commit
-- ファイル生成はWrite/Editでローカル完結→Bashでcommit+push（`mcp__github__push_files`は初期構築時のみ）
+---
 
-## ユーザー操作
-- 新テーマのリサーチ開始：リサーチテーマを入力するだけ
-- 途中再開：/continue と入力
+## 1. モデル使い分け（期間限定: 全タスク Opus）
+- **全タスク Opus**。サブエージェントも `model: "opus"` を明示
+- 通常運用: 「メイン Opus / サブ Sonnet (model: "sonnet")」
 
-## 開発者情報・命名ルール
+---
 
-このリポジトリの開発者・所有者は **男座員也（Kazuya Oza / おざ かずや）** です。
+## 2. 開発者情報・命名ルール
 
-- ドキュメント・コード・コミット等で開発者名を記載する際は必ず **男座員也** または **Kazuya Oza** を使用する
-- 「Murayama」「村山」「Otokoza」「おとこざ」など誤表記は使用しない
-- 英語表記: **Kazuya Oza** / 日本語表記: **男座員也**（おざ かずや）
-- AIアシスタントが生成するドキュメントでも本ルールを遵守すること
+| 種別 | 表記 | 用途 |
+|---|---|---|
+| **システム識別子（変更不可）** | `KazuyaMurayama` | GitHub ユーザー名 / URL / `@KazuyaMurayama` |
+| **システム識別子（変更不可）** | `kazuya.murayama.21@gmail.com` | git `user.email` / 連絡先 |
+| **表記名（人間として記載する場合）** | **男座員也（Kazuya Oza / おざ かずや）** | ドキュメント本文の著者名 / コミット message 中の自己言及 |
 
-### 開発者の作業環境
-- **OS:** Windows 11（Macではない）。シェルは PowerShell 5.1 / Bash（WSL/Git Bash）。`brew` / `Cmd+` / Mac専用コマンドは使用不可。パッケージ管理は `winget` / `scoop`。
-- **スマートフォン:** iPhone（iOS）。Android固有の手順・adb・Play Store等は不要。
-- コマンド例はPowerShell構文（`;` 連結、`$env:VAR`）で提示。macOS専用ツールを回答に含めない。
+- ドキュメント本文等で開発者名を**人間として**記載する際は **男座員也 / Kazuya Oza** を使用
+- 「Murayama」「村山」「Otokoza」「おとこざ」を**表記名**として誤用しない（システム識別子としての `KazuyaMurayama` は許容）
 
+---
 
-## 🚀 自動実行ポリシー
+## 3. ツール実行・Git・ファイル保存
+- 確認不要・即実行（事前確認文を出力しない）
+- 例外（事前確認必須）: main への `git push --force`、`gh repo delete`
+- **ブランチ管理**: 上記「厳守ルール」のとおり main 単一運用
+- **ファイル保存**: 本リポ内のみ。`C:\Users\user\Desktop` への出力禁止
 
-### 確認不要で即実行する操作
-- 全ファイル操作（作成・編集・削除）
-- 全シェルコマンド（PowerShell, Bash, git, gh, npm, node, python）
-- Git操作: add / commit / push（featureブランチ）/ pull / fetch / merge / branch -D / reset --hard
-- GitHub操作: gh pr create / gh api 全般 / ブランチ削除
-- パッケージ操作: npm install / pip install
-- Web検索・フェッチ
-- バックグラウンドプロセス起動
+---
 
-### 事前確認が必要な操作（例外のみ）
-- `git push --force` を main / master ブランチに対して実行する場合
-- `gh repo delete` 実行時
+## 4. 成果物報告ルール
 
-### 動作原則
-- 計画提示（簡潔）→ 即実行 → 結果報告 のフロー厳守
-- 事前確認文（「Should I run...?」等）を出力しない
-- エラー時は即再試行 or 別アプローチで対応、判断が必要な場合のみ報告
+| 成果物 | 説明 | リンク |
+|---|---|---|
+| file.md | 1行説明 | [開く](https://github.com/KazuyaMurayama/deep-research/blob/main/path/to/file.md) |
 
-## ドキュメント日付ルール
+- Markdownリンク `[表示名](URL)` 形式必須 / `/blob/<実ブランチ>/<実パス>` 形式
+- **報告前にURL存在確認**：`Invoke-WebRequest -Uri https://api.github.com/repos/KazuyaMurayama/deep-research/contents/PATH?ref=BRANCH -UseBasicParsing` でステータス200確認
+- push完了後のみURL生成
 
-レポート・分析・調査系 .md ファイルを新規作成する際は、H1直下に必ず記載:
+---
 
+## ドキュメント命名・日付ルール（v2.0 / 2026-06-03 改訂）
+
+### ファイル名
+- `<TOPIC>_YYYYMMDD.md` 形式（**サフィックス・ハイフンなし**）
+  - 例: `STRATEGY_REPORT_20260603.md`
+- **同日中の追加更新**: `-v2`、`-v3` を追加（例: `STRATEGY_REPORT_20260603-v2.md`）
+- **翌日1回目**: v サフィックスをリセット（例: `STRATEGY_REPORT_20260604.md`）
+
+### 表記の区別
+- **ファイル名**: ハイフン**なし** `YYYYMMDD`（例: `20260603`）
+- **本文中の日付表記**: ハイフン**あり** `YYYY-MM-DD`（例: `2026-06-03`）
+
+### H1直下の日付メタデータ
+レポート系 .md 新規作成時は H1直下に必ず記載:
 ```
 作成日: YYYY-MM-DD
 最終更新日: YYYY-MM-DD
 ```
+更新時は **最終更新日のみ** 当日付に書き換え（作成日は固定）。
 
-- 更新時は **最終更新日のみ** を当日付に書き換える（作成日は固定）
-- 除外: README / CLAUDE.md / FILE_INDEX / tasks.md / CHANGELOG / LICENSE
+### 対象外（日付サフィックスを入れない）
+- README / CLAUDE.md / FILE_INDEX / tasks.md / CHANGELOG / LICENSE / SPEC.md
+- `CURRENT_*.md`（常に最新で参照される単一ファイル）
+- パイプライン自動生成ファイル（例: `REPORT.md`、`outputs/*.md`）
 
-## 作業品質ルール
+### 旧形式（廃止・新規禁止）
+- ❌ `<TOPIC>_2026-06-03.md`（ハイフン区切り）
+- ✅ `<TOPIC>_20260603.md`（**現行ルール**）
 
-### Git・ブランチ管理
-- 作業前: `git branch --show-current` でブランチ確認 → main以外なら `git checkout main && git pull` してから開始。
+---
 
-### ファイル特定（編集前）
-- ユーザー発話のキーワード全てをファイル名と照合してから編集。キーワード不完全一致・候補不確かなら必ず確認。
+## 6. Skill 起動ルール
 
-### 成果物報告
-- ファイル作成・更新・push後は必ず3列表で報告: `| 成果物 | 説明 | リンク |`
-- リンクは `/blob/<実ブランチ>/<パス>` 形式。報告前に `gh api repos/OWNER/REPO/contents/PATH?ref=BRANCH` で存在確認。push前はURL生成しない。
-
-### ドキュメント品質
-- UIパス・コマンド・設定名は公式ドキュメントで確認後に記載。確認不可なら「[要確認]」と明記。
-- OS/環境制約（例: Windows専用）をタスク開始時に確認。完成後に `brew`/`Cmd`/`macOS` 等をgrepして除去。
-
-<!-- GLOBAL_RULES_START -->
-## Global Rules (synced from ~/.claude/CLAUDE.md)
-
-### 成果物報告（最重要・毎回必須）
-ファイルを1つでも作成・更新・pushしたら、**すべて**を3列表で報告する。例外なし。
-
-| 成果物 | 説明 | リンク |
-|---|---|---|
-| ファイル名 | 1行説明 | [開く](https://github.com/OWNER/REPO/blob/BRANCH/PATH) |
-
-厳守事項（違反＝再提出）:
-1. Markdownリンク `[表示名](URL)` 形式必須。plain URL禁止。
-2. `/blob/<実ブランチ名>/<実パス>` 形式。トップURL禁止。
-3. 提示前に `gh api repos/OWNER/REPO/contents/PATH?ref=BRANCH` で存在確認。
-4. ブランチ名は `git rev-parse --abbrev-ref HEAD` で取得。推測禁止。
-5. push完了後のみURL生成。未pushはローカル絶対パス＋「（ローカル）」明記。
-6. 404発生時は即訂正＋原因1行報告。
-
-### ツール実行
-- 確認不要・即実行。「Should I...?」等の事前確認文は出力しない。
-- 例外（事前確認必須）: main/masterへの `git push --force`、`gh repo delete`。
-- 長時間処理は `run_in_background: true` を積極使用。
-
-### モデル・サブエージェント
-- メイン Opus / 探索・検索・テスト系サブは Sonnet (`model: "sonnet"`)。
-- サブ起動promptに必ず明記:「成果物は3列表報告・URL検証必須・Markdownリンク形式」
-
-### 回答スタイル
-- 回答末尾に「**Next Action:**」でユーザーの次アクションを具体推奨。
-## 他リポジトリ参照ルール
-別リポジトリの内容を参照する必要が生じたら、必ず `.claude/cross-repo.md` を読み、その手順に従って `WebFetch` で取得する（「できない」と返さない）。
-
-### 品質ルール（必読）
-- ブランチ衛生・リサーチファクトチェックは `.claude/quality-rules.md` を参照し、ファイル生成前・push前に必ず適用する。
-- Repo type: research
-
-<!-- GLOBAL_RULES_END -->
+| トリガー | スキル |
+|---|---|
+| 調査トピック受取・並列リサーチ | `.claude/skills/research-deep/SKILL.md` |
+| 計画立案・実行 | `.claude/skills/sp-writing-plans/SKILL.md` + `sp-executing-plans/SKILL.md` |
+| 並列エージェント運用 | `.claude/skills/sp-dispatching-parallel-agents/SKILL.md` |
+| 図表生成（レポート） | `.claude/skills/mermaid-agents365/SKILL.md` |
+| 引用・エビデンス品質 | `.claude/skills/data-quality-audit/SKILL.md` |
+| QC・レビュー前 | `.claude/skills/analysis-qa-checklist/SKILL.md` |
+| 成果物の納品・コミット前 | `.claude/skills/sp-verification-before-completion/SKILL.md` |
+| インサイト統合・ナラティブ | `.claude/skills/insight-synthesis/SKILL.md` + `data-narrative-builder/SKILL.md` |
