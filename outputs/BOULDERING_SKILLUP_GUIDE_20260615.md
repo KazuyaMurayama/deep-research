@@ -1,22 +1,49 @@
-# ボルダリング上達ガイド：初心者→中級→上級のステップアップと前腕疲労対策
+# ボルダリング上達ガイド：初心者→中級者へのステップアップ完全版（前腕疲労対策付き）
 
 作成日: 2026-06-15
 最終更新日: 2026-06-15
 
-> 本レポートは信頼できるクライミング専門メディア・コーチ（Eric Hörst / trainingforclimbing.com、Lattice Training、The Climbing Doctor、Hooper's Beta、99Boulders、各国ジム等）と日本のジム/メディアの情報を統合し、URL実在確認のうえ作成した。医療・障害に関する記述は一般情報であり、診断・治療の代替ではない。痛みが続く場合は専門家への相談を推奨する。
+> 本レポートは信頼できるクライミング専門メディア・コーチ（Eric Hörst / trainingforclimbing.com、Lattice Training、The Climbing Doctor、99Boulders、各国ジム等）と日本のジム/メディアの情報を統合し、URL実在確認のうえ作成した。医療・障害に関する記述は一般情報であり、診断・治療の代替ではない。痛みが続く場合は専門家への相談を推奨する。
 
 ---
 
 ## エグゼクティブサマリー
 
-- ボルダリング上達の核心は、レベルを問わず一貫して **「腕で登らず、足と体幹で登る」** こと。前腕がすぐ疲れるのも、グレードが停滞するのも、根は同じ「腕依存」にあることが多い。
-- **初心者→中級者**: フットワーク・重心・基礎ムーブ（ダイアゴナル/フラッギング）・オブザベーションの習得が鍵。目安は「3級完登」。
-- **中級者→上級者**: 高度ムーブ・ボディテンション・計画的トレーニング（フィンガーボード等）・メンタル（フォール練習）が鍵。フィンガーボード/キャンパスは**故障リスクが高く開始時期に条件がある**。
+- ボルダリング上達の核心はレベルを問わず一貫して **「腕で登らず、足と体幹で登る」** こと。前腕がすぐ疲れるのも、グレードが停滞するのも、根は同じ「腕依存」にあることが多い。
+- **初心者→中級者（本レポートの対象）**: フットワーク・重心移動・基礎ムーブ（ダイアゴナル/フラッギング）・オブザベーションの習得が鍵。目安は「3級完登」。
 - **【重点】前腕がすぐ疲れ、1週間ほど筋肉痛・握力低下が続く問題**: 通常の遅発性筋肉痛（DOMS）は48〜72時間で回復するため、**1週間継続は正常範囲を超えている可能性が高い**。まず休養・頻度調整・技術改善・拮抗筋ケアで対応し、特定の指の局所的な鋭い痛みがあれば**プーリー（指の腱）損傷の疑い**として専門家受診を検討すべき。
 
 ---
 
-## 本レポートの使い方：レベル定義とグレード対応表
+## 用語集（初めて見る言葉はここで確認）
+
+| 用語 | 読み・英語 | 意味 |
+|------|-----------|------|
+| **エッジング** | edging | シューズの縁（エッジ）でホールドを踏む技術 |
+| **スメアリング** | smearing | ホールドのない壁面に靴底全体を押し当て、摩擦で立つ技術 |
+| **オープンハンド** | open hand | 指を伸ばし気味に指の腹でホールドを持つグリップ。腱への負荷が最も少ない |
+| **ハーフクリンプ** | half crimp | 第一関節を約90度に曲げるグリップ。中程度の腱負荷 |
+| **フルクリンプ** | full crimp | 親指を人差し指に添え、指関節を強く曲げるグリップ。腱への負荷が最大 |
+| **A2プーリー** | A2 pulley | 中指・薬指・人差し指の付け根にある腱の滑車。クライミングで最も損傷しやすい部位 |
+| **ダイアゴナル** | diagonal | 対角の手足（左手＋右足など）に荷重して体をひねる基本ムーブ |
+| **フラッギング** | flagging | 使わない足を空中に伸ばしてカウンターバランスを取るムーブ |
+| **バックステップ** | backstep | アウトサイドエッジで横向きに立ち、ヒップを壁に向けるムーブ。リーチが伸びる |
+| **ドロップニー** | drop knee | バックステップから膝を内側に落として体幹をひねるムーブ |
+| **ステミング** | stemming | コーナーで両足を対向する2面に押し付けて支えるムーブ。省エネでレストに使える |
+| **ヒールフック** | heel hook | かかとをホールドにかけてハムストリングス（もも裏）で引くムーブ |
+| **オブザベーション** | observation | 登る前に目で課題を分析・解析する作業 |
+| **パンプ** | pump | 前腕の筋肉が充血してパンパンになる状態。静的収縮による血流遮断が原因 |
+| **DOMS** | Delayed Onset Muscle Soreness | 遅発性筋肉痛。運動後24〜72時間でピークを迎える |
+| **ラバーバンド** | rubber band / exercise band | 指の伸筋を鍛える輪ゴム状の弾性バンド。クライミング用品店やAmazonで入手可能 |
+| **ハングボード** | hangboard / fingerboard | 指力強化専用の壁取り付け器具。初心者には不要・危険 |
+| **ベータ** | beta | ルートの解決法・ムーブ情報のこと |
+| **ガバ** | jug | 深くえぐれた持ちやすいホールド |
+| **カチ** | crimp | 指先を引っかける薄いホールド |
+| **スローパー** | sloper | 丸みがあり摩擦で保持するホールド |
+
+---
+
+## グレード対応表（中級者の目安を把握する）
 
 ジムによってグレードは異なるため、以下はあくまで目安（出典: [YAMA HACK グレード換算表](https://yamahack.com/1889)、[BouldMedia グレード表](https://boulmedia.com/gradetable/)）。
 
@@ -26,27 +53,27 @@
 | 6級 | V0 | 4+ | 数回の経験で挑戦可 |
 | 5級 | V0+〜V1 | 4+〜5 | 脱初心者の第一歩 |
 | 4級 | V2〜V3 | 5+〜6a | 数ヶ月のトレーニングで到達 |
-| 3級 | V3〜V4 | 6a+〜6b | **「脱初心者完了」=中級者の目安** |
+| **3級** | **V3〜V4** | **6a+〜6b** | **「脱初心者完了」＝中級者の目安** |
 | 2級 | V4〜V5 | 6b+〜6c | 半年〜1年 |
 | 1級 | V5〜V6 | 6c+〜7a | 多くの中級者が当たる壁 |
-| 初段 | V7〜V8 | 7a+〜7b | **上級の入口**（数年レベル） |
-| 二段 | V8〜V9 | 7b+〜7c | 専門的トレーニングが必要 |
-| 三段 | V10〜V11 | 7c+〜8a | エリートレベル |
+| 初段 | V7〜V8 | 7a+〜7b | 上級の入口（数年レベル） |
 
-**期間の目安（週3回以上継続した場合）**: V3→V4は安定まで約2年、V4→V5は約1年（速い人で8〜9ヶ月）、V7（初段前後）は5年以上というのが複数コーチ・メディアの相場感（出典: [Bouldering Boss - Grade Progression](https://boulderingboss.com/how-long-does-it-take-to-move-up-through-bouldering-grades/)）。V6以降は1グレード上がるごとに難度が体感「約2倍」になるとされ、最初のプラトー（停滞）はV5〜V6で起きやすいと言われる。
+**期間の目安（週3回以上継続した場合）**: 本レポートのゴール「3級（V3〜V4）」到達まで、平均的には**1〜2年**かかるとされる（出典: [Bouldering Boss - Grade Progression](https://boulderingboss.com/how-long-does-it-take-to-move-up-through-bouldering-grades/)）。技術習得の丁寧さと頻度によって大きく差が出る。
 
 ---
 
-# 第1部　初心者 → 中級者へのステップアップ
+# 第1部　初心者→中級者へのステップアップ
 
 ## 1-1. フットワーク（足の置き方）
 
 足は手より疲れにくい筋肉（脚）に体重を預けるための土台。初心者脱却の最重要要素。
 
-- **エッジング**: インサイドエッジ（親指側＝拇指球で立つ。最も多用）とアウトサイドエッジ（小指側＝横移動・バックステップで使用）を使い分ける。踵を少し上げると力が入りやすい。**土踏まずで乗らない**（力が逃げ滑る）。
-- **スメアリング**: ホールドのない壁面に靴底を押し付け、摩擦で立つ。靴底のゴムを多く接触させ、重心を親指寄りに集中させて下向きの圧力をかけ続ける。焦らずゆっくり荷重する。
+- **エッジング**（*edging*：シューズの縁でホールドを踏む技術）: インサイドエッジ（親指側＝拇指球で立つ。最も多用）とアウトサイドエッジ（小指側＝横移動・バックステップで使用）を使い分ける。踵を少し上げると力が入りやすい。**土踏まずで乗らない**（力が逃げ滑る）。
+- **スメアリング**（*smearing*：ホールドのない壁面に靴底を押し付け摩擦で立つ技術）: 靴底のゴムを多く接触させ、重心を親指寄りに集中させて下向きの圧力をかけ続ける。焦らずゆっくり荷重する。
 - **静かな足運び（サイレントフット）**: 足を置くとき音を立てない＝精密さの指標。「サイレント・トラバース」（音を立てずに5〜10分横移動）が有効な練習。**手を動かす前に必ず足の置き場所を目で確認する**習慣をつける。
 - **足を信じる**: 初心者最大の弱点は「足が滑るかも」と手に頼ること。クライミングシューズのフリクションを信頼し、足への「乗り込み」を練習する。
+
+> ▶ **図解参照（エッジング vs スメアリング）**: [Beta Boulders - Smearing vs Edging（画像・英語）](https://betaboulders.com/smearing-vs-edging/)
 
 （出典: [Beta Boulders - Smearing vs Edging](https://betaboulders.com/smearing-vs-edging/)、[Sport Rock - Basics of Footwork](https://www.sportrock.com/post/basics-of-footwork)、[VDiff Climbing - Footwork](https://www.vdiffclimbing.com/sport-technique-footwork/)）
 
@@ -54,50 +81,64 @@
 
 **基本原則：「腕は伸ばせ、脚は曲げろ」**
 
-- **腕を伸ばす**: 腕を曲げると上腕・前腕が常に収縮して消耗する。肘を伸ばして骨格でぶら下がると筋肉を休められる。
+- **腕を伸ばす（デッドハング姿勢）**: 腕を曲げると上腕・前腕が常に収縮して消耗する。肘を伸ばして骨格でぶら下がると筋肉を休められる。
 - **腰（ヒップ）を壁に近づける**: 「おへそを壁に近づける」意識で重心が足に乗り、手が楽になる。膝を曲げるとヒップが自然に壁へ寄る。
 - **足で立つ（脚で押し上げる）**: 大腿四頭筋・大殿筋は腕より大きく疲れにくい。「腕で引く」のではなく「足で押す」意識。
 - **脱力**: 握力は「落ちない最小限」に。各ホールド間で手首を振って前腕を緩める。レスト姿勢は腕を完全に伸ばし足に荷重して息を整える。
 
-> ある解説では、体重60kgの人が腰を壁に寄せない場合は手に約24kg、腰を壁に寄せると約6kgまで負荷が下がる（約75%節約）という試算が示されている（出典: [Butora USA - Body Technique: How to Use Your Hips](https://butorausa.com/blogs/beta-blog/rock-climbing-body-technique-how-to-use-your-hips)）。数値はあくまで概念的な目安と考えられる。
+> 体重60kgの人が腰を壁に寄せない場合は手に約24kg、腰を壁に寄せると約6kgまで負荷が下がる（約75%節約）という試算が示されている（出典: [Butora USA - Body Technique: How to Use Your Hips](https://butorausa.com/blogs/beta-blog/rock-climbing-body-technique-how-to-use-your-hips)）。数値はあくまで概念的な目安。
 
 ## 1-3. ホールドの種類と持ち方
 
 | ホールド | 持ち方のコツ | 注意 |
 |---|---|---|
 | **ガバ（Jug）** | 深くえぐれ持ちやすい。全指でかけられる | ガバでも力みすぎない |
-| **カチ（Crimp）** | 指先を引っかける。下記3形式 | フルクリンプは腱負荷大 |
+| **カチ（Crimp）** | 指先を引っかける。下記3形式を使い分け | フルクリンプは腱負荷大 |
 | **スローパー（Sloper）** | 手のひら全体で覆い、腕を伸ばし肩から押し込む | 腕を曲げると滑る |
 | **ピンチ（Pinch）** | 親指と4指で挟む。親指の力と挟む方向が重要 | — |
 | **ポケット（Pocket）** | 1〜3本指を入れる | 怪我リスク最大。要ウォームアップ |
 
 **カチの3グリップ（重要）**:
-1. **オープンハンド**: 指を伸ばし気味に指腹で持つ。腱（A2プーリー）負荷が最小。**初心者最優先**。
-2. **ハーフクリンプ**: 第一関節を約90度。中程度の強度。
-3. **フルクリンプ**: 親指を添え関節を強く曲げる。最も力が出るが**A2プーリーへの負荷が突出して高い**ため初心者は避ける。
+
+| グリップ | 指の形 | 腱への負荷 | 初心者への推奨 |
+|---|---|---|---|
+| **オープンハンド** | 指をやや伸ばし、指の腹（ハラ）で保持 | 最小 | **最優先で習得する** |
+| **ハーフクリンプ** | 第一関節を約90度に曲げる | 中程度 | 慣れてから使う |
+| **フルクリンプ** | 親指を人差し指に添え、全力で指を曲げる | 最大（A2プーリー損傷リスク高） | **初心者は極力避ける** |
+
+> **なぜオープンハンドを優先するのか**: フルクリンプは最も力が出るが、指の付け根にある**A2プーリー**（腱鞘の滑車）への負荷が突出して高く、クライミング初心者に多い「プーリー損傷」の主因となる。オープンハンドは力は出づらいが腱を守り、長期的により強い指を育てる。
+>
+> ▶ **図解参照（3グリップの比較）**: [Max Climbing - Crimp vs Open Hand vs Drag（図解・英語）](https://www.maxclimbing.com/blogs/knowledge-hub-anatomy/crimp-vs-open-hand-vs-drag-the-mechanical-differences-explained)
 
 （出典: [Max Climbing - Crimp vs Open Hand vs Drag](https://www.maxclimbing.com/blogs/knowledge-hub-anatomy/crimp-vs-open-hand-vs-drag-the-mechanical-differences-explained)、[REI - Climbing Holds](https://www.rei.com/learn/expert-advice/climbing-holds.html)、[ボルダリングデイズ - ホールドの種類と持ち方](https://bouldering-days.com/beginner/835/)）
 
 ## 1-4. 基礎ムーブ
 
-- **ダイアゴナル（対角線）**: 対角の手足（左手＋右足など）に荷重して体をひねる。左手を出すなら左足アウトサイドエッジに乗り、体をひねって右手を伸ばす。**「腕だけで登る」から脱却する最重要ムーブ**。
-- **フラッギング**: 使わない脚を空中に伸ばしてカウンターバランスを取る。フラッグした足は壁を押さず「錘」として使う。インフラッグ/アウトフラッグがある。
-- **バックステップ／ドロップニー**: アウトサイドエッジでヒップを壁に向け横向きに立つ＝リーチが伸びる。ドロップニーは内膝を落として体幹をひねり、傾斜壁で重心を壁に引き寄せる。
-- **ステミング**: コーナーで両足を対向2面に押し付けて保持。脚で支える省エネ姿勢でレストにも使える。
-- **ヒールフック（入口）**: かかとをホールドにかけハムストリングで引く「第3の手」。傾斜壁で有効。
+- **ダイアゴナル**（*diagonal*：対角の手足に荷重して体をひねるムーブ）: 対角の手足（左手＋右足など）に荷重して体をひねる。左手を出すなら左足アウトサイドエッジに乗り、体をひねって右手を伸ばす。**「腕だけで登る」から脱却する最重要ムーブ**。腕への負荷を脚・体幹に分散させる。
+  > ▶ **動画解説（日本語）**: [クライミングの基本 ムーブ「ダイアゴナル」講師：杉田雅俊](https://www.youtube.com/watch?v=McZuBDgD7EE)
+
+- **フラッギング**（*flagging*：使わない足を空中に伸ばしてカウンターバランスを取るムーブ）: フラッグした足は壁を押さず「錘」として使う。インフラッグ（体の内側に伸ばす）/アウトフラッグ（外側）がある。
+  > ▶ **動画解説（日本語）**: [F-STYLE ムーブ003「アウトサイドフラッギング」](https://www.youtube.com/watch?v=CsZWgL7J2ME)
+  > ▶ **図解参照（英語・写真）**: [Conquer Your Crux - How to Flag](https://www.conqueryourcrux.com/how-to-flag/)
+
+- **バックステップ／ドロップニー**（*backstep*：外向きに立つ、*drop knee*：膝を内側に落とす）: バックステップはアウトサイドエッジでヒップを壁に向け横向きに立つ＝リーチが伸び腕が楽になる。ドロップニーはさらに内膝を落として体幹をひねり、傾斜壁で重心を壁に引き寄せる。
+
+- **ステミング**（*stemming*：コーナーで両足を対向2面に押し付けるムーブ）: 脚で支える省エネ姿勢でレストにも使える。左右の壁をそれぞれアウトサイドエッジで押し付けて三角形を作る。
+
+- **ヒールフック（入口）**（*heel hook*：かかとをホールドにかけてハムストリングスで引くムーブ）: 「第3の手」として使い、傾斜壁で腕の負担を大幅軽減。かかとをホールドにかけ、もも裏（ハムストリングス）で引く感覚。
 
 （出典: [Training for Climbing - Steep Wall Techniques](https://trainingforclimbing.com/steep-wall-climbing-techniques/)、[Conquer Your Crux - How to Flag](https://www.conqueryourcrux.com/how-to-flag/)、[Send Edition - 22 Climbing Techniques](https://sendedition.com/22-climbing-techniques-and-how-to-do-them/)）
 
 ## 1-5. オブザベーション（課題の読み方）
 
-登る前に「目で登る」準備作業。上達の最重要スキルの一つ。
+**オブザベーション**（*observation*）とは、登る前に「目で登る」準備作業。上達の最重要スキルの一つ。
 
 1. **ホールドの順番を把握**: スタートから順に視覚的にたどる。
 2. **手順（ハンドシーケンス）を決める**: どちらの手でどのホールドを取るか具体化（右→左→右…）。
 3. **足の位置を確認**: 重要な足ホールドを把握（詳細は登りながら調整）。
 4. **ムーブを想像**: 体の向き・ダイアゴナル・ヒールフック等を推測。
 
-正面・斜めの複数角度から観察し、他のクライマーのベータを参考にする。登った後は「なぜ成功/失敗したか」を言語化する。
+正面・斜めの複数角度から観察し、他のクライマーの**ベータ**（*beta*＝解決法・ムーブ情報のこと）を参考にする。登った後は「なぜ成功/失敗したか」を言語化する。
 
 （出典: [Climbing.com - Reading Routes](https://www.climbing.com/skills/reading-routes/)、[FrictionLabs - 6 Ways to Read Routes](https://frictionlabs.eu/blog/6-ways-to-read-climbing-gym-routes)）
 
@@ -107,8 +148,8 @@
 - **メニュー例（Lattice Training推奨の初心者セッション）**: ①やさしいルートでウォームアップ → ②確実に登れるグレードを20本（各3回以内・3分休憩）→ ③10分休憩後に繰り返し → ④補強（プッシュ系/プル系/ヒンジ系 各1種目）。
 - **サーキット**: 最高グレードより1〜2下の課題をレストなしで連続。持久力とムーブ精度が同時に向上。
 - **録画**: 自分の登りをスマホで撮り、クセ・ミスを確認。
-- **多様なスタイル**: スラブ／バーティカル／オーバーハングをバランスよく。
-- **ハングボードは初心者には不要・危険**: 壁を登るだけで指力は自然に育つ。腱が未発達な段階での使用は怪我リスクが高い。
+- **多様なスタイル**: スラブ（前傾なし）／バーティカル（垂直）／オーバーハング（前傾壁）をバランスよく。
+- **ハングボード（フィンガーボード）は初心者には不要・危険**: **ハングボード**（*hangboard*）とは指力強化専用の壁設置器具。壁を登るだけで指力は自然に育つ。腱が未発達な段階での使用は損傷リスクが高く、初心者には推奨されない。
 
 （出典: [Lattice Training - Beginner's Guide](https://latticetraining.com/blog/the-beginners-guide/)、[T-WALL - ボルダリング頻度](https://twall.jp/frequency/)）
 
@@ -127,102 +168,27 @@
 
 ---
 
-# 第2部　中級者 → 上級者へのステップアップ
-
-## 2-1. 高度なムーブ
-
-- **デッドポイント**: 両手足を壁に残したまま重心を投げ、慣性がゼロになる頂点でホールドを取る。動的ムーブで最も省エネ。
-- **ダイノ**: 完全に壁を離れる爆発的跳躍。脚のドライブ＋下の手の引きで軌道を決め、腰の動きで推力を出す。小さなダイノから始める。
-- **ヒールフック**: 主役はハムストリングス・臀筋。かかとを移動したい方向へ向ける。**離すときが最難関**——手とサブフットが安定し、コアをブレースしてからヒールを外す（外すと激しいスイングが起きる）。
-- **トゥフック**: 大腿四頭筋・腸腰筋で上方向に引く。爪先をすね方向に反らせ、膝を曲げず一本の棒のように。
-- **マントル**: 棚を超えるためプル→プッシュへ切替。高い足を置く→肘を棚高さへ→手首を返し掌底プッシュ→高い足に乗り立つ（膝を使わない）。神経系の切替と股関節外旋可動域が肝。
-- **コンプレッション**: アレート/ボリュームを両側から挟む内向き力。指で引かず胸・肩・コアで「押しつぶす」。速くしない（スピードはテンションを壊す）。
-- **ガストン**: 手のひらを外向きに、肘を開いて押し開く力で支える（ドアをこじ開ける動作）。
-
-（出典: [Training for Climbing - Heel/Toe Hook](https://trainingforclimbing.com/develop-fantastic-footwork-with-heel-hook-and-toe-hook-technique/)、[Rockclimbing Realms - Dynos/Heels/Toes](https://rockclimbingrealms.com/bouldering-moves-dynos-heels-toes-demystified/)、[Rockclimbing Realms - Compression](https://rockclimbingrealms.com/compression-climbing-technique-explained/)、[DPM Climbing - Gaston](https://www.dpmclimbing.com/what-is-a-gaston-in-climbing-a-game-changing-move/)）
-
-## 2-2. 体幹・ボディテンション
-
-爪先→ハムストリング→臀筋→コア→上半身をつなぐ「運動連鎖」を常時維持する力。コア収縮が一瞬抜けると傾斜壁で即落ちる。
-
-- 「体を一本の棒にする」感覚: プランク、ホロウボディホールド、ハンギングL字で抗回転力を強化。デッドリフトは全身同時発火の練習として有効。
-- ムーブ前にコアをブレース（息を吸って固める）→保持→完了後に吐く（重量挙げと同じ呼吸法）。
-- **ボディテンションは主にスティープウォール（前傾壁）の実践から育つ**。器具トレーニングは補助。
-
-（出典: [StoneLine - Body Tension](https://www.stonelineclimbing.com/blog/body-tension)、[City Bloc - Breath/Tension/Rhythm](https://citybloc.co.uk/breath-work-body-tension-and-rhythm-3-subtle-techniques-to-elevate-your-bouldering/)）
-
-## 2-3. 精密なフットワーク・重心移動
-
-- フォアフットのゴム先端でピンポイントにエッジへ乗る。
-- **オフフット（乗っていない方の足）こそテクニックの要**——体軸を決める（Hooper's Beta）。
-- 移動方向へ先に重心を送る（手を出す前に腰を寄せる）。バックステップは股関節を壁へ鋭角に入れるとリーチが伸び腕の負担が激減。
-- ドリル例: V0〜V2を「上腕を曲げずに」登る（足と背中だけで登る練習）。
-
-（出典: [Hooper's Beta](https://www.hoopersbeta.com/)）
-
-## 2-4. トレーニング（⚠️ 開始時期と故障リスクに注意）
-
-### フィンガーボード（ハングボード）
-- **開始の目安**: 中級（1級〜初段相当）以上。初心者の早期使用は指腱・肩の損傷リスクが急増する。
-- **頻度**: 週2回（多くて3回）まで。連日禁止。20〜30分かけて段階的にウォームアップし、終了後に拮抗筋トレを行う。
-- **プロトコル例**: 最大指力の基礎=「7/53法」（7秒ハング→53秒レスト×3セット、3〜5ラウンド）。持久力=「7/3リピーター」（7秒ON/3秒OFF×6〜8回）。**片手ハングはV9/5.13/8a以上が条件**とされ、それ未満では不適切。
-
-### キャンパスボード
-- **開始条件（重要）**: 目安として **V5〜V6以上・クライミング歴2〜5年以上・懸垂15〜20回が楽にできる**こと。**18歳未満は骨端線骨折リスクのため「足なしキャンパス」は厳禁**。フルクリンプ禁止（ハーフ/オープンのみ）。週2回上限、間に48〜72時間。
-
-### リミットボルダリング
-- 自分の最高+1〜2グレードのムーブを3〜5手に分解して打ち込む（送ることが目的ではない）。アテンプト間3〜5分の完全レスト、出力が落ちたら終了。週2回以下。
-
-### 能力区分（混同しない）
-| 能力 | 内容 | 代表トレ |
-|---|---|---|
-| 最大指力 | 1回の最大把持 | 最大ハング、7/53、リミットボルダリング |
-| パワー | 爆発的出力 | キャンパス、ダイノ練習 |
-| パワーエンデュランス | 高強度を複数回 | 4×4、30/30インターバル |
-| フィンガーエンデュランス | 長時間の把持 | 7/3リピーター |
-
-（出典: [Hörst - Intro to Fingerboard](https://trainingforclimbing.com/intro-to-fingerboard-training/)、[Hörst - Advanced Hangboard](https://trainingforclimbing.com/advanced-hangboard-training-technique/)、[Hörst - Limit Bouldering](https://trainingforclimbing.com/limit-bouldering-for-building-max-climbing-strength-and-power/)、[Hörst - Power-Endurance Protocols](https://trainingforclimbing.com/power-endurance-training-protocols-for-climbers/)、[Rockclimbing Realms - Campus Board](https://rockclimbingrealms.com/campusing-technique-training/)）
-
-## 2-5. メンタル
-
-- **フォール練習（恐怖の克服）**: 恐怖は学習されたもので、「落ちても何も起きない」体験の反復で消去できる。段階的曝露（低い位置のバウンス→スラックを徐々に増やす→傾斜壁→垂直壁）。落下中はリラックスして穏やかな呼吸。「少し不快だが最終的にポジティブ」な強度に留める。精神的に疲れたらその日は終了。
-- **コミットメント**: 「休む→観察・考える→決断→動く」の4ステップを意識化し、苦しさの中で上手に戦う（struggle well）力を育てる。
-- **ビジュアライゼーション**: 初回トライ前に頭の中で完全に登り切る。地上での時間が壁上のエネルギー節約に直結する。
-
-（出典: [Lattice Training - Fear of Falling](https://latticetraining.com/blog/fear-of-falling/)、[Boulderflash - Visualisation](https://boulderflash.com/blog/visualisation-how-to-improve-route-reading/)、[Warriors Way - Applied Mental Training](https://warriorsway.com/course/applied-mental-training-in-bouldering/)）
-
-## 2-6. 停滞（プラトー）要因と対策
-
-| 要因 | 対策 |
-|---|---|
-| オーバーグリッピング（握りすぎ） | 足を信頼しオープンハンドで。V0〜V2を「上腕なし」で登る |
-| 腕依存の登り | 脚で押す・ヒップを壁に寄せる・背中で引く |
-| 同じスタイルばかり | 毎月新スタイル開拓（前傾↔スラブ、カチ↔スロパー） |
-| レスト不足 | アテンプト間3分以上（ハードは5〜10分）、週1完全休養 |
-| ボディテンション/足の軽視 | 易しい課題で足の精度を磨く、ドロップニー/フラッギングを意図的に使う |
-| 限界グレードのみ打つ | 「リミット系」と「エンデュランス系」をセッションで使い分け |
-
-（出典: [Dynamite Starfish - Breaking Plateau](https://dynamitestarfish.com/blogs/news/break-through-a-plateau-in-rock-climbing)、[Lattice Training - Top 5 Training Mistakes](https://latticetraining.com/2019/05/16/top-5-biggest-training-mistakes-climbers-make)）
-
----
-
-# 第3部　【重点】前腕がすぐ疲れる・1週間続く筋肉痛/握力低下への予防と対策
+# 第2部　【重点】前腕がすぐ疲れる・1週間続く筋肉痛/握力低下への予防と対策
 
 > ご相談の「ボルダリングをするとすぐ前腕が疲れ、1週間ほど筋肉痛・握力低下が続く」問題への、エビデンスベースの整理。
 
-## 3-1. 原因の切り分け
+## 2-1. 原因の切り分け
 
 ### なぜ前腕がすぐ疲れるのか（パンプの生理学）
-前腕の屈筋群が静的収縮を続けると筋内圧が上がって血管が圧迫され、酸素供給が遮断される。これが前腕パンプ（張り・うっ血）の正体（出典: [The Climbing Doctor - Forearm Pump Physiology](https://theclimbingdoctor.com/physiology-of-forearm-pump-and-ways-to-delay-its-onset/)）。初心者に強く出る要因は **①握りすぎ ②腕依存の登り ③肘を曲げたまま登る ④フットワークが不安定で常に腕でバランスを補う**。
+**パンプ**（*pump*＝前腕の充血・パンパンの状態）は、前腕の屈筋群が静的収縮を続けると筋内圧が上がって血管が圧迫され、酸素供給が遮断されることで起きる（出典: [The Climbing Doctor - Forearm Pump Physiology](https://theclimbingdoctor.com/physiology-of-forearm-pump-and-ways-to-delay-its-onset/)）。初心者に強く出る要因は **①握りすぎ ②腕依存の登り ③肘を曲げたまま登る ④フットワークが不安定で常に腕でバランスを補う**。
 
 ### 「1週間続く筋肉痛・握力低下」が示すもの
-- 典型的なDOMS（遅発性筋肉痛）は**運動後24〜48時間で発症・ピーク、72時間程度で改善**する（出典: [Rock Climbing Central - Recover Forearms](https://rockclimbingcentral.com/how-do-i-recover-my-forearms-after-bouldering/)）。**1週間の継続は通常のDOMSの範囲を超えている可能性が高い**と考えられる。
+- 典型的な**DOMS**（*Delayed Onset Muscle Soreness*＝遅発性筋肉痛）は**運動後24〜48時間で発症・ピーク、72時間程度で改善**する（出典: [Rock Climbing Central - Recover Forearms](https://rockclimbingcentral.com/how-do-i-recover-my-forearms-after-bouldering/)）。**1週間の継続は通常のDOMSの範囲を超えている可能性が高い**と考えられる。
 - 「腱・靱帯は筋肉の約5倍の時間をかけて適応する」とされ、筋肉より腱の疲弊が先行しやすい（出典: [Lattice Training - Beginner's Guide](https://latticetraining.com/blog/the-beginners-guide/)）。初心者は「腕は疲れていなくても腱は限界」になりやすい。
 - したがって本件は **オーバーユース／回復不足の可能性** が考えられ、後述の頻度・回復管理が最優先。
 
-## 3-2. 受診を検討すべきサイン（重要）
+## 2-2. 受診を検討すべきサイン（重要）
 
-以下があれば**クライミングを中止し、整形外科・スポーツ理学療法士への相談を推奨**（出典: [Max Climbing - Finger Pulley Injuries](https://www.maxclimbing.com/blogs/knowledge-hub-injury-prevention/finger-pulley-injuries-a2-a3-a4-mechanics-symptoms-safe-return-to-load)、[Backcountry Physio - Pulley Injury](https://www.backcountry.physio/climbing-pulley-injury-causes-symptoms-and-treatment/)）：
+以下があれば**クライミングを中止し、整形外科・スポーツ理学療法士への相談を推奨**：
+
+> **A2プーリー**（*A2 pulley*）とは、中指・薬指・人差し指の付け根（第一関節と手のひらの間）にある腱鞘の滑車のこと。フルクリンプや過負荷によって損傷しやすく、クライマーに最も多い障害の一つ（出典: [Max Climbing - Finger Pulley Injuries](https://www.maxclimbing.com/blogs/knowledge-hub-injury-prevention/finger-pulley-injuries-a2-a3-a4-mechanics-symptoms-safe-return-to-load)）。
+>
+> ▶ **A2プーリーの図解（英語）**: [Backcountry Physio - Pulley Injury](https://www.backcountry.physio/climbing-pulley-injury-causes-symptoms-and-treatment/)
 
 - 指の付け根（A2プーリー付近）の**鋭い局所的な痛み**
 - 登行中に**「ポン」という音/感触**があった
@@ -241,7 +207,7 @@
 
 （出典: [Max Climbing - Flexor Tendon Overload](https://www.maxclimbing.com/blogs/knowledge-hub-injury-prevention/flexor-tendon-overload-crimp-elbow-precursor)、[Physiopedia - Rock Climbing Injuries](https://www.physio-pedia.com/Rock_Climbing_Injuries)）
 
-## 3-3. 予防
+## 2-3. 予防
 
 ### (A) 技術面（前腕への負荷を減らす登り方）
 - **足を使う**: 体重を足に乗せ、腕は方向づけのガイドに。
@@ -251,36 +217,39 @@
 - **積極的にレスト**: 足が安定する場所で腕を振り血流回復。深呼吸で過剰な握力を抑える。
 
 ### (B) ウォームアップ／クールダウン
-- **ウォームアップ（3段階）**: ①軽い有酸素5〜15分 → ②前腕・手首のダイナミックストレッチ、フォームローラー → ③易しいルート（限界より2〜3下）から段階的に。RPE 2/10程度の軽い継続登り（ARC的）10〜20分は毛細血管適応に有効とされる。
+- **ウォームアップ（3段階）**: ①軽い有酸素5〜15分 → ②前腕・手首のダイナミックストレッチ、フォームローラー → ③易しいルート（限界より2〜3下）から段階的に。
 - **クールダウン**: 軽い有酸素5〜15分＋温まった状態で静的ストレッチ＋**前腕マッサージ**（テニスボール/フォームローラー）。
 
 （出典: [99Boulders - Warm-Up & Cool Down](https://www.99boulders.com/climbing-warm-up-and-cool-down)、[Lattice Training - Endurance](https://latticetraining.com/blog/what-is-endurance-training-in-climbing/)）
 
 ### (C) 拮抗筋トレーニング（なぜ重要か）
-クライミングは屈筋を極端に鍛えるため伸筋との不均衡が生じ、肘（テニス肘）・指腱・肩の障害リスクが上がる。伸筋強化は握力と手首安定性も高める。
-- **指伸筋（ラバーバンド）**: 指先にバンドをかけ手首をまっすぐに保ち指を広げる→戻す。15〜25回×1〜3セット。
+クライミングは屈筋を極端に鍛えるため伸筋との不均衡が生じ、肘・指腱・肩の障害リスクが上がる。伸筋強化は握力と手首安定性も高める。
+
+- **指伸筋トレーニング（ラバーバンド）**: **ラバーバンド**（*rubber band / exercise band*＝指の伸筋を鍛える輪ゴム状の弾性バンド。クライミング用品店やAmazonで300〜800円程度で入手可能）を指先にかけ、手首をまっすぐに保ち指を広げる→戻す。15〜25回×1〜3セット。
+  > ▶ **実施方法の参考（写真・英語）**: [The Climbing Doctor - Antagonist Exercises](https://theclimbingdoctor.com/rock-climbing-injury-tips-antagonist-strength-exercises/)
+
 - **リバースリストカール（手首伸筋）**: 手のひら下向きで軽い重量を10〜15回×2〜3セット。
 - 急性の痛み・腫れがある間は拮抗筋トレも中止する。
 
 （出典: [The Climbing Doctor - Antagonist Exercises](https://theclimbingdoctor.com/rock-climbing-injury-tips-antagonist-strength-exercises/)、[Hörst - Wrist Stabilizers](https://trainingforclimbing.com/training-the-wrist-stabilizers/)）
 
-## 3-4. 回復の最適化
+## 2-4. 回復の最適化
 
 - **睡眠（エビデンス最強）**: 毎晩7〜9時間。睡眠不足は炎症応答と筋回復を阻害する。
 - **栄養（中〜強）**: タンパク質は運動者で体重1kgあたり1.4〜2.0g/日が推奨（ISSN基準）。セッション後30〜60分以内に20〜40gのタンパク質＋炭水化物。アルコール・喫煙は回復を阻害。水分・電解質も補給。
-- **マッサージ／フォームローラー（中程度）**: 前腕ロールは筋肉痛軽減のエビデンスあり。ただし急性の腫れがある時は深部マッサージを避ける。
+- **マッサージ／フォームローラー（中程度）**: 前腕ロールは筋肉痛軽減のエビデンスあり。急性の腫れがある時は深部マッサージを避ける。
 - **温冷（限定的）**: 急性炎症期はアイシング、慢性の筋硬直には温め。アイシング/NSAIDは「腫れと痛みが引いたら中止」が推奨される（腱修復を遅らせ得るため）。
 
 （出典: [Training for Climbing - Protein for Climbers](https://trainingforclimbing.com/benefits-supplemental-protein-for-climbers/)、[Rock Climbing Central - Recover Forearms](https://rockclimbingcentral.com/how-do-i-recover-my-forearms-after-bouldering/)、[The Climbing Doctor - Load or Rest](https://theclimbingdoctor.com/tendons-do-i-load-it-or-rest-it/)）
 
-## 3-5. 頻度・負荷管理
+## 2-5. 頻度・負荷管理
 
 - **初心者（6ヶ月未満）の目安**: 週3回以内、1セッション1.5〜2時間以内。2日連続で登ったら最低1日完全休養。
 - **毎回限界まで追い込まない**。「毎セッション全力＝毎回パンプ」は腱への蓄積疲労になる。
 - **漸進的負荷**: 強度・頻度の増加は週5〜10%以内が一般的なスポーツ医学の目安。「長く休んだ後に一気にやりすぎる」が最多の障害パターン。
 - クライミング障害は**過使用由来が大半**とする研究報告がある（出典: [PMC10756908 - 系統的レビュー](https://pmc.ncbi.nlm.nih.gov/articles/PMC10756908/)）。
 
-## 3-6. あなたのケースへの推奨（まとめ）
+## 2-6. あなたのケースへの推奨（まとめ）
 
 1. **まず1〜2週間、前腕に強い負荷をかけない**（完全休養か、痛みのない範囲の軽い活動）。
 2. 再開後は **週2〜3回以内・毎回限界まで登らない**ペースに。
@@ -292,25 +261,27 @@
 
 ---
 
-# 第4部　技術を学ぶための厳選リソース（URL実在確認済み）
+# 第3部　技術を学ぶための厳選リソース（日本語優先）
 
-## 動画
+> **写真・画像について**: 本ファイルはテキスト＋外部リンク形式のため、画像ファイルの添付はできません。各テクニックの参考画像・動画は、各セクション内の「▶ 図解参照」「▶ 動画解説」リンクからご確認ください。
+
+## 動画（日本語）
 
 | リソース | 言語 | 対象 | 推薦理由 |
 |---|---|---|---|
-| **[Catalyst Climbing](https://www.youtube.com/@CatalystClimbing)** | 英語 | 初級〜上級 | 元GB代表・ヘッドコーチ Louis Parkinson による体系的チュートリアル。初心者TipsからスローパーなどグリップTipsまで。Climbing.comが推薦 |
-| **[Movement for Climbers](https://www.youtube.com/channel/UC6-rliFvsdCUTZndrZTQjMA)** | 英語 | 初級〜中級 | コーチSiawn Ouによる技術特化。グレード別(V0〜V7)の「なぜそのムーブが必要か」から解説する教育的構成 |
-| **[Lattice Training](https://www.youtube.com/channel/UCMQzIsi7kwz1_xZjqNhz9kw)** | 英語 | 中級〜上級 | 科学的コーチング企業。トレーニング理論・プラトー打破・ケガ予防。データに基づく強度指標が高評価 |
+| **[F-STYLE「クライミングの基本」シリーズ（講師：杉田雅俊）](https://www.youtube.com/@FreeClimbingStyle)** | 日本語 | 初心者〜中級者 | 元日本代表クライマーの杉田雅俊が出演するフリークライミング専門チャンネル。「正対→ダイアゴナル→フラッギング→バックステップ…」と番号順に体系的にムーブを解説。特に[ムーブ002「ダイアゴナル」](https://www.youtube.com/watch?v=McZuBDgD7EE)と[ムーブ003「アウトサイドフラッギング」](https://www.youtube.com/watch?v=CsZWgL7J2ME)から視聴推奨 |
+| **[ボルダリングの教科書さや（たなべさやこ）](https://www.youtube.com/channel/UCbqxTXwhOx4Yk9RIPBYT8OA)** | 日本語 | 初心者〜4〜5級 | クライミング歴37年・ジム経営11年のプロインストラクターが運営。「非力な女性でも楽に登れる」切り口で体力に頼らない技術を丁寧に解説。特に[ダイアゴナル解説](https://www.youtube.com/watch?v=6LxaWEUgZ58)と[省エネ方法](https://www.youtube.com/watch?v=7I8p8iZjGoU)がおすすめ |
+| **[ボルダリングチャンネル YuTube ダイアゴナル入門](https://www.youtube.com/watch?v=Oq2dMyXnyhM)** | 日本語 | 初心者 | 「初心者がはじめに覚えるべきボルダリングムーブ」シリーズ。ダイアゴナル解説動画は**再生40万回超**と日本語ボルダリング動画で有数の支持を受ける。実践的な動きを分かりやすく説明 |
 
 ## 記事
 
 | リソース | 言語 | 対象 | 推薦理由 |
 |---|---|---|---|
-| **[Climbing Moves, Holds & Technique: The Beginner's Guide（99Boulders）](https://www.99boulders.com/climbing-moves-holds-and-technique)** | 英語 | 初級 | 10種以上のホールドと基本ムーブを図解付きで包括解説。最初に読む定番 |
-| **[12 Advanced Bouldering Tips（99Boulders）](https://www.99boulders.com/bouldering-tips)** | 英語 | 中〜上級 | 試技回数管理・課題選択・練習設計など中上級者が見落とす観点を網羅 |
-| **[ボルダリング初心者の上達法④ ムーブの基本と体の使い方（Everfree Climbing Gym）](https://everfree-climbing.com/bouldering-techniques-04-moves-basics/)** | 日本語 | 初級〜初中級 | 実際のジムが運営。「なぜ上手い人は楽に見えるか」から体の使い方を日本語で平易に解説。シリーズで体系的に読める |
+| **[ボルダリング初心者の上達法④ ムーブの基本と体の使い方（Everfree Climbing Gym）](https://everfree-climbing.com/bouldering-techniques-04-moves-basics/)** | 日本語 | 初級〜初中級 | 実際のジムが運営する解説記事。「なぜ上手い人は楽に見えるか」から体の使い方を平易に解説。①〜⑥のシリーズ通読推奨 |
+| **[Climbing Moves, Holds & Technique: The Beginner's Guide（99Boulders）](https://www.99boulders.com/climbing-moves-holds-and-technique)** | 英語 | 初級 | 10種以上のホールドと基本ムーブを図解付きで包括解説。写真・図が豊富で視覚的に理解しやすい定番ガイド |
+| **[ボルダリング初心者の「腕がパンパン」を解決する方法（MELOS）](https://melos.media/hobby/9398/)** | 日本語 | 初級 | 前腕パンプの原因と対策を日本語で解説。本ガイド第2部の補完情報として活用できる |
 
-> ケガ予防・リハビリの補足参照には [Hooper's Beta](https://www.hoopersbeta.com/) と [The Climbing Doctor](https://theclimbingdoctor.com/) が有用。
+> ケガ予防・リハビリの補足参照には [Hooper's Beta](https://www.hoopersbeta.com/) と [The Climbing Doctor](https://theclimbingdoctor.com/) が有用（英語）。
 
 ---
 
@@ -329,24 +300,7 @@
 - [Climbing.com - Reading Routes](https://www.climbing.com/skills/reading-routes/)
 - [FrictionLabs - 6 Ways to Read Routes](https://frictionlabs.eu/blog/6-ways-to-read-climbing-gym-routes)
 - [Lattice Training - Beginner's Guide](https://latticetraining.com/blog/the-beginners-guide/)
-- [Lattice Training - Top 5 Training Mistakes](https://latticetraining.com/2019/05/16/top-5-biggest-training-mistakes-climbers-make)
-- [Training for Climbing - Heel/Toe Hook](https://trainingforclimbing.com/develop-fantastic-footwork-with-heel-hook-and-toe-hook-technique/)
-- [Rockclimbing Realms - Dynos/Heels/Toes](https://rockclimbingrealms.com/bouldering-moves-dynos-heels-toes-demystified/)
-- [Rockclimbing Realms - Compression](https://rockclimbingrealms.com/compression-climbing-technique-explained/)
-- [Rockclimbing Realms - How to Mantle](https://rockclimbingrealms.com/how-to-mantle-climbing/)
-- [DPM Climbing - Gaston](https://www.dpmclimbing.com/what-is-a-gaston-in-climbing-a-game-changing-move/)
-- [StoneLine - Body Tension](https://www.stonelineclimbing.com/blog/body-tension)
-- [City Bloc - Breath/Tension/Rhythm](https://citybloc.co.uk/breath-work-body-tension-and-rhythm-3-subtle-techniques-to-elevate-your-bouldering/)
-- [Hörst - Intro to Fingerboard](https://trainingforclimbing.com/intro-to-fingerboard-training/)
-- [Hörst - Advanced Hangboard](https://trainingforclimbing.com/advanced-hangboard-training-technique/)
-- [Hörst - Limit Bouldering](https://trainingforclimbing.com/limit-bouldering-for-building-max-climbing-strength-and-power/)
-- [Hörst - Power-Endurance Protocols](https://trainingforclimbing.com/power-endurance-training-protocols-for-climbers/)
-- [Rockclimbing Realms - Campus Board](https://rockclimbingrealms.com/campusing-technique-training/)
-- [Lattice Training - Fear of Falling](https://latticetraining.com/blog/fear-of-falling/)
-- [Boulderflash - Visualisation](https://boulderflash.com/blog/visualisation-how-to-improve-route-reading/)
-- [Warriors Way - Applied Mental Training](https://warriorsway.com/course/applied-mental-training-in-bouldering/)
 - [Bouldering Boss - Grade Progression](https://boulderingboss.com/how-long-does-it-take-to-move-up-through-bouldering-grades/)
-- [Dynamite Starfish - Breaking Plateau](https://dynamitestarfish.com/blogs/news/break-through-a-plateau-in-rock-climbing)
 - [YAMA HACK - グレード換算表](https://yamahack.com/1889)
 - [BouldMedia - グレード表](https://boulmedia.com/gradetable/)
 - [ボルダリングデイズ - ホールドの種類と持ち方](https://bouldering-days.com/beginner/835/)
@@ -370,13 +324,15 @@
 - [Backcountry Physio - Pulley Injury](https://www.backcountry.physio/climbing-pulley-injury-causes-symptoms-and-treatment/)
 
 ### 学習リソース
-- [Catalyst Climbing - YouTube](https://www.youtube.com/@CatalystClimbing)
-- [Movement for Climbers - YouTube](https://www.youtube.com/channel/UC6-rliFvsdCUTZndrZTQjMA)
-- [Lattice Training - YouTube](https://www.youtube.com/channel/UCMQzIsi7kwz1_xZjqNhz9kw)
-- [99Boulders - Climbing Moves, Holds & Technique](https://www.99boulders.com/climbing-moves-holds-and-technique)
-- [99Boulders - 12 Advanced Bouldering Tips](https://www.99boulders.com/bouldering-tips)
+- [F-STYLE「クライミングの基本」シリーズ - YouTube](https://www.youtube.com/@FreeClimbingStyle)
+- [F-STYLE ムーブ002「ダイアゴナル」（杉田雅俊）](https://www.youtube.com/watch?v=McZuBDgD7EE)
+- [F-STYLE ムーブ003「アウトサイドフラッギング」](https://www.youtube.com/watch?v=CsZWgL7J2ME)
+- [ボルダリングの教科書さや - YouTube](https://www.youtube.com/channel/UCbqxTXwhOx4Yk9RIPBYT8OA)
+- [さやクライミング - ダイアゴナル解説](https://www.youtube.com/watch?v=6LxaWEUgZ58)
+- [ボルダリングチャンネル YuTube - ダイアゴナル入門（40万回）](https://www.youtube.com/watch?v=Oq2dMyXnyhM)
 - [Everfree Climbing Gym - ムーブの基本と体の使い方](https://everfree-climbing.com/bouldering-techniques-04-moves-basics/)
-- [Climbing.com - 5 Best YouTube Channels for Beginner Boulderers](https://www.climbing.com/skills/bouldering/5-best-youtube-channels-for-beginner-boulderers/)
+- [99Boulders - Climbing Moves, Holds & Technique](https://www.99boulders.com/climbing-moves-holds-and-technique)
+- [MELOS - 腕がパンパンを解決](https://melos.media/hobby/9398/)
 - [Hooper's Beta](https://www.hoopersbeta.com/)
 
 ---
