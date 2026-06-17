@@ -20,6 +20,13 @@
 - [x] 当初手順から修正：①隠れアイコン対処を追加 ②CLI パッケージ名を最新表記に統一 ③無料プランで動くかのような誤読箇所を削除 ④モード名を公式名に揃え
 - [x] レポート生成・公開：outputs/CURSOR_CODEX_GUIDE_20260617.md（手順A=拡張機能・手順B=CLI 両建て／所要時間表／トラブルシュート／検証メモ／参考リンク）
 - [x] 公開：main へマージ＆push
+- [x] **v2 改訂（ファクトチェック＋品質レビュー＋新セクション追加）**
+  - ファクトチェック：公式 cloud / integrations/github / guides/agents-md / npm @openai/codex を追加照合
+  - 独立 quality-review エージェント（general-purpose）で13件指摘 → 主要7件を反映
+  - 修正：Node.js v22+ に訂正／`npm i -g codex`（無関係 2012 年製パッケージ）の罠を警告／公式インストーラ `curl -fsSL .../install.sh | sh` を主流路に格上げ／Agent(Full Access) の説明を「承認最小化」に修正／無料プラン断定を緩和／アクティビティバー注意の重複3→1集約／OAuth 文言・`/exit` の断定緩和
+  - 新セクション §5「既存 GitHub リポジトリを Codex に引き継いで検証する方法」3方式：①ローカル clone × IDE 拡張機能＋AGENTS.md ②Codex Cloud（chatgpt.com/codex）GitHub 接続＋Environment 設定＋PR 自動生成 ③`@codex review`/`@codex fix` で既存 PR 連携
+  - 参考リンクを一次/二次に分離、公式11件＋日本語実機3件
+- [x] 公開：v2 を main へマージ＆push
 
 ### 2026-06-15 ボルダリング上達ガイド（初心者→中級→上級＋前腕疲労対策）
 - [x] Sonnetサブエージェント4本並列調査（①初心者→中級技術 ②中級→上級技術 ③学習リソース動画/記事 ④前腕パンプ・筋肉痛・握力低下の予防/対策）
