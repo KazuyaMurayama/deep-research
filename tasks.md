@@ -14,6 +14,13 @@
 
 ## リサーチ実行タスク（テーマごとにここに追記）
 
+### 2026-06-17 Cursor で OpenAI Codex の機能を使う方法（最短手順ガイド）
+- [x] Web調査：OpenAI Codex 公式（IDE/Quickstart/Features/Changelog）・GitHub openai/codex・note.com 実機記事・Qiita/zenn 日本語ガイドを照合
+- [x] 主要発見：(1) Codex IDE 拡張機能（識別子 `openai.chatgpt`）は VS Code/Cursor/Windsurf 公式対応、ChatGPT 有料プランまたは API キー必須 (2) Cursor は横向きアクティビティバー仕様で Codex アイコンが隠れやすい → 右クリックで表示切替 (3) CLI 版は `npm i -g @openai/codex` でインストール (4) モードは Chat/Agent/Agent(Full Access) の3種
+- [x] 当初手順から修正：①隠れアイコン対処を追加 ②CLI パッケージ名を最新表記に統一 ③無料プランで動くかのような誤読箇所を削除 ④モード名を公式名に揃え
+- [x] レポート生成・公開：outputs/CURSOR_CODEX_GUIDE_20260617.md（手順A=拡張機能・手順B=CLI 両建て／所要時間表／トラブルシュート／検証メモ／参考リンク）
+- [x] 公開：main へマージ＆push
+
 ### 2026-06-15 ボルダリング上達ガイド（初心者→中級→上級＋前腕疲労対策）
 - [x] Sonnetサブエージェント4本並列調査（①初心者→中級技術 ②中級→上級技術 ③学習リソース動画/記事 ④前腕パンプ・筋肉痛・握力低下の予防/対策）
 - [x] 統合執筆（親=Opus）：4部構成＋グレード対応表（日本級段↔V↔仏）＋よくある失敗表＋停滞要因表
