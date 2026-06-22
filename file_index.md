@@ -19,6 +19,7 @@
 ## アウトプット（最新順）
 | ファイル | テーマ | スコア | 日付 |
 |----------|--------|--------|------|
+| [outputs/2026-06-22_freelance-health-insurance-cheapest.md](outputs/2026-06-22_freelance-health-insurance-cheapest.md) | フリーランス世帯の健康保険「最安・最低限」化ガイド（40代個人事業主＋パート妻＋幼児2人・世帯所得800万円）：任意継続/市区町村国保/国保組合(文美国保)/マイクロ法人社保/扶養最適化を制度別年間コスト比較 | 91/100 | 2026-06-22 |
 | [outputs/2026-06-02_two-dog-shiba-bordercollie.md](outputs/2026-06-02_two-dog-shiba-bordercollie.md) | 柴犬5歳＋ボーダーコリー0歳の2頭飼い 実現可能性・影響・課題対策ガイド（東京都花小金井・幼児2人世帯）※サイズ比較・楽しみ・生涯費用＋スコアリング刷新(健康/静か/抜け毛/コスト)＋BC♀子犬の選定〜育成ロードマップ＋参考犬種(シェルティ/秋田/ハスキー♀)比較 追記 | 92/100 | 2026-06-02 |
 | [outputs/2026-05-20_online-meeting-minutes-system.md](outputs/2026-05-20_online-meeting-minutes-system.md) | オンライン会議 AI議事録システム完全設計ガイド（Windows 11・Razer Seiren Mini対応） | -/100 | 2026-05-20 |
 | [outputs/2026-05-20_sbi-cfd-nasdaq-8x-9x-leverage-guide.md](outputs/2026-05-20_sbi-cfd-nasdaq-8x-9x-leverage-guide.md) | SBI証券CFDでNASDAQ-100に8倍・9倍レバレッジをかける方法【ウェブ検証レポート】 | -/100 | 2026-05-20 |
