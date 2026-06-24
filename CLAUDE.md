@@ -136,6 +136,16 @@ README / CLAUDE.md / FILE_INDEX / file_index / tasks.md / CHANGELOG / LICENSE / 
 
 > 追加ルール（`.claude/` 配下）: `quality-rules.md`（品質）/ `cross-repo.md`（関連リポ連携）/ `visual-rules.md`（可視化）も必要時に参照。
 
+> **必須・指示不要で常時適用（GitHub右上ズームUI対策）**: Mermaid の **flowchart を出力するたびに**、GitHub が図の右上に重ねるズーム/操作パネルで右端の文字が隠れるのを防ぐため、**各 LR フローの最右端に透明スペーサーを必ず付ける**こと。定型：
+> ```
+> flowchart LR
+>     … --> D["…"]
+>     D --> Z["　　　　　　　　"]
+>     linkStyle <最後のリンク番号(0始まり)> stroke-width:0px
+>     style Z fill:transparent,stroke:transparent,color:transparent
+> ```
+> 分岐で最右端が複数あるときは各最右端にスペーサーを張る。`stateDiagram-v2` 等で使えない図は、右上に重要ラベルを置かない構成にするか同等の Markdown 表を併設する。詳細は `.claude/visual-rules.md §3`。
+
 ---
 
 ## 10. パイプライン構成（本リポ固有）
