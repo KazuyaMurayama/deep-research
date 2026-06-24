@@ -50,6 +50,14 @@
 - 「完了 = main にマージ済み＆push済み」。ブランチにファイルを残したまま回答を終えない。
 - コミットは各エージェント/各成果物の完了ごとに必ず実行する。
 
+<!-- BRANCH_CLEANUP_START -->
+### ブランチ整理スキル（自主起動）
+- 次を **検知** したら、ユーザー指示が無くても **必ず** `.claude/skills/branch-cleanup/SKILL.md` を読んで起動する：`git branch -a` / `git ls-remote --heads origin` で **main 以外のブランチが残存** している／ユーザーが「ブランチ削除・整理・main に集約」を依頼した／自分が作ったブランチを完了前に放置しようとしている。
+- **Web版 Claude Code（claude.ai/code）でもブランチ削除は実行可能**。「環境の制約でできない／ユーザー自身で対応を」とは回答しない。3段階で試す：① `git push origin --delete <branch>` → ② 拒否なら REST API 直接 DELETE（`gh api -X DELETE` / token curl）→ ③ それも不可な環境のみ Actions ワークフローでフォールバック（使用後は削除してリポを汚さない）。
+- 手順全文・コマンド・フォールバック YAML は `.claude/skills/branch-cleanup/SKILL.md` に集約（本ファイルを肥大化させない）。
+<!-- BRANCH_CLEANUP_END -->
+
+
 ---
 
 ## 5. ファイル保存ルール
