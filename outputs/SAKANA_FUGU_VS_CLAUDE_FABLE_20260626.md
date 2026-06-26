@@ -374,7 +374,7 @@ claude  # → セッション内で /model opus または /model claude-opus-4-8
 - 実機コスト・体感は **KEITO 氏（KEITO【AI&WEB ch】）の検証動画**（2026-06、8万円課金・4時間検証）に基づく一次的実機証言。商用ベンチではない。
 - Fable 5 の停止・復旧状況は流動的。最新は [isfable5back.com](https://isfable5back.com/) と [Anthropic公式](https://www.anthropic.com/news/fable-mythos-access) で要確認。
 - Sakana Fugu の無料枠上限・詳細なトライアル条件については公開情報での確認が取れていない。[console.sakana.ai](https://console.sakana.ai) で直接確認を推奨。
-- スコアはこのレポートの評価枠組み（12観点・各100点）による相対評価であり、用途により重み付けは変わる。
+- スコアはこのレポートの評価枠組み（13観点・各100点）による相対評価であり、用途により重み付けは変わる。
 
 ---
 
