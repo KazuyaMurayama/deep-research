@@ -14,6 +14,17 @@
 
 ## リサーチ実行タスク（テーマごとにここに追記）
 
+### 2026-06-26 「理想のAI恋人が作れるサービス」国内外比較レポート
+- [x] 研究設計（Opus）：12サービス×10評価軸・心理効果・弊害の構成設計
+- [x] Web調査①（Sonnet）：海外AIコンパニオンサービス12社詳細調査
+- [x] Web調査②（Sonnet）：日本語対応・国内サービス調査（zeta・MiraiMind・Gatebox等）
+- [x] Web調査③（Sonnet）：心理的効果・弊害の学術エビデンス調査（arXiv・PubMed・ScienceDirect等）
+- [x] レポート統合執筆（Opus）：7セクション・スコア表・Mermaidフロー図・参考ソース完備
+- [x] 主要発見：①総合1位=Character.AI（80点・無料無制限・日本語ネイティブ・NSFWなし）②日本語特化1位=zeta（74点・月商1.2億・200万ユーザー）③短期孤独感軽減はHBS論文で実証済みだが青少年自死（2024年フロリダ）・ERP廃止ショック等の重大リスクも確認 ④Replika開発元はGDPR€500万罰金（2025年）
+- [x] 公開：outputs/AI_COMPANION_SERVICES_COMPARISON_20260626.md を claude/research-cfd-leverage-sbi-AXMRN へコミット&push
+
+### 2026-06-26 Sakana Fugu vs VS Code Claude Code 比較レポート（v3）
+
 ### 2026-06-24 日本国内移住先 14都市比較レポート（拡張版）
 - [x] ベースレポート特定（outputs/2026-05-12_japan-5cities-relocation-report.md・札幌・仙台・新潟・軽井沢・花小金井の5都市比較）
 - [x] プレリサーチで新候補9市を抽出：八戸・帯広・函館（北海道東北）／盛岡・富山・金沢・松本・長野（中部北陸）／北九州（西日本）
