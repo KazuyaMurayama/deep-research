@@ -14,6 +14,18 @@
 
 ## リサーチ実行タスク（テーマごとにここに追記）
 
+### 2026-07-02 品質基盤強化：ハルシネーション対策・レビュー仕組み化・網羅性担保・スキル拡張
+- [x] Web調査（Sonnet×2並列）：①ハルシネーション低減・網羅性向上のベストプラクティス（Anthropic公式reduce-hallucinations/multi-agent research system・CoVe・SAFE・self-preference bias・引用検証の実証研究等） ②公開Claude Codeスキル（anthropics/skills・obra/superpowers・ジャーナリズム系fact-checkスキル等）
+- [x] 新スキル4本を `.claude/skills/` に作成（実装=Sonnet委譲、設計=Fable）：
+  - `fact-check`：クレーム台帳→出典整合（引用ドリフト/出典なし数値/限定条件の脱落/循環引用の検出）→数値triangulation→CoVe式独立再検証→SUPPORTED/PARTIAL/UNSUPPORTED/CONTRADICTED判定→確信度ラベル。push前必須ゲート
+  - `independent-review`：独立ファクトチェック（生成コンテキスト非共有）＋多観点パネル（Contrarian必須）の2段レビュー。公開スコアは独立実測値（自己申告92→実測86の実録を教訓化）。指摘も原典検証してから採用/不採用を裁定
+  - `coverage-check`：視点マトリクス（ステークホルダー/時間軸/空間/賛否/定量定性/PESTLE）・視点プロファイル別クエリ・反証探索クエリ必須化・premortem・公開前completeness critic
+  - `sp-dispatching-parallel-agents`：obra/superpowers（MIT）を日本語化導入＋再帰的メタ応答対策の注記
+- [x] パイプライン改訂（agents/01〜04、skills/ミラー同期済み）：01=Step2.5網羅性設計＋session.jsonにcoverage_matrix/counter_evidence_queries/premortem_risks、02=ソース検証大原則（リンク生存≠事実正確性・triangulation・循環引用・interleaved thinking）＋Step3.5反証探索ラウンド、03=Contrarian役追加＋確信度ラベル、04=ルーブリックをAnthropic本番Research準拠8項目に置換＋fact-checkゲート＋独立レビュー必須＋completeness critic＋ファイル名規則をv2.0に整合
+- [x] `.claude/quality-rules.md` v2：必須チェック2→4項目（意味的整合確認・triangulation・確信度ラベリング・公開前ゲート）
+- [x] CLAUDE.md §9 スキル表に4本追加、file_index.md に品質保証スキル表を追加
+- [x] 公開：claude/deep-research-coverage-hallucination-dwx6p8 へ push（main へのマージは未実施＝セッション指定ブランチ制約のため。次セッションでマージ検討）
+
 ### 2026-06-30 大学生・20代社会人への「直接講義」実現方法リサーチ（6テーマ＝DS/GAFA働き方/投資/幸福/思考法/キャリア）
 - [x] 研究設計：4要件（手法評価/パイロット運用/発信戦略・ブランディング/0-12か月実行プラン）を4軸に分解、Sonnetサブエージェント4本並列で投入
 - [x] Web調査A（公式チャネル評価）：大学ゲスト講義・非常勤・企業研修・自治体・登壇/TEDx・ビザスク等マッチング・学生NPOを始め方/相場/ハードル付きで。投資=金商法、景表法の留意点

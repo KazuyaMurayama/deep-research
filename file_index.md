@@ -16,6 +16,14 @@
 | skills/04_quality_publisher.md | 品質審査・公開 |
 | skills/timeout.md | タイムアウト対策（全エージェント共通） |
 
+## 品質保証スキル（.claude/skills/）
+| ファイル | 役割 |
+|----------|------|
+| .claude/skills/fact-check/SKILL.md | ハルシネーション検出（クレーム台帳・出典整合・triangulation・CoVe独立再検証）。push前必須ゲート |
+| .claude/skills/independent-review/SKILL.md | 独立レビュアー＋多観点パネル（Contrarian必須）。公開スコアは独立実測値 |
+| .claude/skills/coverage-check/SKILL.md | 視点マトリクス・反証探索クエリ・premortem・completeness critic による網羅性担保 |
+| .claude/skills/sp-dispatching-parallel-agents/SKILL.md | 並列サブエージェント委譲の判断基準（superpowers由来・MIT） |
+
 ## アウトプット（最新順）
 | ファイル | テーマ | スコア | 日付 |
 |----------|--------|--------|------|

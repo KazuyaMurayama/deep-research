@@ -133,6 +133,10 @@ README / CLAUDE.md / FILE_INDEX / file_index / tasks.md / CHANGELOG / LICENSE / 
 | 計画に沿った実行 | `.claude/skills/sp-executing-plans/SKILL.md` |
 | 図表生成（レポート） | `.claude/skills/mermaid-agents365/SKILL.md` |
 | 成果物の納品・コミット前チェック | `.claude/skills/sp-verification-before-completion/SKILL.md` |
+| リサーチレポート草稿完成時・push前（必須） | `.claude/skills/fact-check/SKILL.md` |
+| レポート公開前の独立レビュー（必須） | `.claude/skills/independent-review/SKILL.md` |
+| 研究設計時の視点網羅チェック・公開前の抜け漏れ検出 | `.claude/skills/coverage-check/SKILL.md` |
+| 複数サブエージェントへの並列委譲時 | `.claude/skills/sp-dispatching-parallel-agents/SKILL.md` |
 
 > 追加ルール（`.claude/` 配下）: `quality-rules.md`（品質）/ `cross-repo.md`（関連リポ連携）/ `visual-rules.md`（可視化）も必要時に参照。
 
